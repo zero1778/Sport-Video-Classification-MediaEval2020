@@ -1,4 +1,5 @@
 from torch.utils.data import Dataset, DataLoader
+from model import NetSimpleBranch
 
 #########################################################################
 ###################### Reset Pytorch Session ############################
@@ -43,6 +44,9 @@ class my_variables():
         del dict['log']
         return dict
 
+
+def get_annotation_data(dataset_list,size_data):
+    
 ##########################################################################
 ############################ Dataset Class ###############################
 ##########################################################################
@@ -59,60 +63,7 @@ class My_dataset(Dataset):
     def __getitem__(self, idx):
         ###TODO###
         rgb, flow, label = get_annotation_data(self.dataset_list[idx], self.size_data, augmentation = self.augmentation, norm_method = self.norm_method, flow_method = self.flow_method)
+        # rgb, flolabel = get_annotation_data(self.dataset_list[idx], self.size_data, augmentation = self.augmentation, norm_method = self.norm_method)
         sample = {'rgb': torch.FloatTensor(rgb), 'flow': torch.FloatTensor(flow), 'label': label}
         return sample
         
-#######################################################################
-############################ Make model ###############################
-#######################################################################
-def make_the_model(video_list):
-
-    #### Same seed #####
-    reset_training(param.seed)
-
-    ##### Get all the annotations in random order #####
-    ###TODO###
-    annotations_list, negative_list = get_annotations_list(video_list)
-
-    ##### Build Train, Validation and Test set #####
-    ###TODO###
-    train_list, validation_list, test_list = build_lists_set(annotations_list, negative_list)
-
-    # Variables
-    lr = 0.01
-
-    compute_normalization_values(os.path.join(param.path_data, 'values_flow_%s.npy' % 'DeepFlow'))
-    
-    args = my_variables()
-
-    ##################
-    ## Architecture ##
-    ##################
-    model = make_architecture(args)
-
-    ######################
-    ## Data preparation ##
-    ######################
-    ##### Build Dataset class and Data Loader #####
-    train_set = My_dataset(train_list, augmentation = args.augmentation, norm_method = args.norm_method, flow_method = args.flow_method, data_types = args.model_type, fps=args.fps, size_data=args.size_data)
-    validation_set = My_dataset(validation_list, norm_method = args.norm_method, flow_method = args.flow_method, data_types = args.model_type, fps=args.fps, size_data=args.size_data)
-    test_set = My_dataset(test_list, norm_method = args.norm_method, flow_method = args.flow_method, data_types = args.model_type, fps=args.fps, size_data=args.size_data)
-
-    ## Loaders of the Datasets
-    train_loader = DataLoader(train_set, batch_size = args.batch_size, shuffle = True, num_workers = args.workers)
-    validation_loader = DataLoader(validation_set, batch_size = args.batch_size, shuffle = False, num_workers = args.workers)
-    test_loader = DataLoader(test_set, batch_size = args.batch_size, shuffle = False, num_workers = args.workers)
-
-    ######################
-    ## Training process ##
-    ######################
-    train_model(model, args, train_loader, validation_loader)
-    args.load = True
-
-    ## Load best model
-    model = make_architecture(args)
-
-    ##################
-    ## Test process ##
-    ##################
-    test_model(model, args, test_loader, param.list_of_moves)
