@@ -1,5 +1,6 @@
 from torch.utils.data import Dataset, DataLoader
 from model import NetSimpleBranch
+import os
 
 #########################################################################
 ###################### Reset Pytorch Session ############################
@@ -45,13 +46,14 @@ class my_variables():
         return dict
 
 
-def get_annotation_data(dataset_list,size_data):
+# def get_annotation_data(dataset_list,size_data):
     
 ##########################################################################
 ############################ Dataset Class ###############################
 ##########################################################################
 class My_dataset(Dataset):
-    def __init__(self, dataset_list, size_data, augmentation=0, norm_method = norm_method, flow_method = flow_method):
+    # def __init__(self, dataset_list, size_data, augmentation=0, norm_method = norm_method, flow_method = flow_method):
+    def __init__(self, dataset_list, size_data, augmentation=0, norm_method = 'norm_method', flow_method = 'flow_method'):
         self.dataset_list = dataset_list
         self.augmentation = augmentation
         self.norm_method = norm_method
@@ -66,4 +68,16 @@ class My_dataset(Dataset):
         # rgb, flolabel = get_annotation_data(self.dataset_list[idx], self.size_data, augmentation = self.augmentation, norm_method = self.norm_method)
         sample = {'rgb': torch.FloatTensor(rgb), 'flow': torch.FloatTensor(flow), 'label': label}
         return sample
+
         
+def build_lists_set(save_path):
+    # for d in os.listdir(data_dir):
+        # cur_dir = os.path.join(data_dir, d)
+        # if d in ['train', 'val']:
+        #     for id, label in enumerate(sorted(os.listdir(cur_dir))):
+        #         for vid_name in sorted(os.listdir(os.path.join(cur_dir, label))):
+
+    for d in os.listdir(save_path)
+
+
+build_lists_set("data")
