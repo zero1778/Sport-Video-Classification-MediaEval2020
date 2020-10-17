@@ -4,8 +4,7 @@ from train import train_model
 from model import * 
 from utils import *
 
-def build_lists_set():
-    pass
+
 if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')

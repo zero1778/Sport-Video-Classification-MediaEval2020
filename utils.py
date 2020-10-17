@@ -1,6 +1,6 @@
 from torch.utils.data import Dataset, DataLoader
 from model import NetSimpleBranch
-import os
+import os, cv2
 
 #########################################################################
 ###################### Reset Pytorch Session ############################
@@ -69,15 +69,85 @@ class My_dataset(Dataset):
         sample = {'rgb': torch.FloatTensor(rgb), 'flow': torch.FloatTensor(flow), 'label': label}
         return sample
 
-        
-def build_lists_set(save_path):
+def build_lists_set(data_dir):
+    '''
+    data_dir is a folder contain preprocessed data. \n
+    Structure of data_dir:
+    data_dir:
+    -train
+    -val
+    -test
+    '''
+    for d in os.listdir(data_dir):
+        cur_dir = os.path.join(data_dir, d)
+        if d == 'train':
+            train_list = build_train_val_list(cur_dir)
+        elif d == 'val':
+            val_list = build_train_val_list(cur_dir)
+        elif d == 'test':
+            test_list = build_test_list(cur_dir)
+    
+    return train_list, val_list, test_list
+
+
+
+def build_train_val_list(data_dir):
+    '''
+    data_dir can be train or val \n
+    Structure of data_dir:
+    data_dir:
+    -Label:
+    --DeepFlow
+    --Video:
+    ---RBG
+    ---DeepFlow
+    '''
     # for d in os.listdir(data_dir):
         # cur_dir = os.path.join(data_dir, d)
         # if d in ['train', 'val']:
         #     for id, label in enumerate(sorted(os.listdir(cur_dir))):
         #         for vid_name in sorted(os.listdir(os.path.join(cur_dir, label))):
+    data_list = []
+    for label_idx, label in enumerate(sorted(os.listdir(data_dir))):
+        label_dir = os.path.join(data_dir, label)
+        for d in sorted(os.listdir(label_dir)):
+            if d == "DeepFlow":
+                continue
+            video_dir = os.path.join(data_dir, d)
+            for branch in os.listdir(video_dir):
+                branch_dir = os.path.join(video_dir, branch)
+                if branch == "RBG":
+                    for frame in sorted(os.listdir(branch_dir)):
+                        image_path = os.path.join(branch_dir, frame)
+                        image = cv2.imread(image_path)
+                        # Optical flow is None  
+                        sample = (image, None, label_idx)
+                        data_list.append(sample)
+    return data_list
 
-    for d in os.listdir(save_path)
-
+def build_test_list(data_dir):
+    '''
+    structure of data_dir:
+    data_dir:
+    -DeepFlow
+    -Video:
+    --RBG
+    --DeepFlow
+    '''
+    data_list = []
+    for d in sorted(os.listdir(data_dir)):
+            if d == "DeepFlow":
+                continue
+            video_dir = os.path.join(data_dir, d)
+            for branch in os.listdir(video_dir):
+                branch_dir = os.path.join(video_dir, branch)
+                if branch == "RBG":
+                    for frame in sorted(os.listdir(branch_dir)):
+                        image_path = os.path.join(branch_dir, frame)
+                        image = cv2.imread(image_path)
+                        # Optical flow is None  
+                        sample = (image, None, None)
+                        data_list.append(sample)
+    return data_list
 
 build_lists_set("data")
