@@ -1,14 +1,19 @@
-import cv2 as cv 
+import cv2
 import numpy as np 
+import argparse 
+import os
+from os import listdir
+from tqdm import tqdm
+from os.path import isfile, join
 
 
 def get_args():
     parser = argparse.ArgumentParser(description='Extracting Optical Flow',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-i', '--input', metavar='I', type=str,
-                        help='Path of RGB video', dest='input')
+                        help='Path of RGB images', dest='inp')
     parser.add_argument('-o', '--output', metavar='O', type=str,
-                        help='Path to Optical Flow video', dest='output')
+                        help='Path to Optical Flow video', dest='out')
 
     return parser.parse_args()
 
@@ -17,19 +22,30 @@ if __name__ == "__main__":
     # The video feed is read in as 
     # a VideoCapture object 
     args = get_args()
-    cap = cv.VideoCapture(args.input) 
+    mypath = args.inp + '/'
+    out_path = args.out
+    # print(out_path)
+    # exit(0)
+    # cap = cv2.VideoCapture(mypath) 
 
     # ret = a boolean return value from 
     # getting the frame, first_frame = the 
     # first frame in the entire video sequence 
     
-    ret, first_frame = cap.read() 
-
+    rgb_images = [f for f in sorted(listdir(mypath)) if isfile(join(mypath, f))]
+    # print(rgb_images)
+    # exit(0)
+    # width_OF=320
+    # ret, first_frame = cap.read() 
+    # first_frame = cv2.resize(first_frame, (width_OF, first_frame.shape[0] * width_OF // first_frame.shape[1]))
     # Converts frame to grayscale because we 
     # only need the luminance channel for 
     # detecting edges - less computationally 
     # expensive 
-    prev_gray = cv.cvtColor(first_frame, cv.COLOR_BGR2GRAY) 
+    # print(mypath)
+    first_frame = cv2.imread(mypath + rgb_images[0])
+    
+    prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY) 
 
     # Creates an image filled with zero 
     # intensities with the same dimensions 
@@ -39,28 +55,36 @@ if __name__ == "__main__":
     # Sets image saturation to maximum 
     mask[..., 1] = 255
 
-    while(cap.isOpened()): 
+    mog = cv2.createBackgroundSubtractorMOG2()
+    
+
+    for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
         
         # ret = a boolean return value from getting 
         # the frame, frame = the current frame being 
         # projected in the video 
-        ret, frame = cap.read() 
-        
+        # ret, frame = cap.read() 
+        # frame = cv2.resize(frame, (width_OF, frame.shape[0] * width_OF // frame.shape[1]))
         # Opens a new window and displays the input 
         # frame 
-        cv.imshow("input", frame) 
-        
+        frame = cv2.imread(mypath + list_frame)
+        fgmask = mog.apply(frame)
+        # cv2.imshow('frame',fgmask)
+        # cv2.waitKey(0)
+        # print(fgmask)
+        # cv2.imshow("input", frame) 
+        # cv2.waitKey(0)
         # Converts each frame to grayscale - we previously 
         # only converted the first frame to grayscale 
-        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY) 
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
         
         # Calculates dense optical flow by Farneback method 
-        flow = cv.calcOpticalFlowFarneback(prev_gray, gray, 
+        flow = cv2.calcOpticalFlowFarneback(prev_gray, gray, 
                                         None, 
                                         0.5, 3, 15, 3, 5, 1.2, 0) 
         
         # Computes the magnitude and angle of the 2D vectors 
-        magnitude, angle = cv.cartToPolar(flow[..., 0], flow[..., 1]) 
+        magnitude, angle = cv2.cartToPolar(flow[..., 0], flow[..., 1]) 
         
         # Sets image hue according to the optical flow 
         # direction 
@@ -68,24 +92,54 @@ if __name__ == "__main__":
         
         # Sets image value according to the optical flow 
         # magnitude (normalized) 
-        mask[..., 2] = cv.normalize(magnitude, None, 0, 255, cv.NORM_MINMAX) 
+        mask[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
         
         # Converts HSV to RGB (BGR) color representation 
-        rgb = cv.cvtColor(mask, cv.COLOR_HSV2BGR) 
-        
-        # Opens a new window and displays the output frame 
-        cv.imshow("dense optical flow", rgb) 
+        rgb = cv2.cvtColor(mask, cv2.COLOR_HSV2RGB) 
+    
+        # h, s, v1 = cv2.split(mask)
+        gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) 
+        # cv2.imshow('framev1',v1)
+        # print(v1.shape)
+        # print(fgmask.shape)
+        # print(np.max(v1))
+        # cv2.waitKey(0)
+        # print(v1)
+        # gray = gray / 255
+        fmask = (gray * fgmask)
+        def pp1(fmask):    
+            info = np.iinfo(fmask.dtype)
+            fmask = fmask.astype(np.float64) / info.max
+            fmask = fmask * 255
+            fmask = fmask.astype(np.uint8) 
+            return fmask
+        def pp2(fmask):
+            return fmask / 255
+        def pp3(fmask):
+            return fmask % 255
+
+        fmask = pp2(fmask)
+        print(fmask)
+        # print(fmask)
+        cv2.imshow('frame',fmask)
+        cv2.waitKey(0)
+
+        # break
+        # cv2.imshow("dense optical flow", v1) 
+        # cv2.waitKey(0)
         
         # Updates previous frame 
         prev_gray = gray 
+        cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
+
         
         # Frames are read by intervals of 1 millisecond. The 
         # programs breaks out of the while loop when the 
         # user presses the 'q' key 
-        if cv.waitKey(1) & 0xFF == ord('q'): 
-            break
+        # if cv2.waitKey(1) & 0xFF == ord('q'): 
+        #     break
 
     # The following frees up resources and 
     # closes all windows 
-    cap.release() 
-    cv.destroyAllWindows() 
+    # cap.release() 
+    # cv2.destroyAllWindows() 

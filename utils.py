@@ -154,4 +154,4 @@ def build_test_list(data_dir):
                         data_list.append(sample)
     return data_list
 
-build_lists_set("data")
+# build_lists_set("data")

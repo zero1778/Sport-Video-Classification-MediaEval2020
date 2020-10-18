@@ -1,4 +1,6 @@
 from utils import make_path
+import time, os, cv2
+from tqdm import tqdm
 
 ############################################################
 ##################### Build the data #######################
@@ -14,7 +16,7 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
     compute_DeepFlow(video_list, save_path, log, workers)
 
     # Compute ROI
-    compute_ROI(video_list, save_path, log, workers, flow_method=flow_method)
+    # compute_ROI(video_list, save_path, log, workers, flow_method=flow_method)
 
 
 ##################### RGB #######################
@@ -22,7 +24,7 @@ def extract_frames(video_list, save_path, width_OF, log):
     # Chrono
     start_time = time.time()
 
-    for idx, video_path in enumerate(video_list):
+    for idx, video_path in tqdm(enumerate(video_list)):
         
         video_name = os.path.basename(video_path)
         # progress_bar(idx, len(video_list), 'Frame extraction - %s' % (video_name))
@@ -31,6 +33,8 @@ def extract_frames(video_list, save_path, width_OF, log):
         make_path(path_data_video)
         path_RGB = os.path.join(path_data_video, 'RGB')
         make_path(path_RGB)
+        path_DeepFlow= os.path.join(path_data_video, 'DeepFlow')
+        make_path(path_DeepFlow)
 
         # Load Video
         cap = cv2.VideoCapture(video_path)
@@ -58,43 +62,45 @@ def extract_frames(video_list, save_path, width_OF, log):
 ##################### Deep Flow #######################
 def compute_DeepFlow(video_list, save_path, log, workers):
     start_time = time.time()
-    DeepFlow_pool = ActivePool()
-
+    # DeepFlow_pool = ActivePool()
+  
     for idx, video_path in enumerate(video_list):
 
         video_name = os.path.basename(video_path).split('.')[0]
         path_data_video = os.path.join(save_path, video_name)
-
+        # make_path()
+        compute_DeepFlow_video(os.path.join(path_data_video, 'RGB'), os.path.join(path_data_video, 'DeepFlow'))
         # Split the calculation in severals process
-        while threading.activeCount() > workers:
-            # progress_bar(idx + 1 - threading.activeCount(), len(video_list), 'DeepFlow computation')
-            time.sleep(0.1)
+    #     while threading.activeCount() > workers:
+    #         # progress_bar(idx + 1 - threading.activeCount(), len(video_list), 'DeepFlow computation')
+    #         time.sleep(0.1)
 
-        if threading.activeCount() <= workers:
-            job = threading.Thread(target = compute_DeepFlow_video, name = idx, args = (DeepFlow_pool,
-                                                                                        os.path.join(path_data_video, 'RGB'),
-                                                                                        os.path.join(path_data_video, 'DeepFlow')))
-            job.daemon=True
-            job.start()
+    #     if threading.activeCount() <= workers:
+    #         job = threading.Thread(target = compute_DeepFlow_video, name = idx, args = (DeepFlow_pool,
+    #                                                                                     os.path.join(path_data_video, 'RGB'),
+    #                                                                                     os.path.join(path_data_video, 'DeepFlow')))
+    #         job.daemon=True
+    #         job.start()
 
-    while threading.activeCount()>1:
+    # while threading.activeCount()>1:
         # progress_bar(idx + 1 - threading.activeCount(), len(video_list), 'DeepFlow computation')
         time.sleep(0.1)
 
     # progress_bar(idx + 1, len(video_list), 'DeepFlow computation done in %d s' % (time.time() - start_time), 1, log=log)
 
 
-def compute_DeepFlow_video(pool, path_RGB, path_Flow):
-    name = threading.current_thread().name
-    pool.makeActive(name)
+# def compute_DeepFlow_video(pool, path_RGB, path_Flow):
+def compute_DeepFlow_video(path_RGB, path_Flow):
+    # name = threading.current_thread().name
+    # pool.makeActive(name)
     os.system('python cv_flow.py -i %s -o %s' % (path_RGB, path_Flow))
-    pool.makeInactive(name)
+    # pool.makeInactive(name)
 
 
 ##################### ROI #######################
 def compute_ROI(video_list, save_path, log, workers, flow_method='DeepFlow'):
     start_time = time.time()
-    ROI_pool = ActivePool()
+    # ROI_pool = ActivePool()
 
     for idx, video_path in enumerate(video_list):
 
@@ -138,4 +144,7 @@ def join_values_flow(video_list, name_values, save_path):
     np.save(os.path.join(save_path, name_values), values_flow)
 
 if __name__ == "__main__":
-    build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow'):
+    # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
+    video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00468_00660.mp4']
+    save_path = 'data/'
+    build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
