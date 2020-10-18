@@ -4,6 +4,7 @@ from train import train_model
 from model import * 
 from utils import *
 
+<<<<<<< HEAD
 def build_lists_set():
     pass
 
@@ -24,6 +25,8 @@ def get_args():
                         help='Percent of the data that is used as validation (0-100)')
 
     return parser.parse_args()
+=======
+>>>>>>> a15ec5c81878002f97622b36bc91e6c853a20ca6
 
 if __name__ == "__main__":
     args = get_args()
