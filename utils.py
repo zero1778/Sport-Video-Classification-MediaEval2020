@@ -2,6 +2,10 @@ from torch.utils.data import Dataset, DataLoader
 from model import NetSimpleBranch
 import os
 
+def make_path(path):
+    if not os.path.isdir(path):
+        os.makedirs(path)
+        
 #########################################################################
 ###################### Reset Pytorch Session ############################
 #########################################################################
