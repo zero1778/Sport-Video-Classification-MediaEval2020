@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     ##### Build Train, Validation and Test set #####
     ###TODO###
-    train_list, validation_list, test_list = build_lists_set(data_dir)
+    train_list, validation_list, _ = build_lists_set(data_dir)
 
     # Variables
     lr = 0.01
