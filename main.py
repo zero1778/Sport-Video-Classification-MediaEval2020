@@ -4,12 +4,11 @@ from train import train_model
 from model import * 
 from utils import *
 
-<<<<<<< HEAD
 def build_lists_set():
     pass
 
 def get_args():
-    parser = argparse.ArgumentParser(description='Train the UNet on images and target masks',
+    parser = argparse.ArgumentParser(description='Train the Fine_grained',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-e', '--epochs', metavar='E', type=int, default=5,
                         help='Number of epochs', dest='epochs')
@@ -25,8 +24,6 @@ def get_args():
                         help='Percent of the data that is used as validation (0-100)')
 
     return parser.parse_args()
-=======
->>>>>>> a15ec5c81878002f97622b36bc91e6c853a20ca6
 
 if __name__ == "__main__":
     args = get_args()

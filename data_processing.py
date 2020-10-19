@@ -14,7 +14,7 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
     
 
     # Compute DeepFlow
-    # compute_DeepFlow(video_list, save_path, log, workers)
+    compute_DeepFlow(video_list, save_path, log, workers)
 
     # Compute ROI
     compute_ROI(video_list, save_path, log, workers, flow_method=flow_method)
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     # video_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
     # video_list = ['data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4']
     # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
-    video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 2 people
+    video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
     # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
     save_path = 'data/'
     build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')

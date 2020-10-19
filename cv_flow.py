@@ -21,26 +21,27 @@ if __name__ == "__main__":
 
     # The video feed is read in as 
     # a VideoCapture object 
+    print("INFO: Computing DeepFlow...")
     args = get_args()
-    width_OF = 320
+    # width_OF = 320
     # mypath = args.inp + '/'
-    mypath = 'data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4'
+    mypath = args.inp + '/'
     out_path = args.out
     # print(out_path)
     # exit(0)
-    cap = cv2.VideoCapture(mypath) 
+    # cap = cv2.VideoCapture(mypath) 
 
     # ret = a boolean return value from 
     # getting the frame, first_frame = the 
     # first frame in the entire video sequence 
     
     ##TODO##
-    # rgb_images = [f for f in sorted(listdir(mypath)) if isfile(join(mypath, f))]
+    rgb_images = [f for f in sorted(listdir(mypath)) if isfile(join(mypath, f))]
 
     # print(rgb_images)
     # exit(0)
     # width_OF=320
-    ret, first_frame = cap.read() 
+    # ret, first_frame = cap.read() 
     # first_frame = cv2.resize(first_frame, (width_OF, first_frame.shape[0] * width_OF // first_frame.shape[1]))
     # Converts frame to grayscale because we 
     # only need the luminance channel for 
@@ -48,7 +49,7 @@ if __name__ == "__main__":
     # expensive 
     # print(mypath)
     ##TODO##
-    # first_frame = cv2.imread(mypath + rgb_images[0])
+    first_frame = cv2.imread(mypath + rgb_images[0])
     
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY) 
 
@@ -63,17 +64,17 @@ if __name__ == "__main__":
     mog = cv2.createBackgroundSubtractorMOG2()
     
 
-    # for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
-    while (1):
+    for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
+    # while (1):
         # ret = a boolean return value from getting 
         # the frame, frame = the current frame being 
         # projected in the video 
-        ret, frame = cap.read() 
+        # ret, frame = cap.read() 
         # frame = cv2.resize(frame, (width_OF, frame.shape[0] * width_OF // frame.shape[1]))
         # Opens a new window and displays the input 
         # frame 
-        # frame = cv2.imread(mypath + list_frame)
-        fgmask = mog.apply(frame)
+        frame = cv2.imread(mypath + list_frame)
+        
         # fgmask = 
         # cv2.imshow('frame',fgmask)
         # cv2.waitKey(0)
@@ -103,13 +104,14 @@ if __name__ == "__main__":
         
         # Converts HSV to RGB (BGR) color representation 
         rgb = cv2.cvtColor(mask, cv2.COLOR_HSV2RGB) 
-    
-        # h, s, v1 = cv2.split(mask)
+
         gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY)
+        fgmask = mog.apply(frame)
+
         prev_gray = gray 
 
-        fgmask = cv2.resize(fgmask, (width_OF, fgmask.shape[0] * width_OF // fgmask.shape[1])) 
-        gray = cv2.resize(gray, (width_OF, gray.shape[0] * width_OF // gray.shape[1])) 
+        # fgmask = cv2.resize(fgmask, (width_OF, fgmask.shape[0] * width_OF // fgmask.shape[1])) 
+        # gray = cv2.resize(gray, (width_OF, gray.shape[0] * width_OF // gray.shape[1])) 
         # cv2.imshow('framev1',v1)
         # print(v1.shape)
         # print(fgmask.shape)
@@ -118,6 +120,7 @@ if __name__ == "__main__":
         # print(v1)
         # gray = gray / 255
         fmask = (gray * fgmask)
+
         def pp1(fmask):    
             info = np.iinfo(fmask.dtype)
             fmask = fmask.astype(np.float64) / info.max
@@ -130,26 +133,12 @@ if __name__ == "__main__":
             return fmask % 255
 
         fmask = pp1(fmask)
-        # print(fmask)
+        
         cv2.imshow('frame',fmask)
         cv2.waitKey(0)
 
-        # break
-        # cv2.imshow("dense optical flow", v1) 
-        # cv2.waitKey(0)
-        
-        # Updates previous frame 
-        
-        # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
+        cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
 
-        
-        # Frames are read by intervals of 1 millisecond. The 
-        # programs breaks out of the while loop when the 
-        # user presses the 'q' key 
-        # if cv2.waitKey(1) & 0xFF == ord('q'): 
-        #     break
 
-    # The following frees up resources and 
-    # closes all windows 
-    cap.release() 
+    # cap.release() 
     cv2.destroyAllWindows() 
