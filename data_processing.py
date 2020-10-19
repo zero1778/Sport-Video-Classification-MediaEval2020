@@ -1,6 +1,7 @@
 from utils import make_path
 import time, os, cv2
 from tqdm import tqdm
+import sys
 import numpy as np
 
 ############################################################
@@ -101,13 +102,18 @@ def compute_DeepFlow_video(path_RGB, path_Flow):
 ##################### ROI #######################
 def compute_ROI(video_list, save_path, log, workers, flow_method='CVFlow'):
     start_time = time.time()
+
     # ROI_pool = ActivePool()
 
     for idx, video_path in enumerate(video_list):
 
         video_name = os.path.basename(video_path).split('.')[0]
+        # label = os.path.basename(video_path).split('.')[1]
+        # print(label)
         path_data_video = os.path.join(save_path, video_name)
-        compute_roi_video(path_data_video, flow_method)
+        make_path(path_data_video + "/RGB_cropped")
+        output_rgb_cropped = os.path.join(path_data_video, "RGB_cropped")
+        compute_roi_video(path_data_video, flow_method, output_rgb_cropped)
         # Split the calculation in severals process
     #     while threading.activeCount() > workers:
     #         # progress_bar(idx + 1 - threading.activeCount(), len(video_list), 'ROI computation for %s' % (flow_method))
@@ -128,10 +134,10 @@ def compute_ROI(video_list, save_path, log, workers, flow_method='CVFlow'):
     # progress_bar(len(video_list), len(video_list), 'ROI computation for %s completed in %d s' % (flow_method, int(time.time() - start_time)), 1, log=log)
 
 
-def compute_roi_video(path_data_video, flow_method):
+def compute_roi_video(path_data_video, flow_method, output_rgb_cropped):
     # name = threading.current_thread().name
     # pool.makeActive(name)
-    os.system('python roi_flow.py -i %s -m %s' % (path_data_video, flow_method))
+    os.system('python roi_flow.py -i %s -m %s -o %s' % (path_data_video, flow_method, output_rgb_cropped))
     # pool.makeInactive(name)
 
 
@@ -149,7 +155,8 @@ if __name__ == "__main__":
     # video_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
     # video_list = ['data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4']
     # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
-    video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 2 people
+    # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] 
+    video_list = ['data/val/Serve_Forehand_Backspin/2710727544_01352_01508.mp4']
     # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
     save_path = 'data/'
     build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
