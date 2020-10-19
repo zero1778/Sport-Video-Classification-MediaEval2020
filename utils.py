@@ -112,6 +112,7 @@ def build_train_val_list(data_dir):
         #     for id, label in enumerate(sorted(os.listdir(cur_dir))):
         #         for vid_name in sorted(os.listdir(os.path.join(cur_dir, label))):
     data_list = []
+    total = 0
     for label_idx, label in enumerate(sorted(os.listdir(data_dir))):
         label_dir = os.path.join(data_dir, label)
         for d in sorted(os.listdir(label_dir)):

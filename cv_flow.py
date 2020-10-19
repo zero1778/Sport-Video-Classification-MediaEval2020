@@ -118,11 +118,11 @@ if __name__ == "__main__":
         def pp3(fmask):
             return fmask % 255
 
-        fmask = pp2(fmask)
-        print(fmask)
+        fmask = pp1(fmask)
         # print(fmask)
-        cv2.imshow('frame',fmask)
-        cv2.waitKey(0)
+        # print(fmask)
+        # cv2.imshow('frame',fmask)
+        # cv2.waitKey(0)
 
         # break
         # cv2.imshow("dense optical flow", v1) 
