@@ -70,9 +70,14 @@ if __name__ == "__main__":
     w_x, w_y = 180, 320
     opt = []
     total = len(rgb_images)
+    # ksize_w = 180
+    # ksize_h = 320
+    sigma_W = 0.3*((W - 1)*0.5 - 1)+0.8
+    sigma_H = 0.3*((H - 1)*0.5 - 1)+0.8
 
     start_frame = int((total - T) / 2)
     end_frame = start_frame + T
+    print(start_frame, end_frame)
     for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
 
         # ret = a boolean return value from getting 
@@ -95,6 +100,13 @@ if __name__ == "__main__":
         def pp3(fmask):
             return fmask % 255
         fgmask = mog.apply(frame)
+        
+        gaussian_x = cv2.getGaussianKernel(W, sigma_W)
+        gaussian_y = cv2.getGaussianKernel(H, sigma_H)
+        gaussian_weight = gaussian_x * np.transpose(gaussian_y)
+        # fgmask = np.multiply(fgmask, gaussian_weight)
+        cv2.imshow("Foreground",fgmask)
+
         fgmaskT = (fgmask != 0).astype(int)
         fgmaskT = np.expand_dims(fgmaskT, axis=-1)
         # Converts each frame to grayscale - we previously 
@@ -103,7 +115,9 @@ if __name__ == "__main__":
         flow = cv2.calcOpticalFlowFarneback(prev_gray, gray, 
                                         None, 
                                         0.5, 3, 15, 3, 5, 1.2, 0) 
-        flow_filter = flow * fgmaskT
+        flow_filter = np.multiply(flow, fgmaskT)
+        
+
         magnitude, angle = cv2.cartToPolar(flow_filter[..., 0], flow_filter[..., 1]) 
         mask[..., 0] = angle * 180 / np.pi / 2
         mask[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
@@ -122,7 +136,7 @@ if __name__ == "__main__":
         # gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) 
         # cv2.imshow("Flow", gray)
         # # cv2.imshow("Optical Flow", gray)
-        cv2.imshow("Foreground Extracted", fgmask)
+        cv2.imshow("Optical Filter", gray)
         # fmask = (gray * fgmask)
         # fmask = pp1(fmask)
         fmaskT = (gray != 0).astype(int)  
@@ -148,7 +162,7 @@ if __name__ == "__main__":
     
         #Calculate Gravity
         X_g, Y_g = int(X_sum/flow_num), int(Y_sum/flow_num)
-        print("Gravity = ", X_g, Y_g)
+        # print("Gravity = ", X_g, Y_g)
 
         X_tl, Y_tl =  X_g - 60, Y_g - 75
 
@@ -158,18 +172,29 @@ if __name__ == "__main__":
         if (Y_tl < 0): Y_tl = 0
         crop_image = frame[X_tl: X_tl + W, Y_tl : Y_tl + H]
         crop_opt   = flow_filter[X_tl: X_tl + W, Y_tl : Y_tl + H]
-        np.save('values_flow_%s' % flow_method, crop_opt)
+
+        
+        # magnitude, angle1 = cv2.cartToPolar(crop_opt[..., 0], crop_opt[..., 1]) 
+        # mask1[..., 0] = angle1 * 180 / np.pi / 2
+        # mask1[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
+        # rgb = cv2.cvtColor(mask1, cv2.COLOR_HSV2RGB) 
+        # gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY)
+        
+        # gray = np.multiply(gray, gaussian_weight)
+        # np.save('values_flow_%s' % flow_method, crop_opt)
         # # print(crop_image.shape)
         # cv2.imshow("Flow_filter", gray)
         
-        cv2.imshow("Cropped",crop_image)
-        cv2.waitKey(0)
-        cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
-        # image = cv2.rectangle(fmask, (Y_g - 75,X_g - 60), (Y_g + 45,X_g + 60), color=(255), thickness=3)
-
-        
-        # cv2.imshow('ROI Flow', image)
         # cv2.waitKey(0)
+        # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
+
+        image = cv2.rectangle(frame, (Y_tl, X_tl), (Y_tl + H, X_tl + W), color=(0,0,255), thickness=2)
+
+        if (frame_number >= start_frame and frame_number <= end_frame):
+            cv2.imshow("Cropped",crop_image)
+            cv2.imshow('ROI Flow', image)
+        cv2.waitKey(0)
+        # cv2.destroyAllWindows() 
         
         
         # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
