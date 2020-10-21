@@ -8,10 +8,10 @@ import numpy as np
 ############################################################
 ##################### Build the data #######################
 ############################################################
-def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow'):
+def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='CVFlow'):
     make_path(save_path)
     # Extract Frames
-    extract_frames(video_list, save_path, width_OF, log)
+    extract_frames(video_list, save_path, width_OF, log, flow_method)
     
 
     # Compute DeepFlow
@@ -22,7 +22,7 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
 
 
 ##################### RGB #######################
-def extract_frames(video_list, save_path, width_OF, log):
+def extract_frames(video_list, save_path, width_OF, log, flow_method):
     # Chrono
     start_time = time.time()
     print("INFO: Extracting RGB Frame...")
@@ -35,7 +35,7 @@ def extract_frames(video_list, save_path, width_OF, log):
         make_path(path_data_video)
         path_RGB = os.path.join(path_data_video, 'RGB')
         make_path(path_RGB)
-        path_DeepFlow= os.path.join(path_data_video, 'DeepFlow')
+        path_DeepFlow= os.path.join(path_data_video, flow_method)
         make_path(path_DeepFlow)
 
         # Load Video
@@ -97,7 +97,7 @@ def compute_DeepFlow(video_list, save_path, log, workers):
 def compute_DeepFlow_video(path_RGB, path_Flow):
     # name = threading.current_thread().name
     # pool.makeActive(name)
-    # os.system('python cv_flow.py -i %s -o %s' % (path_RGB, path_Flow))
+    os.system('python cv_flow.py -i %s -o %s' % (path_RGB, path_Flow))
     # pool.makeInactive(name)
 
 
@@ -157,22 +157,22 @@ def join_values_flow(video_list, name_values, save_path):
 if __name__ == "__main__":
     # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
     data_dir = "data"
-    save_path = "data_processed_1"
+    save_path = "data_processed"
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":
-            # continue
-            save_path = os.path.join(save_path, "test")
+            continue
+            save_video_path = os.path.join(save_path, "test")
             video_list = []
             for video in os.listdir(cur_dir):
                 video_path = os.path.join(cur_dir, video)
                 video_list.append(video_path)
-            build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+            build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
         else:
-            if d == "val":
-                # continue
-            if d != 'train':
-                # continue
+            # if d == "val":
+            #     continue
+            # if d != 'train':
+            #     continue
             save_path = os.path.join(save_path, d)
             # print(cur_dir)
             for label in sorted(os.listdir(cur_dir)):
@@ -182,7 +182,7 @@ if __name__ == "__main__":
                 for video in os.listdir(label_path):
                     video_path = os.path.join(label_path, video)
                     video_list.append(video_path)
-                build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+                build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
                             
 
             

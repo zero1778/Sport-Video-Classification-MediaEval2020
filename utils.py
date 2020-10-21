@@ -127,7 +127,7 @@ def build_train_val_list(data_dir):
                         image = cv2.imread(image_path)
                         # Optical flow is None
                         sample = (image, None, label_idx)
-                        d   111ta_list.append(sample)
+                        data_list.append(sample)
     return data_list
 
 def build_test_list(data_dir):
