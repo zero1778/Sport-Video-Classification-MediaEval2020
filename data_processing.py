@@ -97,7 +97,7 @@ def compute_DeepFlow(video_list, save_path, log, workers):
 def compute_DeepFlow_video(path_RGB, path_Flow):
     # name = threading.current_thread().name
     # pool.makeActive(name)
-    os.system('python cv_flow.py -i %s -o %s' % (path_RGB, path_Flow))
+    # os.system('python cv_flow.py -i %s -o %s' % (path_RGB, path_Flow))
     # pool.makeInactive(name)
 
 
@@ -171,7 +171,10 @@ if __name__ == "__main__":
         else:
             if d == "val":
                 continue
+            if d != 'train':
+                continue
             save_path = os.path.join(save_path, d)
+            # print(cur_dir)
             for label in sorted(os.listdir(cur_dir))[:2]:
                 label_path = os.path.join(cur_dir, label)
                 save_video_path = os.path.join(save_path, label)
@@ -208,10 +211,6 @@ if __name__ == "__main__":
     # # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
     # # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
     # # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
-    # save_path = 'data/train_list/'
-    # make_path(save_path)
-    # build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-ve_Forehand_Hit/7410672998_03308_03472.mp4']
     # save_path = 'data/train_list/'
     # make_path(save_path)
     # build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
