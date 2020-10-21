@@ -54,11 +54,11 @@ if __name__ == "__main__":
     # print(len(gaussian))
     # print(gaussian)
 
-    start_frame = int((total - T) / 2)
+    start_frame = max(int((total - T) / 2), 0)
     end_frame = min(start_frame + T, total - 1)
-    print(start_frame, end_frame)
+    # print("(Start, End) = (%d, %d)" % (start_frame, end_frame))
     
-    for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
+    for frame_number, list_frame in enumerate(rgb_images[1:]):
         
         if (frame_number > end_frame): break
         # ret = a boolean return value from getting 
@@ -166,11 +166,11 @@ if __name__ == "__main__":
         #     break
     N = len(opt)
     if (N < 100):
-        delta = (100 - N) / 2
+        delta = int((100 - N) / 2)
         first = opt[0]
         last = opt[len(opt) - 1]
         for i in range (0, delta):
-            opt = first + opt
+            opt = [first] + opt
             opt.append(last)
         while len(opt) < 100:
             opt.append(last)

@@ -10,7 +10,6 @@ import numpy as np
 ############################################################
 def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow'):
     make_path(save_path)
-
     # Extract Frames
     extract_frames(video_list, save_path, width_OF, log)
     
@@ -26,7 +25,8 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
 def extract_frames(video_list, save_path, width_OF, log):
     # Chrono
     start_time = time.time()
-    for idx, video_path in tqdm(enumerate(video_list)):
+    print("INFO: Extracting RGB Frame...")
+    for video_path in tqdm(video_list):
         
         video_name = os.path.basename(video_path)
         # progress_bar(idx, len(video_list), 'Frame extraction - %s' % (video_name))
@@ -109,7 +109,7 @@ def compute_ROI(video_list, save_path, log, workers, flow_method='CVFlow'):
 
     # ROI_pool = ActivePool()
 
-    for idx, video_path in enumerate(video_list):
+    for video_path in tqdm(video_list):
 
         video_name = os.path.basename(video_path).split('.')[0]
         # label = os.path.basename(video_path).split('.')[1]
@@ -195,11 +195,12 @@ if __name__ == "__main__":
     train_list = []
     for i in data['train']:
         train_list.append(i['path'])
-    train_list = train_list[:3]
+    # train_list = train_list[:3]
+    
     # video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00768_00952.mp4']
     # save_path = 'data_preprocessing_1/train/Defensive_Backhand_Backspin/'
     # build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-    # video_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
+    # train_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
     # video_list = ['data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4']
     # video_list = ['data/train/Offensive_Forehand_Loop/7410672998_07924_08136.mp4'] #good
     # video_list = ['data/train/Offensive_Forehand_Loop/268101021042_01016_01200.mp4']
