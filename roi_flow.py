@@ -27,16 +27,12 @@ def cal_roi(u_max, u_g, C, w_C, alpha=0.6):
     return int(temp), temp
 
 if __name__ == "__main__":
-
-    # The video feed is read in as 
-    # a VideoCapture object 
+ 
     print("INFO: Computing ROI Flow...")
     args = get_args()
     path_rgb = args.inp + '/RGB/'
     flow_method = args.method
     out_path = args.out
-    # print(out_path)
-    # exit(0)
     # cap = cv2.VideoCapture(path_rgb) 
     
     
@@ -45,23 +41,7 @@ if __name__ == "__main__":
     first_frame = cv2.imread(path_rgb + rgb_images[0])
     
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY) 
-
-    # hog = cv2.HOGDescriptor()
-    # hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-    # boxes, weights = hog.detectMultiScale(first_frame, winStride=(8,8) )
-    # boxes = np.array([[x, y, x + w, y + h] for (x, y, w, h) in boxes])
-    # X_roi, Y_roi = 0,0
-    # for (xA, yA, xB, yB) in boxes:
-    #     # display the detected boxes in the colour picture
-    #     X_roi , Y_roi = int((xA + xB)/2), int((yA + yB)/2)
-    #     break
-
-    # Creates an image filled with zero 
-    # intensities with the same dimensions 
-    # as the frame 
     mask = np.zeros_like(first_frame) 
-
-    # Sets image saturation to maximum 
     mask[..., 1] = 255
 
     mog = cv2.createBackgroundSubtractorMOG2()
@@ -70,16 +50,19 @@ if __name__ == "__main__":
     w_x, w_y = 180, 320
     opt = []
     total = len(rgb_images)
-    # ksize_w = 180
-    # ksize_h = 320
-    sigma_W = 0.3*((W - 1)*0.5 - 1)+0.8
-    sigma_H = 0.3*((H - 1)*0.5 - 1)+0.8
+    ksize = 41
+    sigma = 0.3*((ksize - 1)*0.5 - 1)+0.8
+    # gaussian = cv2.getGaussianKernel(ksize, sigma)
+    # print(len(gaussian))
+    # print(gaussian)
 
     start_frame = int((total - T) / 2)
-    end_frame = start_frame + T
+    end_frame = min(start_frame + T, total - 1)
     print(start_frame, end_frame)
+    
     for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
-
+        
+        if (frame_number > end_frame): break
         # ret = a boolean return value from getting 
         # the frame, frame = the current frame being 
         # projected in the video 
@@ -99,44 +82,32 @@ if __name__ == "__main__":
             return fmask / 255
         def pp3(fmask):
             return fmask % 255
-        fgmask = mog.apply(frame)
-        
-        gaussian_x = cv2.getGaussianKernel(W, sigma_W)
-        gaussian_y = cv2.getGaussianKernel(H, sigma_H)
-        gaussian_weight = gaussian_x * np.transpose(gaussian_y)
+
+        fgmask = mog.apply(frame)        
+        # gaussian_x = cv2.getGaussianKernel(W, sigma_W)
+        # gaussian_y = cv2.getGaussianKernel(H, sigma_H)
+        # gaussian_weight = gaussian_x * np.transpose(gaussian_y)
         # fgmask = np.multiply(fgmask, gaussian_weight)
-        cv2.imshow("Foreground",fgmask)
+        # cv2.imshow("Foreground",fgmask)
 
         fgmaskT = (fgmask != 0).astype(int)
         fgmaskT = np.expand_dims(fgmaskT, axis=-1)
-        # Converts each frame to grayscale - we previously 
-        # only converted the first frame to grayscale 
+ 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
         flow = cv2.calcOpticalFlowFarneback(prev_gray, gray, 
                                         None, 
                                         0.5, 3, 15, 3, 5, 1.2, 0) 
         flow_filter = np.multiply(flow, fgmaskT)
-        
 
         magnitude, angle = cv2.cartToPolar(flow_filter[..., 0], flow_filter[..., 1]) 
         mask[..., 0] = angle * 180 / np.pi / 2
         mask[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
         rgb = cv2.cvtColor(mask, cv2.COLOR_HSV2RGB) 
-
         gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) 
-
         
-              
-        
-        # Computes the magnitude and angle of the 2D vectors 
-        # magnitude, angle = cv2.cartToPolar(flow[..., 0], flow[..., 1]) 
-        # mask[..., 0] = angle * 180 / np.pi / 2
-        # mask[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
-        # rgb = cv2.cvtColor(mask, cv2.COLOR_HSV2RGB) 
-        # gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY) 
         # cv2.imshow("Flow", gray)
         # # cv2.imshow("Optical Flow", gray)
-        cv2.imshow("Optical Filter", gray)
+        # cv2.imshow("Optical Filter", gray)
         # fmask = (gray * fgmask)
         # fmask = pp1(fmask)
         fmaskT = (gray != 0).astype(int)  
@@ -144,7 +115,7 @@ if __name__ == "__main__":
         # Updates previous frame 
         prev_gray = gray 
         
-        ##############################333
+        ###################################
         # flow1 = np.sum(np.abs(flow), axis = -1) # 180 x 320 
         # flow2 = flow1 * fmaskT
 
@@ -164,50 +135,49 @@ if __name__ == "__main__":
         X_g, Y_g = int(X_sum/flow_num), int(Y_sum/flow_num)
         # print("Gravity = ", X_g, Y_g)
 
-        X_tl, Y_tl =  X_g - 60, Y_g - 75
+        X_tl, Y_tl =  max(0, X_g - 60), max(0, Y_g - 75)
 
         if (X_tl + W > w_x): X_tl = w_x - W
-        if (X_tl < 0): X_tl = 0
         if (Y_tl + H > w_y): Y_tl = w_y - H
-        if (Y_tl < 0): Y_tl = 0
+
         crop_image = frame[X_tl: X_tl + W, Y_tl : Y_tl + H]
         crop_opt   = flow_filter[X_tl: X_tl + W, Y_tl : Y_tl + H]
-
-        
-        # magnitude, angle1 = cv2.cartToPolar(crop_opt[..., 0], crop_opt[..., 1]) 
-        # mask1[..., 0] = angle1 * 180 / np.pi / 2
-        # mask1[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX) 
-        # rgb = cv2.cvtColor(mask1, cv2.COLOR_HSV2RGB) 
-        # gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY)
         
         # gray = np.multiply(gray, gaussian_weight)
         # np.save('values_flow_%s' % flow_method, crop_opt)
         # # print(crop_image.shape)
         # cv2.imshow("Flow_filter", gray)
-        
+    
         # cv2.waitKey(0)
-        # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
+        cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
 
-        image = cv2.rectangle(frame, (Y_tl, X_tl), (Y_tl + H, X_tl + W), color=(0,0,255), thickness=2)
+        # image = cv2.rectangle(frame, (Y_tl, X_tl), (Y_tl + H, X_tl + W), color=(0,0,255), thickness=2)
 
-        if (frame_number >= start_frame and frame_number <= end_frame):
-            cv2.imshow("Cropped",crop_image)
-            cv2.imshow('ROI Flow', image)
-        cv2.waitKey(0)
-        # cv2.destroyAllWindows() 
-        
+        if (frame_number >= start_frame and frame_number < end_frame):
+            # cv2.imshow("Cropped",crop_image)
+            # cv2.imshow('ROI Flow', crop_opt)
+            opt.append(crop_opt)
+        # cv2.waitKey(0) 
         
         # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
-        
-
-        
-        # Frames are read by intervals of 1 millisecond. The 
-        # programs breaks out of the while loop when the 
-        # user presses the 'q' key 
         # if cv2.waitKey(1) & 0xFF == ord('q'): 
         #     break
+    N = len(opt)
+    if (N < 100):
+        delta = (100 - N) / 2
+        first = opt[0]
+        last = opt[len(opt) - 1]
+        for i in range (0, delta):
+            opt = first + opt
+            opt.append(last)
+        while len(opt) < 100:
+            opt.append(last)
+    opt = np.array(opt)
+    print(opt.shape)
+    print(args.inp)
+    np.save(args.inp + "/values_flow_%s" % (flow_method) , opt)
+    
+          
 
-    # The following frees up resources and 
-    # closes all windows 
     # cap.release() 
     # cv2.destroyAllWindows() 

@@ -1,6 +1,7 @@
 from utils import make_path
 import time, os, cv2, sys
 from tqdm import tqdm
+import json
 import sys
 import numpy as np
 
@@ -181,7 +182,19 @@ if __name__ == "__main__":
                             
 
             
-            
+
+    with open('data.json') as json_file:
+        data = json.load(json_file)
+       
+        # for p in data['people']:
+        #     print('Name: ' + p['name'])
+        #     print('Website: ' + p['website'])
+        #     print('From: ' + p['from'])
+        #     print('')
+    train_list = []
+    for i in data['train']:
+        train_list.append(i['path'])
+    train_list = train_list[:6]
     # video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00768_00952.mp4']
     # save_path = 'data_preprocessing_1/train/Defensive_Backhand_Backspin/'
     # build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
@@ -190,8 +203,8 @@ if __name__ == "__main__":
     # video_list = ['data/train/Offensive_Forehand_Loop/7410672998_07924_08136.mp4'] #good
     # video_list = ['data/train/Offensive_Forehand_Loop/268101021042_01016_01200.mp4']
     # video_list = ['data/val/Serve_Forehand_Backspin/2710727544_01352_01508.mp4']
-    video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
+    # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
     # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
     # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
-    save_path = 'data/'
-    build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+    save_path = 'data/train_list/'
+    build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')

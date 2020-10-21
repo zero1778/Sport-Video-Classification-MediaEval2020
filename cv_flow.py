@@ -65,7 +65,6 @@ if __name__ == "__main__":
     
 
     for frame_number, list_frame in tqdm(enumerate(rgb_images[1:])):
-    # while (1):
         # ret = a boolean return value from getting 
         # the frame, frame = the current frame being 
         # projected in the video 
