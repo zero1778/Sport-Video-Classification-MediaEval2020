@@ -161,7 +161,7 @@ if __name__ == "__main__":
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":
-            continue
+            # continue
             save_path = os.path.join(save_path, "test")
             video_list = []
             for video in os.listdir(cur_dir):
@@ -170,12 +170,12 @@ if __name__ == "__main__":
             build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
         else:
             if d == "val":
-                continue
+                # continue
             if d != 'train':
-                continue
+                # continue
             save_path = os.path.join(save_path, d)
             # print(cur_dir)
-            for label in sorted(os.listdir(cur_dir))[:2]:
+            for label in sorted(os.listdir(cur_dir)):
                 label_path = os.path.join(cur_dir, label)
                 save_video_path = os.path.join(save_path, label)
                 video_list = []
