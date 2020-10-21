@@ -1,7 +1,6 @@
 from utils import make_path
-import time, os, cv2, sys
+import time, os, cv2, sys, json
 from tqdm import tqdm
-import sys
 import numpy as np
 
 ############################################################
@@ -18,7 +17,7 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
     # compute_DeepFlow(video_list, save_path, log, workers)
 
     # Compute ROI
-    compute_ROI(video_list, save_path, log, workers, flow_method=flow_method)
+    # compute_ROI(video_list, save_path, log, workers, flow_method=flow_method)
 
 
 ##################### RGB #######################
@@ -153,32 +152,7 @@ def join_values_flow(video_list, name_values, save_path):
     np.save(os.path.join(save_path, name_values), values_flow)
 
 if __name__ == "__main__":
-    # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
-    # data_dir = "data"
-    # save_path = "data_processed_1"
-    # for d in os.listdir(data_dir):
-    #     cur_dir = os.path.join(data_dir, d)
-    #     if d == "test":
-    #         continue
-    #         save_path = os.path.join(save_path, "test")
-    #         video_list = []
-    #         for video in os.listdir(cur_dir):
-    #             video_path = os.path.join(cur_dir, video)
-    #             video_list.append(video_path)
-    #         build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-    #     else:
-    #         if d == "val":
-    #             continue
-    #         save_path = os.path.join(save_path, d)
-    #         for label in sorted(os.listdir(cur_dir)):
-    #             label_path = os.path.join(cur_dir, label)
-    #             save_path = os.path.join(save_path, label)
-    #             video_list = []
-    #             for video in os.listdir(label_path):
-    #                 video_path = os.path.join(label_path, video)
-    #                 video_list.append(video_path)
-    #             build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-                            
+    # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4                        
 
             
             
@@ -190,8 +164,8 @@ if __name__ == "__main__":
     # video_list = ['data/train/Offensive_Forehand_Loop/7410672998_07924_08136.mp4'] #good
     # video_list = ['data/train/Offensive_Forehand_Loop/268101021042_01016_01200.mp4']
     # video_list = ['data/val/Serve_Forehand_Backspin/2710727544_01352_01508.mp4']
-    video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
+    # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
     # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
     # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
-    save_path = 'data/'
-    build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+    # save_path = 'data/'
+    # build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
