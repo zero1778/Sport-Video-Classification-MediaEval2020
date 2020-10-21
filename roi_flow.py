@@ -27,8 +27,6 @@ def cal_roi(u_max, u_g, C, w_C, alpha=0.6):
     return int(temp), temp
 
 if __name__ == "__main__":
- 
-    print("INFO: Computing ROI Flow...")
     args = get_args()
     path_rgb = args.inp + '/RGB/'
     flow_method = args.method
@@ -125,14 +123,18 @@ if __name__ == "__main__":
     
         X_sum, Y_sum = 0, 0
         flow_num = (fmaskT != 0).astype(int)
-        for x in range(180):
-            for y in range(320):
-                X_sum += x * flow_num[x][y]
-                Y_sum += y * flow_num[x][y]
-        flow_num = flow_num.sum()
+        delta = (flow_num == 1)
+        row, col = np.indices((180, 320))
+        X_g = np.sum(row*delta) // np.sum(delta)
+        Y_g = np.sum(col*delta) // np.sum(delta)
+        # for x in range(180):
+        #     for y in range(320):
+        #         X_sum += x * flow_num[x][y]
+        #         Y_sum += y * flow_num[x][y]
+        # flow_num = flow_num.sum()
     
         #Calculate Gravity
-        X_g, Y_g = int(X_sum/flow_num), int(Y_sum/flow_num)
+        # X_g, Y_g = int(X_sum/flow_num), int(Y_sum/flow_num)
         # print("Gravity = ", X_g, Y_g)
 
         X_tl, Y_tl =  max(0, X_g - 60), max(0, Y_g - 75)
@@ -173,8 +175,8 @@ if __name__ == "__main__":
         while len(opt) < 100:
             opt.append(last)
     opt = np.array(opt)
-    print(opt.shape)
-    print(args.inp)
+    # print(opt.shape)
+    # print(args.inp)
     np.save(args.inp + "/values_flow_%s" % (flow_method) , opt)
     
           
