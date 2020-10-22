@@ -125,7 +125,7 @@ def build_train_val_list(data_dir):
                     for frame in sorted(os.listdir(branch_dir)):
                         image_path = os.path.join(branch_dir, frame)
                         image = cv2.imread(image_path)
-                        # Optical flow is None  
+                        # Optical flow is None
                         sample = (image, None, label_idx)
                         data_list.append(sample)
     return data_list

@@ -8,10 +8,10 @@ import numpy as np
 ############################################################
 ##################### Build the data #######################
 ############################################################
-def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow'):
+def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='CVFlow'):
     make_path(save_path)
     # Extract Frames
-    extract_frames(video_list, save_path, width_OF, log)
+    extract_frames(video_list, save_path, width_OF, log, flow_method)
     
 
     # Compute DeepFlow
@@ -22,7 +22,7 @@ def build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_m
 
 
 ##################### RGB #######################
-def extract_frames(video_list, save_path, width_OF, log):
+def extract_frames(video_list, save_path, width_OF, log, flow_method):
     # Chrono
     start_time = time.time()
     print("INFO: Extracting RGB Frame...")
@@ -35,7 +35,7 @@ def extract_frames(video_list, save_path, width_OF, log):
         make_path(path_data_video)
         path_RGB = os.path.join(path_data_video, 'RGB')
         make_path(path_RGB)
-        path_DeepFlow= os.path.join(path_data_video, 'DeepFlow')
+        path_DeepFlow= os.path.join(path_data_video, flow_method)
         make_path(path_DeepFlow)
 
         # Load Video
@@ -156,58 +156,61 @@ def join_values_flow(video_list, name_values, save_path):
 
 if __name__ == "__main__":
     # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
-    # data_dir = "data"
-    # save_path = "data_processed_1"
-    # for d in os.listdir(data_dir):
-    #     cur_dir = os.path.join(data_dir, d)
-    #     if d == "test":
-    #         continue
-    #         save_path = os.path.join(save_path, "test")
-    #         video_list = []
-    #         for video in os.listdir(cur_dir):
-    #             video_path = os.path.join(cur_dir, video)
-    #             video_list.append(video_path)
-    #         build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-    #     else:
-    #         if d == "val":
-    #             continue
-    #         save_path = os.path.join(save_path, d)
-    #         for label in sorted(os.listdir(cur_dir)):
-    #             label_path = os.path.join(cur_dir, label)
-    #             save_path = os.path.join(save_path, label)
-    #             video_list = []
-    #             for video in os.listdir(label_path):
-    #                 video_path = os.path.join(label_path, video)
-    #                 video_list.append(video_path)
-    #             build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+    data_dir = "data"
+    save_path = "data_processed"
+    for d in os.listdir(data_dir):
+        cur_dir = os.path.join(data_dir, d)
+        if d == "test":
+            continue
+            save_video_path = os.path.join(save_path, "test")
+            video_list = []
+            for video in os.listdir(cur_dir):
+                video_path = os.path.join(cur_dir, video)
+                video_list.append(video_path)
+            build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
+        else:
+            # if d == "val":
+            #     continue
+            # if d != 'train':
+            #     continue
+            save_path = os.path.join(save_path, d)
+            # print(cur_dir)
+            for label in sorted(os.listdir(cur_dir)):
+                label_path = os.path.join(cur_dir, label)
+                save_video_path = os.path.join(save_path, label)
+                video_list = []
+                for video in os.listdir(label_path):
+                    video_path = os.path.join(label_path, video)
+                    video_list.append(video_path)
+                build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
                             
 
             
 
-    with open('data.json') as json_file:
-        data = json.load(json_file)
+    # with open('data.json') as json_file:
+    #     data = json.load(json_file)
        
-        # for p in data['people']:
-        #     print('Name: ' + p['name'])
-        #     print('Website: ' + p['website'])
-        #     print('From: ' + p['from'])
-        #     print('')
-    train_list = []
-    for i in data['train']:
-        train_list.append(i['path'])
-    # train_list = train_list[:3]
+    #     # for p in data['people']:
+    #     #     print('Name: ' + p['name'])
+    #     #     print('Website: ' + p['website'])
+    #     #     print('From: ' + p['from'])
+    #     #     print('')
+    # train_list = []
+    # for i in data['train']:
+    #     train_list.append(i['path'])
+    # # train_list = train_list[:3]
     
-    # video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00768_00952.mp4']
-    # save_path = 'data_preprocessing_1/train/Defensive_Backhand_Backspin/'
-    # build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-    # train_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
-    # video_list = ['data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4']
-    # video_list = ['data/train/Offensive_Forehand_Loop/7410672998_07924_08136.mp4'] #good
-    # video_list = ['data/train/Offensive_Forehand_Loop/268101021042_01016_01200.mp4']
-    # video_list = ['data/val/Serve_Forehand_Backspin/2710727544_01352_01508.mp4']
-    # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
-    # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
-    # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
-    save_path = 'data/train_list/'
-    make_path(save_path)
-    build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+    # # video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00768_00952.mp4']
+    # # save_path = 'data_preprocessing_1/train/Defensive_Backhand_Backspin/'
+    # # build_data(video_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
+    # # train_list = ['data/train/Defensive_Backhand_Block/786246856_03988_04040.mp4']
+    # # video_list = ['data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4']
+    # # video_list = ['data/train/Offensive_Forehand_Loop/7410672998_07924_08136.mp4'] #good
+    # # video_list = ['data/train/Offensive_Forehand_Loop/268101021042_01016_01200.mp4']
+    # # video_list = ['data/val/Serve_Forehand_Backspin/2710727544_01352_01508.mp4']
+    # # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
+    # # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
+    # # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
+    # save_path = 'data/train_list/'
+    # make_path(save_path)
+    # build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')

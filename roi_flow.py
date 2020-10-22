@@ -56,6 +56,13 @@ if __name__ == "__main__":
 
     start_frame = max(int((total - T) / 2), 0)
     end_frame = min(start_frame + T, total - 1)
+    N = total - 1
+    delta1 = int((100 - N) / 2)
+    # print("Delta = ",delta1)
+    start_num = max(1, delta1 + 1) 
+    start_num_1 = start_num
+        
+    
     # print("(Start, End) = (%d, %d)" % (start_frame, end_frame))
     
     for frame_number, list_frame in enumerate(rgb_images[1:]):
@@ -151,29 +158,37 @@ if __name__ == "__main__":
         # cv2.imshow("Flow_filter", gray)
     
         # cv2.waitKey(0)
-        cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
+        # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), crop_image)
 
         # image = cv2.rectangle(frame, (Y_tl, X_tl), (Y_tl + H, X_tl + W), color=(0,0,255), thickness=2)
+        # cv2.imshow('ROI Flow', image)
 
         if (frame_number >= start_frame and frame_number < end_frame):
             # cv2.imshow("Cropped",crop_image)
-            # cv2.imshow('ROI Flow', crop_opt)
+            # cv2.imshow('ROI Flow', image)
             opt.append(crop_opt)
+            # print()
+            cv2.imwrite(os.path.join(out_path, '%08d.png' % (start_num)), crop_image)
+            start_num += 1
         # cv2.waitKey(0) 
         
         # cv2.imwrite(os.path.join(out_path, '%08d.png' % (frame_number + 1)), fmask)
         # if cv2.waitKey(1) & 0xFF == ord('q'): 
         #     break
-    N = len(opt)
     if (N < 100):
-        delta = int((100 - N) / 2)
         first = opt[0]
         last = opt[len(opt) - 1]
-        for i in range (0, delta):
+        F_frame = cv2.imread(os.path.join(out_path, '%08d.png' % (start_num_1)))
+        L_frame = cv2.imread(os.path.join(out_path, '%08d.png' % (start_num - 1)))
+        for i in range(delta1):
             opt = [first] + opt
             opt.append(last)
+            cv2.imwrite(os.path.join(out_path, '%08d.png' % (i + 1)), F_frame)
+            cv2.imwrite(os.path.join(out_path, '%08d.png' % (start_num)), L_frame)
+            start_num += 1
         while len(opt) < 100:
             opt.append(last)
+            cv2.imwrite(os.path.join(out_path, '%08d.png' % (start_num)), L_frame)
     opt = np.array(opt)
     # print(opt.shape)
     # print(args.inp)
