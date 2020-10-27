@@ -1416,8 +1416,7 @@
             "path": "data/test/746447168_01356_01524.mp4",
             "number_of_frame": 169
         }
-    ]
-,
+    ],
     "val": [
         {
             "path": "data/val/Defensive_Backhand_Backspin/4441623104_01648_01868.mp4",
@@ -2151,8 +2150,7 @@
             "path": "data/val/Serve_Forehand_Topspin/574973434_04052_04248.mp4",
             "number_of_frame": 197
         }
-    ]
-,
+    ],
     "train": [
         {
             "path": "data/train/Defensive_Backhand_Backspin/3197874210_01900_02064.mp4",

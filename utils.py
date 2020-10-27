@@ -1,20 +1,13 @@
 from torch.utils.data import Dataset, DataLoader
 from model import NetSimpleBranch
 import os, cv2
+import matplotlib.pyplot as plt
+
 
 def make_path(path):
     if not os.path.isdir(path):
         os.makedirs(path)
-        
-#########################################################################
-###################### Reset Pytorch Session ############################
-#########################################################################
-def reset_training(seed):
-    gc.collect()
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    
+
 #################################################################
 ###################### Model variables ##########################
 #################################################################
@@ -55,104 +48,23 @@ class my_variables():
 ##########################################################################
 ############################ Dataset Class ###############################
 ##########################################################################
-class My_dataset(Dataset):
-    # def __init__(self, dataset_list, size_data, augmentation=0, norm_method = norm_method, flow_method = flow_method):
-    def __init__(self, dataset_list, size_data, augmentation=0, norm_method = 'norm_method', flow_method = 'flow_method'):
-        self.dataset_list = dataset_list
-        self.augmentation = augmentation
-        self.norm_method = norm_method
-        self.flow_method = flow_method
-
-    def __len__(self):
-        return len(self.dataset_list)
-
-    def __getitem__(self, idx):
-        ###TODO###
-        rgb, flow, label = get_annotation_data(self.dataset_list[idx], self.size_data, augmentation = self.augmentation, norm_method = self.norm_method, flow_method = self.flow_method)
-        # rgb, flolabel = get_annotation_data(self.dataset_list[idx], self.size_data, augmentation = self.augmentation, norm_method = self.norm_method)
-        sample = {'rgb': torch.FloatTensor(rgb), 'flow': torch.FloatTensor(flow), 'label': label}
-        return sample
-
-def build_lists_set(data_dir):
-    '''
-    data_dir is a folder contain preprocessed data. \n
-    Structure of data_dir:
-    data_dir:
-    -train
-    -val
-    -test
-    '''
-    for d in os.listdir(data_dir):
-        cur_dir = os.path.join(data_dir, d)
-        if d == 'train':
-            train_list = build_train_val_list(cur_dir)
-        elif d == 'val':
-            val_list = build_train_val_list(cur_dir)
-        elif d == 'test':
-            test_list = build_test_list(cur_dir)
-    
-    return train_list, val_list, test_list
-
-
-
-def build_train_val_list(data_dir):
-    '''
-    data_dir can be train or val \n
-    Structure of data_dir:
-    data_dir:
-    -Label:
-    --DeepFlow
-    --Video:
-    ---RBG
-    ---DeepFlow
-    '''
-    # for d in os.listdir(data_dir):
-        # cur_dir = os.path.join(data_dir, d)
-        # if d in ['train', 'val']:
-        #     for id, label in enumerate(sorted(os.listdir(cur_dir))):
-        #         for vid_name in sorted(os.listdir(os.path.join(cur_dir, label))):
-    data_list = []
-    total = 0
-    for label_idx, label in enumerate(sorted(os.listdir(data_dir))):
-        label_dir = os.path.join(data_dir, label)
-        for d in sorted(os.listdir(label_dir)):
-            if d == "DeepFlow":
-                continue
-            video_dir = os.path.join(data_dir, d)
-            for branch in os.listdir(video_dir):
-                branch_dir = os.path.join(video_dir, branch)
-                if branch == "RBG":
-                    for frame in sorted(os.listdir(branch_dir)):
-                        image_path = os.path.join(branch_dir, frame)
-                        image = cv2.imread(image_path)
-                        # Optical flow is None  
-                        sample = (image, None, label_idx)
-                        data_list.append(sample)
-    return data_list
-
-def build_test_list(data_dir):
-    '''
-    structure of data_dir:
-    data_dir:
-    -DeepFlow
-    -Video:
-    --RBG
-    --DeepFlow
-    '''
-    data_list = []
-    for d in sorted(os.listdir(data_dir)):
-            if d == "DeepFlow":
-                continue
-            video_dir = os.path.join(data_dir, d)
-            for branch in os.listdir(video_dir):
-                branch_dir = os.path.join(video_dir, branch)
-                if branch == "RBG":
-                    for frame in sorted(os.listdir(branch_dir)):
-                        image_path = os.path.join(branch_dir, frame)
-                        image = cv2.imread(image_path)
-                        # Optical flow is None  
-                        sample = (image, None, None)
-                        data_list.append(sample)
-    return data_list
 
 # build_lists_set("data")
+
+def make_path(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
+def progress_bar(idx, size, description):
+    print('Hello')
+
+
+def make_train_figure(loss_train, loss_val, acc_train, acc_val, path):
+    plt.plot(loss_train, label='Loss Train')
+    plt.plot(loss_val, label='Loss Val')
+    plt.plot(acc_train, label='Acc Train')
+    plt.plot(acc_val, label='Acc Val')
+    plt.legend()
+    plt.savefig(path)
+    plt.show()
