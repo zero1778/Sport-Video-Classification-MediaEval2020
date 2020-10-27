@@ -161,7 +161,7 @@ if __name__ == "__main__":
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":
-            continue
+            #continue
             save_video_path = os.path.join(save_path, "test")
             video_list = []
             for video in os.listdir(cur_dir):
@@ -169,15 +169,15 @@ if __name__ == "__main__":
                 video_list.append(video_path)
             build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
         else:
-            # if d == "val":
-            #     continue
+            if d == "val" or d == "train":
+                 continue
             # if d != 'train':
             #     continue
-            save_path = os.path.join(save_path, d)
+            save_d_path = os.path.join(save_path, d)
             # print(cur_dir)
             for label in sorted(os.listdir(cur_dir)):
                 label_path = os.path.join(cur_dir, label)
-                save_video_path = os.path.join(save_path, label)
+                save_video_path = os.path.join(save_d_path, label)
                 video_list = []
                 for video in os.listdir(label_path):
                     video_path = os.path.join(label_path, video)

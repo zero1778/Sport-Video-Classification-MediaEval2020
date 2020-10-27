@@ -1,0 +1,22 @@
+{
+    "Defensive_Backhand_Backspin": 0,
+    "Defensive_Backhand_Block": 1,
+    "Defensive_Backhand_Push": 2,
+    "Defensive_Forehand_Backspin": 3,
+    "Defensive_Forehand_Block": 4,
+    "Defensive_Forehand_Push": 5,
+    "Offensive_Backhand_Flip": 6,
+    "Offensive_Backhand_Hit": 7,
+    "Offensive_Backhand_Loop": 8,
+    "Offensive_Forehand_Flip": 9,
+    "Offensive_Forehand_Hit": 10,
+    "Offensive_Forehand_Loop": 11,
+    "Serve_Backhand_Backspin": 12,
+    "Serve_Backhand_Loop": 13,
+    "Serve_Backhand_Sidespin": 14,
+    "Serve_Backhand_Topspin": 15,
+    "Serve_Forehand_Backspin": 16,
+    "Serve_Forehand_Loop": 17,
+    "Serve_Forehand_Sidespin": 18,
+    "Serve_Forehand_Topspin": 19
+}

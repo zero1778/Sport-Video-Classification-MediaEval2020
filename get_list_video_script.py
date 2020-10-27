@@ -7,10 +7,20 @@ if __name__ == "__main__":
     data_dir = "data"
     save_path = "data_processed_1"
     f = open("data.json", 'w')
+
+    output_data = {}
+    # for label, idx in enumerate(sorted(os.listdir(data_dir))):
+    #     output_data[idx] = label
+    
+    # print(output_data["Defensive_Backhand_Backspin"])
+
+
+
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
-        output_data = {}
+        # output_data = {}
         if d == "test":
+            # continue
             save_path = os.path.join(save_path, "test")
             video_list = []
             min_frame = 999999
@@ -62,8 +72,8 @@ if __name__ == "__main__":
             output_data[d] = video_list
             print(d + ": " + min_frame_video + ", " + str(min_frame))
 
-        json.dump(output_data, f)
 
+    json.dump(output_data, f, indent=4)
 
 
         
