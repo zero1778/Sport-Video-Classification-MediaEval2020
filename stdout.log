@@ -734,3 +734,75 @@
 [10/26 15:58:11][INFO] train_test.py:  62: Training: [Epoch  100] loss: 2.9977 accuracy: 0.0804 lr: 0.001000
 [10/26 15:58:19][INFO] train_test.py:  94: Evaluation: [Epoch  100] loss: 3.0021 accuracy: 0.0765
 [10/26 15:58:34][INFO] train_test.py: 159: Trained with 100 epochs, lr = 0.001, batchsize = 2, momentum = 0.5 with max validation accuracy of 0.08 done in 5:33:55
+[10/27 12:48:51][INFO] run.py:  92: Train with configs:
+[10/27 12:48:51][INFO] run.py:  93: 
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 2
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 8
+{ N_GPU             }-> 1
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> data_processed
+{ SEED              }-> 31
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 31
+
+[10/27 12:49:15][INFO] run.py:  92: Train with configs:
+[10/27 12:49:15][INFO] run.py:  93: 
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 2
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 8
+{ N_GPU             }-> 1
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> data_processed
+{ SEED              }-> 31
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 31
+
+[10/27 12:52:29][INFO] train_test.py:  62: Training: [Epoch    1] loss: 2.9957 accuracy: 0.0262 lr: 0.001000
+[10/27 12:52:37][INFO] train_test.py:  94: Evaluation: [Epoch    1] loss: 2.9956 accuracy: 0.0383
+[10/27 12:56:04][INFO] train_test.py:  62: Training: [Epoch    2] loss: 2.9954 accuracy: 0.0629 lr: 0.001000
+[10/27 12:56:11][INFO] train_test.py:  94: Evaluation: [Epoch    2] loss: 2.9954 accuracy: 0.0820
+[10/27 12:59:37][INFO] train_test.py:  62: Training: [Epoch    3] loss: 2.9950 accuracy: 0.0944 lr: 0.001000
+[10/27 12:59:45][INFO] train_test.py:  94: Evaluation: [Epoch    3] loss: 2.9948 accuracy: 0.1366
+[10/27 13:03:12][INFO] train_test.py:  62: Training: [Epoch    4] loss: 2.9932 accuracy: 0.1049 lr: 0.001000
+[10/27 13:03:20][INFO] train_test.py:  94: Evaluation: [Epoch    4] loss: 2.9914 accuracy: 0.0874
