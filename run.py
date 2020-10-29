@@ -42,7 +42,7 @@ def train(__C):
 
     ## Loaders of the Datasets
     train_loader = DataLoader(train_set, batch_size=__C.BATCH_SIZE, shuffle=True, num_workers=__C.NUM_WORKERS)
-    validation_loader = DataLoader(validation_set, batch_size=__C.BATCH_SIZE, shuffle=False, num_workers=__C.NUM_WORKERS)
+    validation_loader = DataLoader(validation_set, batch_size=2, shuffle=False, num_workers=__C.NUM_WORKERS)
 
     ##################
     ## Architecture ##
@@ -95,6 +95,7 @@ if __name__ == "__main__":
     #### Same seed #####
     reset_training(__C.SEED)
     make_path(__C.PATH_MODEL)
+    __C.LOAD = True
     if __C.MODE == 'test':
         __C.LOAD = True
         test(__C)

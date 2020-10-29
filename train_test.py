@@ -3,6 +3,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from torch.autograd import Variable
 from utils import make_train_figure, progress_bar
 from tqdm import tqdm
 
@@ -43,9 +44,12 @@ def train_epoch(epoch, __C, model, data_loader, optimizer, criterion):
         # Get batch tensor
         rgb, flow, label = batch['rgb'], batch['flow'], batch['label']
 
-        rgb = rgb.cuda()
-        flow = flow.cuda()
-        label = label.cuda()
+        # rgb = rgb.cuda()
+        # flow = flow.cuda()
+        # label = label.cuda()
+        rgb = Variable(rgb.type(__C.dtype))
+        flow = Variable(flow.type(__C.dtype))
+        label = Variable(label.type(__C.dtype).long())
 
         optimizer.zero_grad()
         output = model(rgb, flow)
@@ -77,10 +81,13 @@ def validation_epoch(epoch, __C, model, data_loader, criterion):
         # Get batch tensor
         rgb, flow, label = batch['rgb'], batch['flow'], batch['label']
 
-        rgb = rgb.cuda()
-        flow = flow.cuda()
-        label = label.cuda()
-
+        # rgb = rgb.cuda()
+        # flow = flow.cuda()
+        # label = label.cuda()
+        rgb = Variable(rgb.type(__C.dtype))
+        flow = Variable(flow.type(__C.dtype))
+        label = Variable(label.type(__C.dtype).long())
+        
         output = model(rgb, flow)
         pred = output.cpu().data.numpy()
         pred_argmax = np.argmax(pred, axis=1)
@@ -158,7 +165,7 @@ def train_model(model, __C, train_loader, validation_loader):
     logger.info('Trained with %d epochs, lr = %g, batchsize = %d, momentum = %g with max validation accuracy of %.2f done in %s' %\
         (__C.EPOCHS, __C.LR, __C.BATCH_SIZE, __C.MOMENTUM, max_acc, datetime.timedelta(seconds=int(time.time() - start_time))))
 
-    # make_train_figure(loss_train, loss_val, acc_train, acc_val, os.path.join(__C.PATH_MODEL, 'Train.png'))
+    make_train_figure(loss_train, loss_val, acc_train, acc_val, os.path.join(__C.PATH_MODEL, 'Train.jpg'))
 
 
 ##########################################################################
