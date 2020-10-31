@@ -87,7 +87,7 @@ def validation_epoch(epoch, __C, model, data_loader, criterion):
         rgb = Variable(rgb.type(__C.dtype))
         flow = Variable(flow.type(__C.dtype))
         label = Variable(label.type(__C.dtype).long())
-
+        
         output = model(rgb, flow)
         pred = output.cpu().data.numpy()
         pred_argmax = np.argmax(pred, axis=1)

@@ -1,4 +1,5 @@
 from torch.utils.data import Dataset, DataLoader
+import torch
 from model import NetSimpleBranch
 import os, cv2
 import matplotlib.pyplot as plt

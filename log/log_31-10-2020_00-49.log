@@ -1,0 +1,1061 @@
+[10/31 00:49:10][INFO] run.py:  94: Train with configs:
+[10/31 00:49:10][INFO] run.py:  95: 
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 1000
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LOAD_PRETRAINED   }-> model_1000
+{ LOG_DIR           }-> ./log
+{ LR                }-> 0.0008
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SAVE              }-> model_change_lr
+{ SEED              }-> 2020
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 2020
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[10/31 00:49:15][INFO] train_test.py: 132: Load model ./twin for retraining
+[10/31 00:49:17][INFO] train_test.py: 135: Model from epoch 491
+[10/31 00:49:17][INFO] train_test.py: 139: loss_train_ : 2.17767
+[10/31 00:49:17][INFO] train_test.py: 139: acc_train_ : 0.896853
+[10/31 00:49:17][INFO] train_test.py: 139: loss_val_ : 2.44582
+[10/31 00:49:17][INFO] train_test.py: 139: acc_val_ : 0.63388
+[10/31 00:50:39][INFO] train_test.py:  66: Training: [Epoch  491] loss: 2.1758 accuracy: 0.8986 lr: 0.001000
+[10/31 00:51:03][INFO] train_test.py: 101: Evaluation: [Epoch  491] loss: 2.4474 accuracy: 0.6448
+[10/31 00:52:22][INFO] train_test.py:  66: Training: [Epoch  492] loss: 2.1758 accuracy: 0.8986 lr: 0.001000
+[10/31 00:52:46][INFO] train_test.py: 101: Evaluation: [Epoch  492] loss: 2.4506 accuracy: 0.6339
+[10/31 00:54:06][INFO] train_test.py:  66: Training: [Epoch  493] loss: 2.1758 accuracy: 0.8986 lr: 0.001000
+[10/31 00:54:30][INFO] train_test.py: 101: Evaluation: [Epoch  493] loss: 2.4481 accuracy: 0.6339
+[10/31 00:55:50][INFO] train_test.py:  66: Training: [Epoch  494] loss: 2.1826 accuracy: 0.8986 lr: 0.001000
+[10/31 00:56:13][INFO] train_test.py: 101: Evaluation: [Epoch  494] loss: 2.4494 accuracy: 0.6448
+[10/31 00:57:33][INFO] train_test.py:  66: Training: [Epoch  495] loss: 2.1757 accuracy: 0.8986 lr: 0.001000
+[10/31 00:57:56][INFO] train_test.py: 101: Evaluation: [Epoch  495] loss: 2.4487 accuracy: 0.6393
+[10/31 00:59:15][INFO] train_test.py:  66: Training: [Epoch  496] loss: 2.1757 accuracy: 0.8986 lr: 0.001000
+[10/31 00:59:39][INFO] train_test.py: 101: Evaluation: [Epoch  496] loss: 2.4496 accuracy: 0.6339
+[10/31 01:00:58][INFO] train_test.py:  66: Training: [Epoch  497] loss: 2.1753 accuracy: 0.9003 lr: 0.001000
+[10/31 01:01:22][INFO] train_test.py: 101: Evaluation: [Epoch  497] loss: 2.4442 accuracy: 0.6448
+[10/31 01:01:22][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4458 to 2.4442
+[10/31 01:02:48][INFO] train_test.py:  66: Training: [Epoch  498] loss: 2.1728 accuracy: 0.9038 lr: 0.001000
+[10/31 01:03:11][INFO] train_test.py: 101: Evaluation: [Epoch  498] loss: 2.4546 accuracy: 0.6393
+[10/31 01:04:31][INFO] train_test.py:  66: Training: [Epoch  499] loss: 2.1780 accuracy: 0.8986 lr: 0.001000
+[10/31 01:04:55][INFO] train_test.py: 101: Evaluation: [Epoch  499] loss: 2.4327 accuracy: 0.6612
+[10/31 01:04:55][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4442 to 2.4327
+[10/31 01:06:29][INFO] train_test.py:  66: Training: [Epoch  500] loss: 2.1664 accuracy: 0.9108 lr: 0.001000
+[10/31 01:06:53][INFO] train_test.py: 101: Evaluation: [Epoch  500] loss: 2.4319 accuracy: 0.6557
+[10/31 01:06:53][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4327 to 2.4319
+[10/31 01:08:28][INFO] train_test.py:  66: Training: [Epoch  501] loss: 2.1666 accuracy: 0.9091 lr: 0.001000
+[10/31 01:08:51][INFO] train_test.py: 101: Evaluation: [Epoch  501] loss: 2.4365 accuracy: 0.6339
+[10/31 01:10:11][INFO] train_test.py:  66: Training: [Epoch  502] loss: 2.1645 accuracy: 0.9108 lr: 0.001000
+[10/31 01:10:35][INFO] train_test.py: 101: Evaluation: [Epoch  502] loss: 2.4349 accuracy: 0.6557
+[10/31 01:11:55][INFO] train_test.py:  66: Training: [Epoch  503] loss: 2.1643 accuracy: 0.9108 lr: 0.001000
+[10/31 01:12:19][INFO] train_test.py: 101: Evaluation: [Epoch  503] loss: 2.4339 accuracy: 0.6557
+[10/31 01:13:38][INFO] train_test.py:  66: Training: [Epoch  504] loss: 2.1642 accuracy: 0.9108 lr: 0.001000
+[10/31 01:14:02][INFO] train_test.py: 101: Evaluation: [Epoch  504] loss: 2.4386 accuracy: 0.6503
+[10/31 01:15:22][INFO] train_test.py:  66: Training: [Epoch  505] loss: 2.1642 accuracy: 0.9108 lr: 0.001000
+[10/31 01:15:46][INFO] train_test.py: 101: Evaluation: [Epoch  505] loss: 2.4394 accuracy: 0.6557
+[10/31 01:17:37][INFO] train_test.py:  66: Training: [Epoch  506] loss: 2.1642 accuracy: 0.9108 lr: 0.001000
+[10/31 01:18:00][INFO] train_test.py: 101: Evaluation: [Epoch  506] loss: 2.4392 accuracy: 0.6557
+[10/31 01:19:20][INFO] train_test.py:  66: Training: [Epoch  507] loss: 2.1641 accuracy: 0.9108 lr: 0.001000
+[10/31 01:19:44][INFO] train_test.py: 101: Evaluation: [Epoch  507] loss: 2.4399 accuracy: 0.6557
+[10/31 01:21:04][INFO] train_test.py:  66: Training: [Epoch  508] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:21:28][INFO] train_test.py: 101: Evaluation: [Epoch  508] loss: 2.4379 accuracy: 0.6557
+[10/31 01:22:48][INFO] train_test.py:  66: Training: [Epoch  509] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:23:12][INFO] train_test.py: 101: Evaluation: [Epoch  509] loss: 2.4394 accuracy: 0.6557
+[10/31 01:24:32][INFO] train_test.py:  66: Training: [Epoch  510] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:24:56][INFO] train_test.py: 101: Evaluation: [Epoch  510] loss: 2.4391 accuracy: 0.6612
+[10/31 01:26:15][INFO] train_test.py:  66: Training: [Epoch  511] loss: 2.1709 accuracy: 0.9108 lr: 0.001000
+[10/31 01:26:39][INFO] train_test.py: 101: Evaluation: [Epoch  511] loss: 2.4401 accuracy: 0.6557
+[10/31 01:27:59][INFO] train_test.py:  66: Training: [Epoch  512] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:28:23][INFO] train_test.py: 101: Evaluation: [Epoch  512] loss: 2.4399 accuracy: 0.6557
+[10/31 01:29:43][INFO] train_test.py:  66: Training: [Epoch  513] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:30:07][INFO] train_test.py: 101: Evaluation: [Epoch  513] loss: 2.4405 accuracy: 0.6612
+[10/31 01:31:28][INFO] train_test.py:  66: Training: [Epoch  514] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:31:51][INFO] train_test.py: 101: Evaluation: [Epoch  514] loss: 2.4396 accuracy: 0.6612
+[10/31 01:33:12][INFO] train_test.py:  66: Training: [Epoch  515] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:33:36][INFO] train_test.py: 101: Evaluation: [Epoch  515] loss: 2.4408 accuracy: 0.6612
+[10/31 01:34:56][INFO] train_test.py:  66: Training: [Epoch  516] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:35:20][INFO] train_test.py: 101: Evaluation: [Epoch  516] loss: 2.4400 accuracy: 0.6612
+[10/31 01:36:40][INFO] train_test.py:  66: Training: [Epoch  517] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:37:04][INFO] train_test.py: 101: Evaluation: [Epoch  517] loss: 2.4406 accuracy: 0.6612
+[10/31 01:38:24][INFO] train_test.py:  66: Training: [Epoch  518] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:38:48][INFO] train_test.py: 101: Evaluation: [Epoch  518] loss: 2.4404 accuracy: 0.6612
+[10/31 01:40:08][INFO] train_test.py:  66: Training: [Epoch  519] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:40:32][INFO] train_test.py: 101: Evaluation: [Epoch  519] loss: 2.4413 accuracy: 0.6612
+[10/31 01:41:52][INFO] train_test.py:  66: Training: [Epoch  520] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:42:16][INFO] train_test.py: 101: Evaluation: [Epoch  520] loss: 2.4408 accuracy: 0.6557
+[10/31 01:43:36][INFO] train_test.py:  66: Training: [Epoch  521] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:44:00][INFO] train_test.py: 101: Evaluation: [Epoch  521] loss: 2.4412 accuracy: 0.6557
+[10/31 01:45:21][INFO] train_test.py:  66: Training: [Epoch  522] loss: 2.1707 accuracy: 0.9108 lr: 0.001000
+[10/31 01:45:44][INFO] train_test.py: 101: Evaluation: [Epoch  522] loss: 2.4416 accuracy: 0.6612
+[10/31 01:47:05][INFO] train_test.py:  66: Training: [Epoch  523] loss: 2.1707 accuracy: 0.9108 lr: 0.001000
+[10/31 01:47:29][INFO] train_test.py: 101: Evaluation: [Epoch  523] loss: 2.4417 accuracy: 0.6557
+[10/31 01:48:49][INFO] train_test.py:  66: Training: [Epoch  524] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:49:13][INFO] train_test.py: 101: Evaluation: [Epoch  524] loss: 2.4414 accuracy: 0.6557
+[10/31 01:50:33][INFO] train_test.py:  66: Training: [Epoch  525] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:50:57][INFO] train_test.py: 101: Evaluation: [Epoch  525] loss: 2.4416 accuracy: 0.6557
+[10/31 01:52:16][INFO] train_test.py:  66: Training: [Epoch  526] loss: 2.1774 accuracy: 0.9108 lr: 0.001000
+[10/31 01:52:40][INFO] train_test.py: 101: Evaluation: [Epoch  526] loss: 2.4406 accuracy: 0.6503
+[10/31 01:54:00][INFO] train_test.py:  66: Training: [Epoch  527] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:54:24][INFO] train_test.py: 101: Evaluation: [Epoch  527] loss: 2.4416 accuracy: 0.6557
+[10/31 01:55:44][INFO] train_test.py:  66: Training: [Epoch  528] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:56:08][INFO] train_test.py: 101: Evaluation: [Epoch  528] loss: 2.4412 accuracy: 0.6557
+[10/31 01:57:28][INFO] train_test.py:  66: Training: [Epoch  529] loss: 2.1640 accuracy: 0.9108 lr: 0.001000
+[10/31 01:57:52][INFO] train_test.py: 101: Evaluation: [Epoch  529] loss: 2.4423 accuracy: 0.6557
+[10/31 01:59:13][INFO] train_test.py:  66: Training: [Epoch  530] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 01:59:37][INFO] train_test.py: 101: Evaluation: [Epoch  530] loss: 2.4424 accuracy: 0.6557
+[10/31 02:00:57][INFO] train_test.py:  66: Training: [Epoch  531] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 02:01:21][INFO] train_test.py: 101: Evaluation: [Epoch  531] loss: 2.4421 accuracy: 0.6557
+[10/31 02:02:41][INFO] train_test.py:  66: Training: [Epoch  532] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 02:03:05][INFO] train_test.py: 101: Evaluation: [Epoch  532] loss: 2.4428 accuracy: 0.6557
+[10/31 02:04:25][INFO] train_test.py:  66: Training: [Epoch  533] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 02:04:49][INFO] train_test.py: 101: Evaluation: [Epoch  533] loss: 2.4425 accuracy: 0.6557
+[10/31 02:06:09][INFO] train_test.py:  66: Training: [Epoch  534] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 02:06:33][INFO] train_test.py: 101: Evaluation: [Epoch  534] loss: 2.4433 accuracy: 0.6557
+[10/31 02:07:54][INFO] train_test.py:  66: Training: [Epoch  535] loss: 2.1639 accuracy: 0.9108 lr: 0.001000
+[10/31 02:08:17][INFO] train_test.py: 101: Evaluation: [Epoch  535] loss: 2.4435 accuracy: 0.6503
+[10/31 02:09:37][INFO] train_test.py:  66: Training: [Epoch  536] loss: 2.1802 accuracy: 0.8986 lr: 0.001000
+[10/31 02:10:01][INFO] train_test.py: 101: Evaluation: [Epoch  536] loss: 2.5425 accuracy: 0.5301
+[10/31 02:11:21][INFO] train_test.py:  66: Training: [Epoch  537] loss: 2.1687 accuracy: 0.9196 lr: 0.001000
+[10/31 02:11:45][INFO] train_test.py: 101: Evaluation: [Epoch  537] loss: 2.7615 accuracy: 0.3115
+[10/31 02:13:05][INFO] train_test.py:  66: Training: [Epoch  538] loss: 2.2193 accuracy: 0.8636 lr: 0.001000
+[10/31 02:13:29][INFO] train_test.py: 101: Evaluation: [Epoch  538] loss: 2.5189 accuracy: 0.5628
+[10/31 02:14:50][INFO] train_test.py:  66: Training: [Epoch  539] loss: 2.1574 accuracy: 0.9283 lr: 0.001000
+[10/31 02:15:14][INFO] train_test.py: 101: Evaluation: [Epoch  539] loss: 2.5135 accuracy: 0.5574
+[10/31 02:16:34][INFO] train_test.py:  66: Training: [Epoch  540] loss: 2.1514 accuracy: 0.9336 lr: 0.001000
+[10/31 02:16:58][INFO] train_test.py: 101: Evaluation: [Epoch  540] loss: 2.4164 accuracy: 0.6721
+[10/31 02:16:58][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4319 to 2.4164
+[10/31 02:18:33][INFO] train_test.py:  66: Training: [Epoch  541] loss: 2.1336 accuracy: 0.9441 lr: 0.001000
+[10/31 02:18:57][INFO] train_test.py: 101: Evaluation: [Epoch  541] loss: 2.4254 accuracy: 0.6557
+[10/31 02:20:16][INFO] train_test.py:  66: Training: [Epoch  542] loss: 2.1374 accuracy: 0.9423 lr: 0.001000
+[10/31 02:20:40][INFO] train_test.py: 101: Evaluation: [Epoch  542] loss: 2.4209 accuracy: 0.6776
+[10/31 02:22:01][INFO] train_test.py:  66: Training: [Epoch  543] loss: 2.1335 accuracy: 0.9441 lr: 0.001000
+[10/31 02:22:25][INFO] train_test.py: 101: Evaluation: [Epoch  543] loss: 2.4417 accuracy: 0.6339
+[10/31 02:23:45][INFO] train_test.py:  66: Training: [Epoch  544] loss: 2.1316 accuracy: 0.9458 lr: 0.001000
+[10/31 02:24:09][INFO] train_test.py: 101: Evaluation: [Epoch  544] loss: 2.4038 accuracy: 0.6940
+[10/31 02:24:09][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4164 to 2.4038
+[10/31 02:25:44][INFO] train_test.py:  66: Training: [Epoch  545] loss: 2.1310 accuracy: 0.9458 lr: 0.001000
+[10/31 02:26:08][INFO] train_test.py: 101: Evaluation: [Epoch  545] loss: 2.4010 accuracy: 0.6831
+[10/31 02:26:08][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4038 to 2.4010
+[10/31 02:27:43][INFO] train_test.py:  66: Training: [Epoch  546] loss: 2.1448 accuracy: 0.9406 lr: 0.001000
+[10/31 02:28:07][INFO] train_test.py: 101: Evaluation: [Epoch  546] loss: 2.4576 accuracy: 0.6339
+[10/31 02:29:27][INFO] train_test.py:  66: Training: [Epoch  547] loss: 2.1320 accuracy: 0.9458 lr: 0.001000
+[10/31 02:29:51][INFO] train_test.py: 101: Evaluation: [Epoch  547] loss: 2.4192 accuracy: 0.6721
+[10/31 02:31:11][INFO] train_test.py:  66: Training: [Epoch  548] loss: 2.1294 accuracy: 0.9476 lr: 0.001000
+[10/31 02:31:35][INFO] train_test.py: 101: Evaluation: [Epoch  548] loss: 2.4115 accuracy: 0.6721
+[10/31 02:32:54][INFO] train_test.py:  66: Training: [Epoch  549] loss: 2.1344 accuracy: 0.9493 lr: 0.001000
+[10/31 02:33:18][INFO] train_test.py: 101: Evaluation: [Epoch  549] loss: 2.4075 accuracy: 0.6885
+[10/31 02:34:38][INFO] train_test.py:  66: Training: [Epoch  550] loss: 2.1275 accuracy: 0.9493 lr: 0.001000
+[10/31 02:35:02][INFO] train_test.py: 101: Evaluation: [Epoch  550] loss: 2.4053 accuracy: 0.6885
+[10/31 02:36:22][INFO] train_test.py:  66: Training: [Epoch  551] loss: 2.1274 accuracy: 0.9493 lr: 0.001000
+[10/31 02:36:46][INFO] train_test.py: 101: Evaluation: [Epoch  551] loss: 2.4036 accuracy: 0.6831
+[10/31 02:38:06][INFO] train_test.py:  66: Training: [Epoch  552] loss: 2.1341 accuracy: 0.9493 lr: 0.001000
+[10/31 02:38:30][INFO] train_test.py: 101: Evaluation: [Epoch  552] loss: 2.4052 accuracy: 0.6885
+[10/31 02:39:49][INFO] train_test.py:  66: Training: [Epoch  553] loss: 2.1274 accuracy: 0.9493 lr: 0.001000
+[10/31 02:40:13][INFO] train_test.py: 101: Evaluation: [Epoch  553] loss: 2.4037 accuracy: 0.6885
+[10/31 02:41:34][INFO] train_test.py:  66: Training: [Epoch  554] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:41:58][INFO] train_test.py: 101: Evaluation: [Epoch  554] loss: 2.4047 accuracy: 0.6940
+[10/31 02:43:17][INFO] train_test.py:  66: Training: [Epoch  555] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:43:42][INFO] train_test.py: 101: Evaluation: [Epoch  555] loss: 2.4035 accuracy: 0.6885
+[10/31 02:45:02][INFO] train_test.py:  66: Training: [Epoch  556] loss: 2.1342 accuracy: 0.9493 lr: 0.001000
+[10/31 02:45:26][INFO] train_test.py: 101: Evaluation: [Epoch  556] loss: 2.4065 accuracy: 0.6885
+[10/31 02:46:46][INFO] train_test.py:  66: Training: [Epoch  557] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:47:10][INFO] train_test.py: 101: Evaluation: [Epoch  557] loss: 2.4043 accuracy: 0.6885
+[10/31 02:48:31][INFO] train_test.py:  66: Training: [Epoch  558] loss: 2.1274 accuracy: 0.9493 lr: 0.001000
+[10/31 02:48:55][INFO] train_test.py: 101: Evaluation: [Epoch  558] loss: 2.4032 accuracy: 0.6995
+[10/31 02:50:14][INFO] train_test.py:  66: Training: [Epoch  559] loss: 2.1274 accuracy: 0.9493 lr: 0.001000
+[10/31 02:50:38][INFO] train_test.py: 101: Evaluation: [Epoch  559] loss: 2.4027 accuracy: 0.6885
+[10/31 02:51:58][INFO] train_test.py:  66: Training: [Epoch  560] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:52:22][INFO] train_test.py: 101: Evaluation: [Epoch  560] loss: 2.4044 accuracy: 0.6940
+[10/31 02:53:42][INFO] train_test.py:  66: Training: [Epoch  561] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:54:06][INFO] train_test.py: 101: Evaluation: [Epoch  561] loss: 2.4038 accuracy: 0.6885
+[10/31 02:55:26][INFO] train_test.py:  66: Training: [Epoch  562] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:55:50][INFO] train_test.py: 101: Evaluation: [Epoch  562] loss: 2.4013 accuracy: 0.6995
+[10/31 02:57:10][INFO] train_test.py:  66: Training: [Epoch  563] loss: 2.1342 accuracy: 0.9493 lr: 0.001000
+[10/31 02:57:34][INFO] train_test.py: 101: Evaluation: [Epoch  563] loss: 2.4008 accuracy: 0.6885
+[10/31 02:57:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4010 to 2.4008
+[10/31 02:59:09][INFO] train_test.py:  66: Training: [Epoch  564] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 02:59:33][INFO] train_test.py: 101: Evaluation: [Epoch  564] loss: 2.4033 accuracy: 0.6940
+[10/31 03:00:53][INFO] train_test.py:  66: Training: [Epoch  565] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 03:01:17][INFO] train_test.py: 101: Evaluation: [Epoch  565] loss: 2.4005 accuracy: 0.6940
+[10/31 03:01:17][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4008 to 2.4005
+[10/31 03:02:53][INFO] train_test.py:  66: Training: [Epoch  566] loss: 2.1273 accuracy: 0.9493 lr: 0.001000
+[10/31 03:03:17][INFO] train_test.py: 101: Evaluation: [Epoch  566] loss: 2.4028 accuracy: 0.6885
+[10/31 03:04:36][INFO] train_test.py:  66: Training: [Epoch  567] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:05:00][INFO] train_test.py: 101: Evaluation: [Epoch  567] loss: 2.4019 accuracy: 0.6885
+[10/31 03:06:20][INFO] train_test.py:  66: Training: [Epoch  568] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:06:44][INFO] train_test.py: 101: Evaluation: [Epoch  568] loss: 2.4020 accuracy: 0.6940
+[10/31 03:08:05][INFO] train_test.py:  66: Training: [Epoch  569] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:08:29][INFO] train_test.py: 101: Evaluation: [Epoch  569] loss: 2.4017 accuracy: 0.6831
+[10/31 03:09:49][INFO] train_test.py:  66: Training: [Epoch  570] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:10:13][INFO] train_test.py: 101: Evaluation: [Epoch  570] loss: 2.4028 accuracy: 0.6995
+[10/31 03:11:33][INFO] train_test.py:  66: Training: [Epoch  571] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:11:57][INFO] train_test.py: 101: Evaluation: [Epoch  571] loss: 2.4024 accuracy: 0.6831
+[10/31 03:13:17][INFO] train_test.py:  66: Training: [Epoch  572] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:13:41][INFO] train_test.py: 101: Evaluation: [Epoch  572] loss: 2.4025 accuracy: 0.6940
+[10/31 03:15:01][INFO] train_test.py:  66: Training: [Epoch  573] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:15:25][INFO] train_test.py: 101: Evaluation: [Epoch  573] loss: 2.4019 accuracy: 0.6831
+[10/31 03:16:45][INFO] train_test.py:  66: Training: [Epoch  574] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:17:09][INFO] train_test.py: 101: Evaluation: [Epoch  574] loss: 2.4021 accuracy: 0.6940
+[10/31 03:18:30][INFO] train_test.py:  66: Training: [Epoch  575] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:18:54][INFO] train_test.py: 101: Evaluation: [Epoch  575] loss: 2.4019 accuracy: 0.6831
+[10/31 03:20:14][INFO] train_test.py:  66: Training: [Epoch  576] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:20:38][INFO] train_test.py: 101: Evaluation: [Epoch  576] loss: 2.4025 accuracy: 0.6995
+[10/31 03:21:58][INFO] train_test.py:  66: Training: [Epoch  577] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:22:21][INFO] train_test.py: 101: Evaluation: [Epoch  577] loss: 2.4023 accuracy: 0.6831
+[10/31 03:23:41][INFO] train_test.py:  66: Training: [Epoch  578] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:24:05][INFO] train_test.py: 101: Evaluation: [Epoch  578] loss: 2.4024 accuracy: 0.6995
+[10/31 03:25:25][INFO] train_test.py:  66: Training: [Epoch  579] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:25:49][INFO] train_test.py: 101: Evaluation: [Epoch  579] loss: 2.4018 accuracy: 0.6776
+[10/31 03:27:10][INFO] train_test.py:  66: Training: [Epoch  580] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:27:34][INFO] train_test.py: 101: Evaluation: [Epoch  580] loss: 2.4023 accuracy: 0.6995
+[10/31 03:28:54][INFO] train_test.py:  66: Training: [Epoch  581] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:29:18][INFO] train_test.py: 101: Evaluation: [Epoch  581] loss: 2.4026 accuracy: 0.6721
+[10/31 03:30:38][INFO] train_test.py:  66: Training: [Epoch  582] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:31:02][INFO] train_test.py: 101: Evaluation: [Epoch  582] loss: 2.4017 accuracy: 0.6940
+[10/31 03:32:22][INFO] train_test.py:  66: Training: [Epoch  583] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:32:46][INFO] train_test.py: 101: Evaluation: [Epoch  583] loss: 2.4014 accuracy: 0.6831
+[10/31 03:34:07][INFO] train_test.py:  66: Training: [Epoch  584] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:34:31][INFO] train_test.py: 101: Evaluation: [Epoch  584] loss: 2.4015 accuracy: 0.6776
+[10/31 03:35:50][INFO] train_test.py:  66: Training: [Epoch  585] loss: 2.1272 accuracy: 0.9493 lr: 0.001000
+[10/31 03:36:14][INFO] train_test.py: 101: Evaluation: [Epoch  585] loss: 2.3997 accuracy: 0.6831
+[10/31 03:36:14][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.4005 to 2.3997
+[10/31 03:37:49][INFO] train_test.py:  66: Training: [Epoch  586] loss: 2.1256 accuracy: 0.9510 lr: 0.001000
+[10/31 03:38:13][INFO] train_test.py: 101: Evaluation: [Epoch  586] loss: 2.4081 accuracy: 0.6885
+[10/31 03:39:33][INFO] train_test.py:  66: Training: [Epoch  587] loss: 2.1255 accuracy: 0.9510 lr: 0.001000
+[10/31 03:39:57][INFO] train_test.py: 101: Evaluation: [Epoch  587] loss: 2.3963 accuracy: 0.6995
+[10/31 03:39:57][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3997 to 2.3963
+[10/31 03:41:32][INFO] train_test.py:  66: Training: [Epoch  588] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:41:56][INFO] train_test.py: 101: Evaluation: [Epoch  588] loss: 2.3972 accuracy: 0.7049
+[10/31 03:43:17][INFO] train_test.py:  66: Training: [Epoch  589] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:43:41][INFO] train_test.py: 101: Evaluation: [Epoch  589] loss: 2.3958 accuracy: 0.7049
+[10/31 03:43:41][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3963 to 2.3958
+[10/31 03:45:16][INFO] train_test.py:  66: Training: [Epoch  590] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:45:40][INFO] train_test.py: 101: Evaluation: [Epoch  590] loss: 2.3966 accuracy: 0.7049
+[10/31 03:47:00][INFO] train_test.py:  66: Training: [Epoch  591] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:47:24][INFO] train_test.py: 101: Evaluation: [Epoch  591] loss: 2.3960 accuracy: 0.7049
+[10/31 03:48:44][INFO] train_test.py:  66: Training: [Epoch  592] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:49:08][INFO] train_test.py: 101: Evaluation: [Epoch  592] loss: 2.3966 accuracy: 0.7049
+[10/31 03:50:28][INFO] train_test.py:  66: Training: [Epoch  593] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:50:52][INFO] train_test.py: 101: Evaluation: [Epoch  593] loss: 2.3952 accuracy: 0.7049
+[10/31 03:50:52][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3958 to 2.3952
+[10/31 03:52:27][INFO] train_test.py:  66: Training: [Epoch  594] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:52:51][INFO] train_test.py: 101: Evaluation: [Epoch  594] loss: 2.3956 accuracy: 0.7049
+[10/31 03:54:11][INFO] train_test.py:  66: Training: [Epoch  595] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:54:35][INFO] train_test.py: 101: Evaluation: [Epoch  595] loss: 2.3953 accuracy: 0.7049
+[10/31 03:55:55][INFO] train_test.py:  66: Training: [Epoch  596] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:56:19][INFO] train_test.py: 101: Evaluation: [Epoch  596] loss: 2.3955 accuracy: 0.7104
+[10/31 03:57:39][INFO] train_test.py:  66: Training: [Epoch  597] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:58:03][INFO] train_test.py: 101: Evaluation: [Epoch  597] loss: 2.3955 accuracy: 0.7104
+[10/31 03:59:23][INFO] train_test.py:  66: Training: [Epoch  598] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 03:59:47][INFO] train_test.py: 101: Evaluation: [Epoch  598] loss: 2.3953 accuracy: 0.7104
+[10/31 04:01:06][INFO] train_test.py:  66: Training: [Epoch  599] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:01:30][INFO] train_test.py: 101: Evaluation: [Epoch  599] loss: 2.3955 accuracy: 0.7049
+[10/31 04:02:51][INFO] train_test.py:  66: Training: [Epoch  600] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:03:15][INFO] train_test.py: 101: Evaluation: [Epoch  600] loss: 2.3954 accuracy: 0.6995
+[10/31 04:04:35][INFO] train_test.py:  66: Training: [Epoch  601] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:04:59][INFO] train_test.py: 101: Evaluation: [Epoch  601] loss: 2.3955 accuracy: 0.6995
+[10/31 04:06:19][INFO] train_test.py:  66: Training: [Epoch  602] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:06:43][INFO] train_test.py: 101: Evaluation: [Epoch  602] loss: 2.3954 accuracy: 0.6995
+[10/31 04:08:03][INFO] train_test.py:  66: Training: [Epoch  603] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 04:08:27][INFO] train_test.py: 101: Evaluation: [Epoch  603] loss: 2.3956 accuracy: 0.6995
+[10/31 04:09:47][INFO] train_test.py:  66: Training: [Epoch  604] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:10:11][INFO] train_test.py: 101: Evaluation: [Epoch  604] loss: 2.3953 accuracy: 0.6995
+[10/31 04:11:31][INFO] train_test.py:  66: Training: [Epoch  605] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:11:55][INFO] train_test.py: 101: Evaluation: [Epoch  605] loss: 2.3953 accuracy: 0.6995
+[10/31 04:13:15][INFO] train_test.py:  66: Training: [Epoch  606] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:13:39][INFO] train_test.py: 101: Evaluation: [Epoch  606] loss: 2.3955 accuracy: 0.6995
+[10/31 04:14:59][INFO] train_test.py:  66: Training: [Epoch  607] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:15:23][INFO] train_test.py: 101: Evaluation: [Epoch  607] loss: 2.3952 accuracy: 0.6995
+[10/31 04:16:43][INFO] train_test.py:  66: Training: [Epoch  608] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:17:07][INFO] train_test.py: 101: Evaluation: [Epoch  608] loss: 2.3955 accuracy: 0.6995
+[10/31 04:18:26][INFO] train_test.py:  66: Training: [Epoch  609] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:18:50][INFO] train_test.py: 101: Evaluation: [Epoch  609] loss: 2.3954 accuracy: 0.6995
+[10/31 04:20:09][INFO] train_test.py:  66: Training: [Epoch  610] loss: 2.1323 accuracy: 0.9510 lr: 0.001000
+[10/31 04:20:33][INFO] train_test.py: 101: Evaluation: [Epoch  610] loss: 2.3957 accuracy: 0.6995
+[10/31 04:21:53][INFO] train_test.py:  66: Training: [Epoch  611] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:22:17][INFO] train_test.py: 101: Evaluation: [Epoch  611] loss: 2.3968 accuracy: 0.6940
+[10/31 04:23:37][INFO] train_test.py:  66: Training: [Epoch  612] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:24:01][INFO] train_test.py: 101: Evaluation: [Epoch  612] loss: 2.3956 accuracy: 0.6995
+[10/31 04:25:21][INFO] train_test.py:  66: Training: [Epoch  613] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:25:45][INFO] train_test.py: 101: Evaluation: [Epoch  613] loss: 2.3956 accuracy: 0.6995
+[10/31 04:27:05][INFO] train_test.py:  66: Training: [Epoch  614] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:27:29][INFO] train_test.py: 101: Evaluation: [Epoch  614] loss: 2.3955 accuracy: 0.6995
+[10/31 04:28:49][INFO] train_test.py:  66: Training: [Epoch  615] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:29:13][INFO] train_test.py: 101: Evaluation: [Epoch  615] loss: 2.3970 accuracy: 0.6995
+[10/31 04:30:33][INFO] train_test.py:  66: Training: [Epoch  616] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:30:57][INFO] train_test.py: 101: Evaluation: [Epoch  616] loss: 2.3956 accuracy: 0.6995
+[10/31 04:32:17][INFO] train_test.py:  66: Training: [Epoch  617] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:32:41][INFO] train_test.py: 101: Evaluation: [Epoch  617] loss: 2.3957 accuracy: 0.6995
+[10/31 04:34:01][INFO] train_test.py:  66: Training: [Epoch  618] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 04:34:25][INFO] train_test.py: 101: Evaluation: [Epoch  618] loss: 2.3964 accuracy: 0.6995
+[10/31 04:35:45][INFO] train_test.py:  66: Training: [Epoch  619] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:36:09][INFO] train_test.py: 101: Evaluation: [Epoch  619] loss: 2.3966 accuracy: 0.6995
+[10/31 04:37:29][INFO] train_test.py:  66: Training: [Epoch  620] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:37:53][INFO] train_test.py: 101: Evaluation: [Epoch  620] loss: 2.3953 accuracy: 0.6995
+[10/31 04:39:13][INFO] train_test.py:  66: Training: [Epoch  621] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:39:37][INFO] train_test.py: 101: Evaluation: [Epoch  621] loss: 2.3975 accuracy: 0.6995
+[10/31 04:40:57][INFO] train_test.py:  66: Training: [Epoch  622] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:41:21][INFO] train_test.py: 101: Evaluation: [Epoch  622] loss: 2.3960 accuracy: 0.6995
+[10/31 04:42:41][INFO] train_test.py:  66: Training: [Epoch  623] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:43:05][INFO] train_test.py: 101: Evaluation: [Epoch  623] loss: 2.3960 accuracy: 0.6995
+[10/31 04:44:25][INFO] train_test.py:  66: Training: [Epoch  624] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:44:49][INFO] train_test.py: 101: Evaluation: [Epoch  624] loss: 2.3974 accuracy: 0.6995
+[10/31 04:46:09][INFO] train_test.py:  66: Training: [Epoch  625] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 04:46:33][INFO] train_test.py: 101: Evaluation: [Epoch  625] loss: 2.3962 accuracy: 0.6995
+[10/31 04:47:53][INFO] train_test.py:  66: Training: [Epoch  626] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:48:17][INFO] train_test.py: 101: Evaluation: [Epoch  626] loss: 2.3969 accuracy: 0.6995
+[10/31 04:49:37][INFO] train_test.py:  66: Training: [Epoch  627] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:50:01][INFO] train_test.py: 101: Evaluation: [Epoch  627] loss: 2.3971 accuracy: 0.6995
+[10/31 04:51:21][INFO] train_test.py:  66: Training: [Epoch  628] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:51:45][INFO] train_test.py: 101: Evaluation: [Epoch  628] loss: 2.3973 accuracy: 0.6995
+[10/31 04:53:05][INFO] train_test.py:  66: Training: [Epoch  629] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:53:29][INFO] train_test.py: 101: Evaluation: [Epoch  629] loss: 2.3959 accuracy: 0.6995
+[10/31 04:54:49][INFO] train_test.py:  66: Training: [Epoch  630] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:55:13][INFO] train_test.py: 101: Evaluation: [Epoch  630] loss: 2.3982 accuracy: 0.6995
+[10/31 04:56:33][INFO] train_test.py:  66: Training: [Epoch  631] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:56:57][INFO] train_test.py: 101: Evaluation: [Epoch  631] loss: 2.3960 accuracy: 0.6995
+[10/31 04:58:17][INFO] train_test.py:  66: Training: [Epoch  632] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 04:58:41][INFO] train_test.py: 101: Evaluation: [Epoch  632] loss: 2.3954 accuracy: 0.6995
+[10/31 05:00:01][INFO] train_test.py:  66: Training: [Epoch  633] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 05:00:25][INFO] train_test.py: 101: Evaluation: [Epoch  633] loss: 2.3965 accuracy: 0.6995
+[10/31 05:01:45][INFO] train_test.py:  66: Training: [Epoch  634] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:02:09][INFO] train_test.py: 101: Evaluation: [Epoch  634] loss: 2.3973 accuracy: 0.6995
+[10/31 05:03:29][INFO] train_test.py:  66: Training: [Epoch  635] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:03:53][INFO] train_test.py: 101: Evaluation: [Epoch  635] loss: 2.3960 accuracy: 0.6995
+[10/31 05:05:13][INFO] train_test.py:  66: Training: [Epoch  636] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:05:37][INFO] train_test.py: 101: Evaluation: [Epoch  636] loss: 2.3953 accuracy: 0.6995
+[10/31 05:06:57][INFO] train_test.py:  66: Training: [Epoch  637] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:07:21][INFO] train_test.py: 101: Evaluation: [Epoch  637] loss: 2.3975 accuracy: 0.6995
+[10/31 05:08:41][INFO] train_test.py:  66: Training: [Epoch  638] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:09:05][INFO] train_test.py: 101: Evaluation: [Epoch  638] loss: 2.3964 accuracy: 0.6995
+[10/31 05:10:25][INFO] train_test.py:  66: Training: [Epoch  639] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:10:49][INFO] train_test.py: 101: Evaluation: [Epoch  639] loss: 2.3955 accuracy: 0.6995
+[10/31 05:12:09][INFO] train_test.py:  66: Training: [Epoch  640] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:12:33][INFO] train_test.py: 101: Evaluation: [Epoch  640] loss: 2.3964 accuracy: 0.7049
+[10/31 05:13:53][INFO] train_test.py:  66: Training: [Epoch  641] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 05:14:17][INFO] train_test.py: 101: Evaluation: [Epoch  641] loss: 2.3972 accuracy: 0.6995
+[10/31 05:15:37][INFO] train_test.py:  66: Training: [Epoch  642] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 05:16:01][INFO] train_test.py: 101: Evaluation: [Epoch  642] loss: 2.3973 accuracy: 0.7049
+[10/31 05:17:21][INFO] train_test.py:  66: Training: [Epoch  643] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:17:45][INFO] train_test.py: 101: Evaluation: [Epoch  643] loss: 2.3968 accuracy: 0.6995
+[10/31 05:19:05][INFO] train_test.py:  66: Training: [Epoch  644] loss: 2.1321 accuracy: 0.9510 lr: 0.001000
+[10/31 05:19:29][INFO] train_test.py: 101: Evaluation: [Epoch  644] loss: 2.3957 accuracy: 0.7049
+[10/31 05:20:49][INFO] train_test.py:  66: Training: [Epoch  645] loss: 2.1254 accuracy: 0.9510 lr: 0.001000
+[10/31 05:21:13][INFO] train_test.py: 101: Evaluation: [Epoch  645] loss: 2.3968 accuracy: 0.6995
+[10/31 05:22:33][INFO] train_test.py:  66: Training: [Epoch  646] loss: 2.1255 accuracy: 0.9528 lr: 0.001000
+[10/31 05:22:57][INFO] train_test.py: 101: Evaluation: [Epoch  646] loss: 2.3978 accuracy: 0.7049
+[10/31 05:24:17][INFO] train_test.py:  66: Training: [Epoch  647] loss: 2.1304 accuracy: 0.9476 lr: 0.001000
+[10/31 05:24:41][INFO] train_test.py: 101: Evaluation: [Epoch  647] loss: 2.4264 accuracy: 0.6776
+[10/31 05:26:01][INFO] train_test.py:  66: Training: [Epoch  648] loss: 2.1349 accuracy: 0.9458 lr: 0.001000
+[10/31 05:26:25][INFO] train_test.py: 101: Evaluation: [Epoch  648] loss: 2.5370 accuracy: 0.5519
+[10/31 05:27:45][INFO] train_test.py:  66: Training: [Epoch  649] loss: 2.1170 accuracy: 0.9650 lr: 0.001000
+[10/31 05:28:08][INFO] train_test.py: 101: Evaluation: [Epoch  649] loss: 2.4166 accuracy: 0.6667
+[10/31 05:29:28][INFO] train_test.py:  66: Training: [Epoch  650] loss: 2.1083 accuracy: 0.9703 lr: 0.001000
+[10/31 05:29:52][INFO] train_test.py: 101: Evaluation: [Epoch  650] loss: 2.4144 accuracy: 0.6776
+[10/31 05:31:12][INFO] train_test.py:  66: Training: [Epoch  651] loss: 2.1024 accuracy: 0.9773 lr: 0.001000
+[10/31 05:31:36][INFO] train_test.py: 101: Evaluation: [Epoch  651] loss: 2.4041 accuracy: 0.6940
+[10/31 05:32:56][INFO] train_test.py:  66: Training: [Epoch  652] loss: 2.0973 accuracy: 0.9808 lr: 0.001000
+[10/31 05:33:20][INFO] train_test.py: 101: Evaluation: [Epoch  652] loss: 2.3866 accuracy: 0.6995
+[10/31 05:33:20][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3952 to 2.3866
+[10/31 05:34:56][INFO] train_test.py:  66: Training: [Epoch  653] loss: 2.0955 accuracy: 0.9825 lr: 0.001000
+[10/31 05:35:20][INFO] train_test.py: 101: Evaluation: [Epoch  653] loss: 2.3850 accuracy: 0.6995
+[10/31 05:35:20][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3866 to 2.3850
+[10/31 05:36:55][INFO] train_test.py:  66: Training: [Epoch  654] loss: 2.0954 accuracy: 0.9825 lr: 0.001000
+[10/31 05:37:19][INFO] train_test.py: 101: Evaluation: [Epoch  654] loss: 2.3834 accuracy: 0.6995
+[10/31 05:37:19][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3850 to 2.3834
+[10/31 05:38:55][INFO] train_test.py:  66: Training: [Epoch  655] loss: 2.0954 accuracy: 0.9825 lr: 0.001000
+[10/31 05:39:19][INFO] train_test.py: 101: Evaluation: [Epoch  655] loss: 2.3828 accuracy: 0.6940
+[10/31 05:39:19][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3834 to 2.3828
+[10/31 05:40:56][INFO] train_test.py:  66: Training: [Epoch  656] loss: 2.0953 accuracy: 0.9825 lr: 0.001000
+[10/31 05:41:20][INFO] train_test.py: 101: Evaluation: [Epoch  656] loss: 2.3815 accuracy: 0.6995
+[10/31 05:41:20][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3828 to 2.3815
+[10/31 05:42:56][INFO] train_test.py:  66: Training: [Epoch  657] loss: 2.0953 accuracy: 0.9825 lr: 0.001000
+[10/31 05:43:20][INFO] train_test.py: 101: Evaluation: [Epoch  657] loss: 2.3813 accuracy: 0.6995
+[10/31 05:43:20][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3815 to 2.3813
+[10/31 05:44:56][INFO] train_test.py:  66: Training: [Epoch  658] loss: 2.0953 accuracy: 0.9825 lr: 0.001000
+[10/31 05:45:20][INFO] train_test.py: 101: Evaluation: [Epoch  658] loss: 2.3800 accuracy: 0.6995
+[10/31 05:45:20][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3813 to 2.3800
+[10/31 05:46:56][INFO] train_test.py:  66: Training: [Epoch  659] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 05:47:20][INFO] train_test.py: 101: Evaluation: [Epoch  659] loss: 2.3811 accuracy: 0.6995
+[10/31 05:48:40][INFO] train_test.py:  66: Training: [Epoch  660] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 05:49:04][INFO] train_test.py: 101: Evaluation: [Epoch  660] loss: 2.3808 accuracy: 0.6995
+[10/31 05:50:24][INFO] train_test.py:  66: Training: [Epoch  661] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 05:50:48][INFO] train_test.py: 101: Evaluation: [Epoch  661] loss: 2.3806 accuracy: 0.6995
+[10/31 05:52:08][INFO] train_test.py:  66: Training: [Epoch  662] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 05:52:32][INFO] train_test.py: 101: Evaluation: [Epoch  662] loss: 2.3804 accuracy: 0.6995
+[10/31 05:53:52][INFO] train_test.py:  66: Training: [Epoch  663] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 05:54:16][INFO] train_test.py: 101: Evaluation: [Epoch  663] loss: 2.3802 accuracy: 0.6995
+[10/31 05:55:36][INFO] train_test.py:  66: Training: [Epoch  664] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 05:56:00][INFO] train_test.py: 101: Evaluation: [Epoch  664] loss: 2.3801 accuracy: 0.7049
+[10/31 05:57:20][INFO] train_test.py:  66: Training: [Epoch  665] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 05:57:44][INFO] train_test.py: 101: Evaluation: [Epoch  665] loss: 2.3799 accuracy: 0.7049
+[10/31 05:57:44][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3800 to 2.3799
+[10/31 05:59:19][INFO] train_test.py:  66: Training: [Epoch  666] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 05:59:43][INFO] train_test.py: 101: Evaluation: [Epoch  666] loss: 2.3799 accuracy: 0.7049
+[10/31 05:59:43][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3799 to 2.3799
+[10/31 06:01:19][INFO] train_test.py:  66: Training: [Epoch  667] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:01:43][INFO] train_test.py: 101: Evaluation: [Epoch  667] loss: 2.3794 accuracy: 0.7049
+[10/31 06:01:43][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3799 to 2.3794
+[10/31 06:03:18][INFO] train_test.py:  66: Training: [Epoch  668] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:03:42][INFO] train_test.py: 101: Evaluation: [Epoch  668] loss: 2.3793 accuracy: 0.7049
+[10/31 06:03:42][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3794 to 2.3793
+[10/31 06:05:18][INFO] train_test.py:  66: Training: [Epoch  669] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:05:42][INFO] train_test.py: 101: Evaluation: [Epoch  669] loss: 2.3792 accuracy: 0.7049
+[10/31 06:05:42][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3793 to 2.3792
+[10/31 06:07:17][INFO] train_test.py:  66: Training: [Epoch  670] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:07:41][INFO] train_test.py: 101: Evaluation: [Epoch  670] loss: 2.3790 accuracy: 0.7049
+[10/31 06:07:41][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3792 to 2.3790
+[10/31 06:09:19][INFO] train_test.py:  66: Training: [Epoch  671] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:09:43][INFO] train_test.py: 101: Evaluation: [Epoch  671] loss: 2.3791 accuracy: 0.7049
+[10/31 06:11:02][INFO] train_test.py:  66: Training: [Epoch  672] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:11:26][INFO] train_test.py: 101: Evaluation: [Epoch  672] loss: 2.3791 accuracy: 0.7049
+[10/31 06:12:46][INFO] train_test.py:  66: Training: [Epoch  673] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:13:10][INFO] train_test.py: 101: Evaluation: [Epoch  673] loss: 2.3790 accuracy: 0.7049
+[10/31 06:14:30][INFO] train_test.py:  66: Training: [Epoch  674] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:14:54][INFO] train_test.py: 101: Evaluation: [Epoch  674] loss: 2.3789 accuracy: 0.7049
+[10/31 06:14:54][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3790 to 2.3789
+[10/31 06:16:30][INFO] train_test.py:  66: Training: [Epoch  675] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:16:54][INFO] train_test.py: 101: Evaluation: [Epoch  675] loss: 2.3789 accuracy: 0.7049
+[10/31 06:18:13][INFO] train_test.py:  66: Training: [Epoch  676] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:18:37][INFO] train_test.py: 101: Evaluation: [Epoch  676] loss: 2.3788 accuracy: 0.7049
+[10/31 06:18:37][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3789 to 2.3788
+[10/31 06:20:12][INFO] train_test.py:  66: Training: [Epoch  677] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:20:36][INFO] train_test.py: 101: Evaluation: [Epoch  677] loss: 2.3786 accuracy: 0.7049
+[10/31 06:20:36][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3788 to 2.3786
+[10/31 06:22:11][INFO] train_test.py:  66: Training: [Epoch  678] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:22:35][INFO] train_test.py: 101: Evaluation: [Epoch  678] loss: 2.3786 accuracy: 0.7049
+[10/31 06:22:35][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3786 to 2.3786
+[10/31 06:24:10][INFO] train_test.py:  66: Training: [Epoch  679] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:24:34][INFO] train_test.py: 101: Evaluation: [Epoch  679] loss: 2.3784 accuracy: 0.7049
+[10/31 06:24:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3786 to 2.3784
+[10/31 06:26:10][INFO] train_test.py:  66: Training: [Epoch  680] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:26:34][INFO] train_test.py: 101: Evaluation: [Epoch  680] loss: 2.3784 accuracy: 0.7049
+[10/31 06:26:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3784 to 2.3784
+[10/31 06:28:11][INFO] train_test.py:  66: Training: [Epoch  681] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:28:35][INFO] train_test.py: 101: Evaluation: [Epoch  681] loss: 2.3783 accuracy: 0.7049
+[10/31 06:28:35][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3784 to 2.3783
+[10/31 06:30:10][INFO] train_test.py:  66: Training: [Epoch  682] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:30:34][INFO] train_test.py: 101: Evaluation: [Epoch  682] loss: 2.3782 accuracy: 0.7049
+[10/31 06:30:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3783 to 2.3782
+[10/31 06:32:10][INFO] train_test.py:  66: Training: [Epoch  683] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:32:34][INFO] train_test.py: 101: Evaluation: [Epoch  683] loss: 2.3781 accuracy: 0.6995
+[10/31 06:32:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3782 to 2.3781
+[10/31 06:34:10][INFO] train_test.py:  66: Training: [Epoch  684] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 06:34:34][INFO] train_test.py: 101: Evaluation: [Epoch  684] loss: 2.3781 accuracy: 0.6995
+[10/31 06:34:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3781 to 2.3781
+[10/31 06:36:10][INFO] train_test.py:  66: Training: [Epoch  685] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:36:34][INFO] train_test.py: 101: Evaluation: [Epoch  685] loss: 2.3781 accuracy: 0.6995
+[10/31 06:37:54][INFO] train_test.py:  66: Training: [Epoch  686] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:38:18][INFO] train_test.py: 101: Evaluation: [Epoch  686] loss: 2.3780 accuracy: 0.6995
+[10/31 06:38:18][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3781 to 2.3780
+[10/31 06:39:54][INFO] train_test.py:  66: Training: [Epoch  687] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:40:18][INFO] train_test.py: 101: Evaluation: [Epoch  687] loss: 2.3781 accuracy: 0.6995
+[10/31 06:41:38][INFO] train_test.py:  66: Training: [Epoch  688] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:42:02][INFO] train_test.py: 101: Evaluation: [Epoch  688] loss: 2.3780 accuracy: 0.6995
+[10/31 06:43:22][INFO] train_test.py:  66: Training: [Epoch  689] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:43:46][INFO] train_test.py: 101: Evaluation: [Epoch  689] loss: 2.3780 accuracy: 0.6995
+[10/31 06:43:46][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3780 to 2.3780
+[10/31 06:45:21][INFO] train_test.py:  66: Training: [Epoch  690] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:45:45][INFO] train_test.py: 101: Evaluation: [Epoch  690] loss: 2.3780 accuracy: 0.6995
+[10/31 06:47:05][INFO] train_test.py:  66: Training: [Epoch  691] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:47:29][INFO] train_test.py: 101: Evaluation: [Epoch  691] loss: 2.3780 accuracy: 0.6995
+[10/31 06:48:49][INFO] train_test.py:  66: Training: [Epoch  692] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:49:13][INFO] train_test.py: 101: Evaluation: [Epoch  692] loss: 2.3781 accuracy: 0.6995
+[10/31 06:50:34][INFO] train_test.py:  66: Training: [Epoch  693] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:50:58][INFO] train_test.py: 101: Evaluation: [Epoch  693] loss: 2.3781 accuracy: 0.6995
+[10/31 06:52:19][INFO] train_test.py:  66: Training: [Epoch  694] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:52:43][INFO] train_test.py: 101: Evaluation: [Epoch  694] loss: 2.3781 accuracy: 0.6995
+[10/31 06:54:03][INFO] train_test.py:  66: Training: [Epoch  695] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:54:27][INFO] train_test.py: 101: Evaluation: [Epoch  695] loss: 2.3780 accuracy: 0.6940
+[10/31 06:55:47][INFO] train_test.py:  66: Training: [Epoch  696] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:56:11][INFO] train_test.py: 101: Evaluation: [Epoch  696] loss: 2.3781 accuracy: 0.6885
+[10/31 06:57:31][INFO] train_test.py:  66: Training: [Epoch  697] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:57:55][INFO] train_test.py: 101: Evaluation: [Epoch  697] loss: 2.3781 accuracy: 0.6885
+[10/31 06:59:15][INFO] train_test.py:  66: Training: [Epoch  698] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 06:59:39][INFO] train_test.py: 101: Evaluation: [Epoch  698] loss: 2.3781 accuracy: 0.6885
+[10/31 07:00:59][INFO] train_test.py:  66: Training: [Epoch  699] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:01:23][INFO] train_test.py: 101: Evaluation: [Epoch  699] loss: 2.3781 accuracy: 0.6885
+[10/31 07:02:42][INFO] train_test.py:  66: Training: [Epoch  700] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:03:06][INFO] train_test.py: 101: Evaluation: [Epoch  700] loss: 2.3784 accuracy: 0.6885
+[10/31 07:04:26][INFO] train_test.py:  66: Training: [Epoch  701] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:04:50][INFO] train_test.py: 101: Evaluation: [Epoch  701] loss: 2.3786 accuracy: 0.6885
+[10/31 07:06:10][INFO] train_test.py:  66: Training: [Epoch  702] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:06:34][INFO] train_test.py: 101: Evaluation: [Epoch  702] loss: 2.3784 accuracy: 0.6885
+[10/31 07:07:54][INFO] train_test.py:  66: Training: [Epoch  703] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:08:18][INFO] train_test.py: 101: Evaluation: [Epoch  703] loss: 2.3783 accuracy: 0.6885
+[10/31 07:09:39][INFO] train_test.py:  66: Training: [Epoch  704] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:10:03][INFO] train_test.py: 101: Evaluation: [Epoch  704] loss: 2.3783 accuracy: 0.6885
+[10/31 07:11:23][INFO] train_test.py:  66: Training: [Epoch  705] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:11:47][INFO] train_test.py: 101: Evaluation: [Epoch  705] loss: 2.3782 accuracy: 0.6940
+[10/31 07:13:07][INFO] train_test.py:  66: Training: [Epoch  706] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:13:31][INFO] train_test.py: 101: Evaluation: [Epoch  706] loss: 2.3781 accuracy: 0.6940
+[10/31 07:14:51][INFO] train_test.py:  66: Training: [Epoch  707] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:15:15][INFO] train_test.py: 101: Evaluation: [Epoch  707] loss: 2.3782 accuracy: 0.6940
+[10/31 07:16:35][INFO] train_test.py:  66: Training: [Epoch  708] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:16:59][INFO] train_test.py: 101: Evaluation: [Epoch  708] loss: 2.3781 accuracy: 0.6940
+[10/31 07:18:20][INFO] train_test.py:  66: Training: [Epoch  709] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:18:43][INFO] train_test.py: 101: Evaluation: [Epoch  709] loss: 2.3781 accuracy: 0.6940
+[10/31 07:20:04][INFO] train_test.py:  66: Training: [Epoch  710] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:20:28][INFO] train_test.py: 101: Evaluation: [Epoch  710] loss: 2.3778 accuracy: 0.6940
+[10/31 07:20:28][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3780 to 2.3778
+[10/31 07:22:04][INFO] train_test.py:  66: Training: [Epoch  711] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:22:28][INFO] train_test.py: 101: Evaluation: [Epoch  711] loss: 2.3778 accuracy: 0.6885
+[10/31 07:23:48][INFO] train_test.py:  66: Training: [Epoch  712] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:24:12][INFO] train_test.py: 101: Evaluation: [Epoch  712] loss: 2.3777 accuracy: 0.6885
+[10/31 07:24:12][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3778 to 2.3777
+[10/31 07:25:48][INFO] train_test.py:  66: Training: [Epoch  713] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:26:11][INFO] train_test.py: 101: Evaluation: [Epoch  713] loss: 2.3778 accuracy: 0.6885
+[10/31 07:27:32][INFO] train_test.py:  66: Training: [Epoch  714] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:27:56][INFO] train_test.py: 101: Evaluation: [Epoch  714] loss: 2.3778 accuracy: 0.6885
+[10/31 07:29:15][INFO] train_test.py:  66: Training: [Epoch  715] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:29:40][INFO] train_test.py: 101: Evaluation: [Epoch  715] loss: 2.3778 accuracy: 0.6885
+[10/31 07:30:59][INFO] train_test.py:  66: Training: [Epoch  716] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:31:23][INFO] train_test.py: 101: Evaluation: [Epoch  716] loss: 2.3777 accuracy: 0.6885
+[10/31 07:32:43][INFO] train_test.py:  66: Training: [Epoch  717] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:33:07][INFO] train_test.py: 101: Evaluation: [Epoch  717] loss: 2.3778 accuracy: 0.6885
+[10/31 07:34:26][INFO] train_test.py:  66: Training: [Epoch  718] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 07:34:50][INFO] train_test.py: 101: Evaluation: [Epoch  718] loss: 2.3778 accuracy: 0.6831
+[10/31 07:36:11][INFO] train_test.py:  66: Training: [Epoch  719] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:36:35][INFO] train_test.py: 101: Evaluation: [Epoch  719] loss: 2.3778 accuracy: 0.6831
+[10/31 07:37:55][INFO] train_test.py:  66: Training: [Epoch  720] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 07:38:19][INFO] train_test.py: 101: Evaluation: [Epoch  720] loss: 2.3779 accuracy: 0.6831
+[10/31 07:39:40][INFO] train_test.py:  66: Training: [Epoch  721] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:40:04][INFO] train_test.py: 101: Evaluation: [Epoch  721] loss: 2.3779 accuracy: 0.6831
+[10/31 07:41:25][INFO] train_test.py:  66: Training: [Epoch  722] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:41:50][INFO] train_test.py: 101: Evaluation: [Epoch  722] loss: 2.3778 accuracy: 0.6831
+[10/31 07:43:10][INFO] train_test.py:  66: Training: [Epoch  723] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:43:34][INFO] train_test.py: 101: Evaluation: [Epoch  723] loss: 2.3776 accuracy: 0.6831
+[10/31 07:43:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3777 to 2.3776
+[10/31 07:45:10][INFO] train_test.py:  66: Training: [Epoch  724] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:45:34][INFO] train_test.py: 101: Evaluation: [Epoch  724] loss: 2.3776 accuracy: 0.6831
+[10/31 07:45:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3776 to 2.3776
+[10/31 07:47:09][INFO] train_test.py:  66: Training: [Epoch  725] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:47:33][INFO] train_test.py: 101: Evaluation: [Epoch  725] loss: 2.3776 accuracy: 0.6831
+[10/31 07:48:53][INFO] train_test.py:  66: Training: [Epoch  726] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:49:17][INFO] train_test.py: 101: Evaluation: [Epoch  726] loss: 2.3776 accuracy: 0.6831
+[10/31 07:49:17][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3776 to 2.3776
+[10/31 07:50:55][INFO] train_test.py:  66: Training: [Epoch  727] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:51:19][INFO] train_test.py: 101: Evaluation: [Epoch  727] loss: 2.3776 accuracy: 0.6831
+[10/31 07:52:39][INFO] train_test.py:  66: Training: [Epoch  728] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:53:03][INFO] train_test.py: 101: Evaluation: [Epoch  728] loss: 2.3775 accuracy: 0.6885
+[10/31 07:53:03][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3776 to 2.3775
+[10/31 07:54:39][INFO] train_test.py:  66: Training: [Epoch  729] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:55:04][INFO] train_test.py: 101: Evaluation: [Epoch  729] loss: 2.3776 accuracy: 0.6885
+[10/31 07:56:23][INFO] train_test.py:  66: Training: [Epoch  730] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:56:47][INFO] train_test.py: 101: Evaluation: [Epoch  730] loss: 2.3775 accuracy: 0.6885
+[10/31 07:56:47][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3775 to 2.3775
+[10/31 07:58:23][INFO] train_test.py:  66: Training: [Epoch  731] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 07:58:47][INFO] train_test.py: 101: Evaluation: [Epoch  731] loss: 2.3776 accuracy: 0.6885
+[10/31 08:00:07][INFO] train_test.py:  66: Training: [Epoch  732] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:00:31][INFO] train_test.py: 101: Evaluation: [Epoch  732] loss: 2.3776 accuracy: 0.6885
+[10/31 08:01:51][INFO] train_test.py:  66: Training: [Epoch  733] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:02:15][INFO] train_test.py: 101: Evaluation: [Epoch  733] loss: 2.3777 accuracy: 0.6885
+[10/31 08:03:35][INFO] train_test.py:  66: Training: [Epoch  734] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:03:59][INFO] train_test.py: 101: Evaluation: [Epoch  734] loss: 2.3776 accuracy: 0.6885
+[10/31 08:05:19][INFO] train_test.py:  66: Training: [Epoch  735] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:05:43][INFO] train_test.py: 101: Evaluation: [Epoch  735] loss: 2.3776 accuracy: 0.6885
+[10/31 08:07:03][INFO] train_test.py:  66: Training: [Epoch  736] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:07:27][INFO] train_test.py: 101: Evaluation: [Epoch  736] loss: 2.3777 accuracy: 0.6885
+[10/31 08:08:48][INFO] train_test.py:  66: Training: [Epoch  737] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:09:12][INFO] train_test.py: 101: Evaluation: [Epoch  737] loss: 2.3778 accuracy: 0.6885
+[10/31 08:10:32][INFO] train_test.py:  66: Training: [Epoch  738] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:10:56][INFO] train_test.py: 101: Evaluation: [Epoch  738] loss: 2.3778 accuracy: 0.6885
+[10/31 08:12:16][INFO] train_test.py:  66: Training: [Epoch  739] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:12:40][INFO] train_test.py: 101: Evaluation: [Epoch  739] loss: 2.3779 accuracy: 0.6885
+[10/31 08:14:00][INFO] train_test.py:  66: Training: [Epoch  740] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:14:24][INFO] train_test.py: 101: Evaluation: [Epoch  740] loss: 2.3779 accuracy: 0.6885
+[10/31 08:15:44][INFO] train_test.py:  66: Training: [Epoch  741] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:16:08][INFO] train_test.py: 101: Evaluation: [Epoch  741] loss: 2.3775 accuracy: 0.6940
+[10/31 08:17:28][INFO] train_test.py:  66: Training: [Epoch  742] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:17:52][INFO] train_test.py: 101: Evaluation: [Epoch  742] loss: 2.3778 accuracy: 0.6940
+[10/31 08:19:13][INFO] train_test.py:  66: Training: [Epoch  743] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:19:37][INFO] train_test.py: 101: Evaluation: [Epoch  743] loss: 2.3779 accuracy: 0.6940
+[10/31 08:20:57][INFO] train_test.py:  66: Training: [Epoch  744] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:21:21][INFO] train_test.py: 101: Evaluation: [Epoch  744] loss: 2.3780 accuracy: 0.6940
+[10/31 08:22:41][INFO] train_test.py:  66: Training: [Epoch  745] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:23:05][INFO] train_test.py: 101: Evaluation: [Epoch  745] loss: 2.3780 accuracy: 0.6940
+[10/31 08:24:24][INFO] train_test.py:  66: Training: [Epoch  746] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:24:48][INFO] train_test.py: 101: Evaluation: [Epoch  746] loss: 2.3779 accuracy: 0.6940
+[10/31 08:26:09][INFO] train_test.py:  66: Training: [Epoch  747] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:26:33][INFO] train_test.py: 101: Evaluation: [Epoch  747] loss: 2.3780 accuracy: 0.6995
+[10/31 08:27:53][INFO] train_test.py:  66: Training: [Epoch  748] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 08:28:17][INFO] train_test.py: 101: Evaluation: [Epoch  748] loss: 2.3780 accuracy: 0.6995
+[10/31 08:29:37][INFO] train_test.py:  66: Training: [Epoch  749] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:30:01][INFO] train_test.py: 101: Evaluation: [Epoch  749] loss: 2.3779 accuracy: 0.6995
+[10/31 08:31:21][INFO] train_test.py:  66: Training: [Epoch  750] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:31:45][INFO] train_test.py: 101: Evaluation: [Epoch  750] loss: 2.3780 accuracy: 0.6995
+[10/31 08:33:06][INFO] train_test.py:  66: Training: [Epoch  751] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 08:33:30][INFO] train_test.py: 101: Evaluation: [Epoch  751] loss: 2.3774 accuracy: 0.6995
+[10/31 08:33:30][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.3775 to 2.3774
+[10/31 08:35:05][INFO] train_test.py:  66: Training: [Epoch  752] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:35:29][INFO] train_test.py: 101: Evaluation: [Epoch  752] loss: 2.3775 accuracy: 0.6995
+[10/31 08:36:49][INFO] train_test.py:  66: Training: [Epoch  753] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:37:13][INFO] train_test.py: 101: Evaluation: [Epoch  753] loss: 2.3778 accuracy: 0.6995
+[10/31 08:38:33][INFO] train_test.py:  66: Training: [Epoch  754] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:38:57][INFO] train_test.py: 101: Evaluation: [Epoch  754] loss: 2.3779 accuracy: 0.6995
+[10/31 08:40:18][INFO] train_test.py:  66: Training: [Epoch  755] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:40:42][INFO] train_test.py: 101: Evaluation: [Epoch  755] loss: 2.3780 accuracy: 0.6995
+[10/31 08:42:01][INFO] train_test.py:  66: Training: [Epoch  756] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:42:25][INFO] train_test.py: 101: Evaluation: [Epoch  756] loss: 2.3779 accuracy: 0.6995
+[10/31 08:43:45][INFO] train_test.py:  66: Training: [Epoch  757] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:44:09][INFO] train_test.py: 101: Evaluation: [Epoch  757] loss: 2.3780 accuracy: 0.6995
+[10/31 08:45:29][INFO] train_test.py:  66: Training: [Epoch  758] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:45:53][INFO] train_test.py: 101: Evaluation: [Epoch  758] loss: 2.3782 accuracy: 0.6995
+[10/31 08:47:14][INFO] train_test.py:  66: Training: [Epoch  759] loss: 2.1004 accuracy: 0.9843 lr: 0.001000
+[10/31 08:47:38][INFO] train_test.py: 101: Evaluation: [Epoch  759] loss: 2.3782 accuracy: 0.6995
+[10/31 08:48:58][INFO] train_test.py:  66: Training: [Epoch  760] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:49:22][INFO] train_test.py: 101: Evaluation: [Epoch  760] loss: 2.3783 accuracy: 0.6995
+[10/31 08:50:42][INFO] train_test.py:  66: Training: [Epoch  761] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:51:06][INFO] train_test.py: 101: Evaluation: [Epoch  761] loss: 2.3785 accuracy: 0.7049
+[10/31 08:52:26][INFO] train_test.py:  66: Training: [Epoch  762] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:52:50][INFO] train_test.py: 101: Evaluation: [Epoch  762] loss: 2.3786 accuracy: 0.7104
+[10/31 08:54:11][INFO] train_test.py:  66: Training: [Epoch  763] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:54:35][INFO] train_test.py: 101: Evaluation: [Epoch  763] loss: 2.3787 accuracy: 0.7104
+[10/31 08:55:55][INFO] train_test.py:  66: Training: [Epoch  764] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:56:19][INFO] train_test.py: 101: Evaluation: [Epoch  764] loss: 2.3787 accuracy: 0.7104
+[10/31 08:57:39][INFO] train_test.py:  66: Training: [Epoch  765] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:58:03][INFO] train_test.py: 101: Evaluation: [Epoch  765] loss: 2.3786 accuracy: 0.7104
+[10/31 08:59:23][INFO] train_test.py:  66: Training: [Epoch  766] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 08:59:47][INFO] train_test.py: 101: Evaluation: [Epoch  766] loss: 2.3788 accuracy: 0.7049
+[10/31 09:01:07][INFO] train_test.py:  66: Training: [Epoch  767] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:01:31][INFO] train_test.py: 101: Evaluation: [Epoch  767] loss: 2.3792 accuracy: 0.7049
+[10/31 09:02:51][INFO] train_test.py:  66: Training: [Epoch  768] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:03:15][INFO] train_test.py: 101: Evaluation: [Epoch  768] loss: 2.3797 accuracy: 0.7049
+[10/31 09:04:35][INFO] train_test.py:  66: Training: [Epoch  769] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:04:59][INFO] train_test.py: 101: Evaluation: [Epoch  769] loss: 2.3816 accuracy: 0.7049
+[10/31 09:06:19][INFO] train_test.py:  66: Training: [Epoch  770] loss: 2.0992 accuracy: 0.9790 lr: 0.001000
+[10/31 09:06:43][INFO] train_test.py: 101: Evaluation: [Epoch  770] loss: 2.3847 accuracy: 0.6995
+[10/31 09:08:03][INFO] train_test.py:  66: Training: [Epoch  771] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:08:27][INFO] train_test.py: 101: Evaluation: [Epoch  771] loss: 2.3852 accuracy: 0.7049
+[10/31 09:09:47][INFO] train_test.py:  66: Training: [Epoch  772] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:10:11][INFO] train_test.py: 101: Evaluation: [Epoch  772] loss: 2.3836 accuracy: 0.7049
+[10/31 09:11:31][INFO] train_test.py:  66: Training: [Epoch  773] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:11:55][INFO] train_test.py: 101: Evaluation: [Epoch  773] loss: 2.3834 accuracy: 0.7049
+[10/31 09:13:16][INFO] train_test.py:  66: Training: [Epoch  774] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:13:39][INFO] train_test.py: 101: Evaluation: [Epoch  774] loss: 2.3831 accuracy: 0.7049
+[10/31 09:15:00][INFO] train_test.py:  66: Training: [Epoch  775] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:15:23][INFO] train_test.py: 101: Evaluation: [Epoch  775] loss: 2.3828 accuracy: 0.6995
+[10/31 09:16:43][INFO] train_test.py:  66: Training: [Epoch  776] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:17:07][INFO] train_test.py: 101: Evaluation: [Epoch  776] loss: 2.3826 accuracy: 0.6940
+[10/31 09:18:27][INFO] train_test.py:  66: Training: [Epoch  777] loss: 2.1005 accuracy: 0.9843 lr: 0.001000
+[10/31 09:18:51][INFO] train_test.py: 101: Evaluation: [Epoch  777] loss: 2.3823 accuracy: 0.6940
+[10/31 09:20:11][INFO] train_test.py:  66: Training: [Epoch  778] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:20:35][INFO] train_test.py: 101: Evaluation: [Epoch  778] loss: 2.3821 accuracy: 0.6940
+[10/31 09:21:55][INFO] train_test.py:  66: Training: [Epoch  779] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:22:19][INFO] train_test.py: 101: Evaluation: [Epoch  779] loss: 2.3820 accuracy: 0.6940
+[10/31 09:23:40][INFO] train_test.py:  66: Training: [Epoch  780] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:24:04][INFO] train_test.py: 101: Evaluation: [Epoch  780] loss: 2.3820 accuracy: 0.6940
+[10/31 09:25:24][INFO] train_test.py:  66: Training: [Epoch  781] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:25:48][INFO] train_test.py: 101: Evaluation: [Epoch  781] loss: 2.3817 accuracy: 0.6940
+[10/31 09:27:08][INFO] train_test.py:  66: Training: [Epoch  782] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:27:32][INFO] train_test.py: 101: Evaluation: [Epoch  782] loss: 2.3815 accuracy: 0.6995
+[10/31 09:28:52][INFO] train_test.py:  66: Training: [Epoch  783] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:29:16][INFO] train_test.py: 101: Evaluation: [Epoch  783] loss: 2.3815 accuracy: 0.7104
+[10/31 09:30:36][INFO] train_test.py:  66: Training: [Epoch  784] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:31:00][INFO] train_test.py: 101: Evaluation: [Epoch  784] loss: 2.3813 accuracy: 0.7104
+[10/31 09:32:19][INFO] train_test.py:  66: Training: [Epoch  785] loss: 2.0936 accuracy: 0.9843 lr: 0.001000
+[10/31 09:32:43][INFO] train_test.py: 101: Evaluation: [Epoch  785] loss: 2.3814 accuracy: 0.7104
+[10/31 09:34:04][INFO] train_test.py:  66: Training: [Epoch  786] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:34:28][INFO] train_test.py: 101: Evaluation: [Epoch  786] loss: 2.3811 accuracy: 0.7104
+[10/31 09:35:48][INFO] train_test.py:  66: Training: [Epoch  787] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:36:11][INFO] train_test.py: 101: Evaluation: [Epoch  787] loss: 2.3806 accuracy: 0.7104
+[10/31 09:37:31][INFO] train_test.py:  66: Training: [Epoch  788] loss: 2.0935 accuracy: 0.9843 lr: 0.001000
+[10/31 09:37:55][INFO] train_test.py: 101: Evaluation: [Epoch  788] loss: 2.3801 accuracy: 0.7158
+[10/31 09:39:15][INFO] train_test.py:  66: Training: [Epoch  789] loss: 2.1016 accuracy: 0.9773 lr: 0.001000
+[10/31 09:39:39][INFO] train_test.py: 101: Evaluation: [Epoch  789] loss: 2.4582 accuracy: 0.6557
+[10/31 09:40:59][INFO] train_test.py:  66: Training: [Epoch  790] loss: 2.1341 accuracy: 0.9476 lr: 0.001000
+[10/31 09:41:23][INFO] train_test.py: 101: Evaluation: [Epoch  790] loss: 2.5228 accuracy: 0.5574
+[10/31 09:42:43][INFO] train_test.py:  66: Training: [Epoch  791] loss: 2.1094 accuracy: 0.9738 lr: 0.001000
+[10/31 09:43:07][INFO] train_test.py: 101: Evaluation: [Epoch  791] loss: 2.4194 accuracy: 0.6721
+[10/31 09:44:28][INFO] train_test.py:  66: Training: [Epoch  792] loss: 2.0949 accuracy: 0.9843 lr: 0.001000
+[10/31 09:44:52][INFO] train_test.py: 101: Evaluation: [Epoch  792] loss: 2.3989 accuracy: 0.6831
+[10/31 09:46:12][INFO] train_test.py:  66: Training: [Epoch  793] loss: 2.0921 accuracy: 0.9860 lr: 0.001000
+[10/31 09:46:36][INFO] train_test.py: 101: Evaluation: [Epoch  793] loss: 2.3958 accuracy: 0.6885
+[10/31 09:47:56][INFO] train_test.py:  66: Training: [Epoch  794] loss: 2.0903 accuracy: 0.9878 lr: 0.001000
+[10/31 09:48:20][INFO] train_test.py: 101: Evaluation: [Epoch  794] loss: 2.3934 accuracy: 0.6885
+[10/31 09:49:40][INFO] train_test.py:  66: Training: [Epoch  795] loss: 2.0902 accuracy: 0.9878 lr: 0.001000
+[10/31 09:50:04][INFO] train_test.py: 101: Evaluation: [Epoch  795] loss: 2.3920 accuracy: 0.6885
+[10/31 09:51:25][INFO] train_test.py:  66: Training: [Epoch  796] loss: 2.0902 accuracy: 0.9878 lr: 0.001000
+[10/31 09:51:48][INFO] train_test.py: 101: Evaluation: [Epoch  796] loss: 2.3909 accuracy: 0.6885
+[10/31 09:53:08][INFO] train_test.py:  66: Training: [Epoch  797] loss: 2.0902 accuracy: 0.9878 lr: 0.001000
+[10/31 09:53:32][INFO] train_test.py: 101: Evaluation: [Epoch  797] loss: 2.3902 accuracy: 0.6885
+[10/31 09:54:53][INFO] train_test.py:  66: Training: [Epoch  798] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 09:55:17][INFO] train_test.py: 101: Evaluation: [Epoch  798] loss: 2.3895 accuracy: 0.6885
+[10/31 09:56:37][INFO] train_test.py:  66: Training: [Epoch  799] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 09:57:00][INFO] train_test.py: 101: Evaluation: [Epoch  799] loss: 2.3889 accuracy: 0.6940
+[10/31 09:58:21][INFO] train_test.py:  66: Training: [Epoch  800] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 09:58:45][INFO] train_test.py: 101: Evaluation: [Epoch  800] loss: 2.3885 accuracy: 0.6940
+[10/31 10:00:05][INFO] train_test.py:  66: Training: [Epoch  801] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:00:29][INFO] train_test.py: 101: Evaluation: [Epoch  801] loss: 2.3881 accuracy: 0.6940
+[10/31 10:01:50][INFO] train_test.py:  66: Training: [Epoch  802] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:02:14][INFO] train_test.py: 101: Evaluation: [Epoch  802] loss: 2.3877 accuracy: 0.6940
+[10/31 10:03:36][INFO] train_test.py:  66: Training: [Epoch  803] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:04:00][INFO] train_test.py: 101: Evaluation: [Epoch  803] loss: 2.3873 accuracy: 0.6995
+[10/31 10:05:20][INFO] train_test.py:  66: Training: [Epoch  804] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:05:45][INFO] train_test.py: 101: Evaluation: [Epoch  804] loss: 2.3871 accuracy: 0.6995
+[10/31 10:07:06][INFO] train_test.py:  66: Training: [Epoch  805] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:07:30][INFO] train_test.py: 101: Evaluation: [Epoch  805] loss: 2.3869 accuracy: 0.6995
+[10/31 10:08:51][INFO] train_test.py:  66: Training: [Epoch  806] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:09:15][INFO] train_test.py: 101: Evaluation: [Epoch  806] loss: 2.3867 accuracy: 0.6995
+[10/31 10:10:36][INFO] train_test.py:  66: Training: [Epoch  807] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:11:00][INFO] train_test.py: 101: Evaluation: [Epoch  807] loss: 2.3865 accuracy: 0.6995
+[10/31 10:12:21][INFO] train_test.py:  66: Training: [Epoch  808] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:12:45][INFO] train_test.py: 101: Evaluation: [Epoch  808] loss: 2.3864 accuracy: 0.6995
+[10/31 10:14:06][INFO] train_test.py:  66: Training: [Epoch  809] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:14:30][INFO] train_test.py: 101: Evaluation: [Epoch  809] loss: 2.3863 accuracy: 0.6995
+[10/31 10:15:50][INFO] train_test.py:  66: Training: [Epoch  810] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:16:14][INFO] train_test.py: 101: Evaluation: [Epoch  810] loss: 2.3862 accuracy: 0.6995
+[10/31 10:17:35][INFO] train_test.py:  66: Training: [Epoch  811] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:17:59][INFO] train_test.py: 101: Evaluation: [Epoch  811] loss: 2.3861 accuracy: 0.6995
+[10/31 10:19:19][INFO] train_test.py:  66: Training: [Epoch  812] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:19:43][INFO] train_test.py: 101: Evaluation: [Epoch  812] loss: 2.3861 accuracy: 0.6995
+[10/31 10:21:04][INFO] train_test.py:  66: Training: [Epoch  813] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:21:28][INFO] train_test.py: 101: Evaluation: [Epoch  813] loss: 2.3860 accuracy: 0.6995
+[10/31 10:22:49][INFO] train_test.py:  66: Training: [Epoch  814] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:23:13][INFO] train_test.py: 101: Evaluation: [Epoch  814] loss: 2.3860 accuracy: 0.6940
+[10/31 10:24:33][INFO] train_test.py:  66: Training: [Epoch  815] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:24:57][INFO] train_test.py: 101: Evaluation: [Epoch  815] loss: 2.3860 accuracy: 0.6995
+[10/31 10:26:18][INFO] train_test.py:  66: Training: [Epoch  816] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:26:42][INFO] train_test.py: 101: Evaluation: [Epoch  816] loss: 2.3858 accuracy: 0.6995
+[10/31 10:28:03][INFO] train_test.py:  66: Training: [Epoch  817] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:28:27][INFO] train_test.py: 101: Evaluation: [Epoch  817] loss: 2.3859 accuracy: 0.6995
+[10/31 10:29:49][INFO] train_test.py:  66: Training: [Epoch  818] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:30:13][INFO] train_test.py: 101: Evaluation: [Epoch  818] loss: 2.3859 accuracy: 0.6995
+[10/31 10:31:35][INFO] train_test.py:  66: Training: [Epoch  819] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:31:59][INFO] train_test.py: 101: Evaluation: [Epoch  819] loss: 2.3859 accuracy: 0.6995
+[10/31 10:33:20][INFO] train_test.py:  66: Training: [Epoch  820] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:33:45][INFO] train_test.py: 101: Evaluation: [Epoch  820] loss: 2.3860 accuracy: 0.6995
+[10/31 10:35:05][INFO] train_test.py:  66: Training: [Epoch  821] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:35:29][INFO] train_test.py: 101: Evaluation: [Epoch  821] loss: 2.3859 accuracy: 0.6995
+[10/31 10:36:51][INFO] train_test.py:  66: Training: [Epoch  822] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:37:15][INFO] train_test.py: 101: Evaluation: [Epoch  822] loss: 2.3860 accuracy: 0.6940
+[10/31 10:38:35][INFO] train_test.py:  66: Training: [Epoch  823] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:38:59][INFO] train_test.py: 101: Evaluation: [Epoch  823] loss: 2.3860 accuracy: 0.6940
+[10/31 10:40:20][INFO] train_test.py:  66: Training: [Epoch  824] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:40:43][INFO] train_test.py: 101: Evaluation: [Epoch  824] loss: 2.3860 accuracy: 0.6940
+[10/31 10:42:04][INFO] train_test.py:  66: Training: [Epoch  825] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:42:27][INFO] train_test.py: 101: Evaluation: [Epoch  825] loss: 2.3860 accuracy: 0.6940
+[10/31 10:43:47][INFO] train_test.py:  66: Training: [Epoch  826] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:44:11][INFO] train_test.py: 101: Evaluation: [Epoch  826] loss: 2.3860 accuracy: 0.6940
+[10/31 10:45:32][INFO] train_test.py:  66: Training: [Epoch  827] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:45:56][INFO] train_test.py: 101: Evaluation: [Epoch  827] loss: 2.3860 accuracy: 0.6940
+[10/31 10:47:16][INFO] train_test.py:  66: Training: [Epoch  828] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:47:40][INFO] train_test.py: 101: Evaluation: [Epoch  828] loss: 2.3860 accuracy: 0.6940
+[10/31 10:49:00][INFO] train_test.py:  66: Training: [Epoch  829] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:49:24][INFO] train_test.py: 101: Evaluation: [Epoch  829] loss: 2.3861 accuracy: 0.6940
+[10/31 10:50:44][INFO] train_test.py:  66: Training: [Epoch  830] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:51:08][INFO] train_test.py: 101: Evaluation: [Epoch  830] loss: 2.3860 accuracy: 0.6940
+[10/31 10:52:28][INFO] train_test.py:  66: Training: [Epoch  831] loss: 2.0968 accuracy: 0.9878 lr: 0.001000
+[10/31 10:52:52][INFO] train_test.py: 101: Evaluation: [Epoch  831] loss: 2.3864 accuracy: 0.6940
+[10/31 10:54:12][INFO] train_test.py:  66: Training: [Epoch  832] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:54:36][INFO] train_test.py: 101: Evaluation: [Epoch  832] loss: 2.3865 accuracy: 0.6940
+[10/31 10:55:57][INFO] train_test.py:  66: Training: [Epoch  833] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:56:21][INFO] train_test.py: 101: Evaluation: [Epoch  833] loss: 2.3865 accuracy: 0.6940
+[10/31 10:57:41][INFO] train_test.py:  66: Training: [Epoch  834] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:58:05][INFO] train_test.py: 101: Evaluation: [Epoch  834] loss: 2.3865 accuracy: 0.6940
+[10/31 10:59:26][INFO] train_test.py:  66: Training: [Epoch  835] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 10:59:50][INFO] train_test.py: 101: Evaluation: [Epoch  835] loss: 2.3867 accuracy: 0.6940
+[10/31 11:01:10][INFO] train_test.py:  66: Training: [Epoch  836] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:01:34][INFO] train_test.py: 101: Evaluation: [Epoch  836] loss: 2.3866 accuracy: 0.6940
+[10/31 11:02:54][INFO] train_test.py:  66: Training: [Epoch  837] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:03:18][INFO] train_test.py: 101: Evaluation: [Epoch  837] loss: 2.3866 accuracy: 0.6940
+[10/31 11:04:39][INFO] train_test.py:  66: Training: [Epoch  838] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:05:03][INFO] train_test.py: 101: Evaluation: [Epoch  838] loss: 2.3866 accuracy: 0.6940
+[10/31 11:06:23][INFO] train_test.py:  66: Training: [Epoch  839] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:06:47][INFO] train_test.py: 101: Evaluation: [Epoch  839] loss: 2.3865 accuracy: 0.6940
+[10/31 11:08:07][INFO] train_test.py:  66: Training: [Epoch  840] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:08:31][INFO] train_test.py: 101: Evaluation: [Epoch  840] loss: 2.3866 accuracy: 0.6940
+[10/31 11:09:51][INFO] train_test.py:  66: Training: [Epoch  841] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:10:15][INFO] train_test.py: 101: Evaluation: [Epoch  841] loss: 2.3866 accuracy: 0.6940
+[10/31 11:11:36][INFO] train_test.py:  66: Training: [Epoch  842] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:12:00][INFO] train_test.py: 101: Evaluation: [Epoch  842] loss: 2.3866 accuracy: 0.6940
+[10/31 11:13:21][INFO] train_test.py:  66: Training: [Epoch  843] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:13:45][INFO] train_test.py: 101: Evaluation: [Epoch  843] loss: 2.3865 accuracy: 0.6940
+[10/31 11:15:05][INFO] train_test.py:  66: Training: [Epoch  844] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:15:29][INFO] train_test.py: 101: Evaluation: [Epoch  844] loss: 2.3865 accuracy: 0.6940
+[10/31 11:16:49][INFO] train_test.py:  66: Training: [Epoch  845] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:17:13][INFO] train_test.py: 101: Evaluation: [Epoch  845] loss: 2.3865 accuracy: 0.6940
+[10/31 11:18:33][INFO] train_test.py:  66: Training: [Epoch  846] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:18:58][INFO] train_test.py: 101: Evaluation: [Epoch  846] loss: 2.3864 accuracy: 0.6940
+[10/31 11:20:17][INFO] train_test.py:  66: Training: [Epoch  847] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:20:41][INFO] train_test.py: 101: Evaluation: [Epoch  847] loss: 2.3865 accuracy: 0.6940
+[10/31 11:22:01][INFO] train_test.py:  66: Training: [Epoch  848] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:22:25][INFO] train_test.py: 101: Evaluation: [Epoch  848] loss: 2.3866 accuracy: 0.6940
+[10/31 11:23:45][INFO] train_test.py:  66: Training: [Epoch  849] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:24:09][INFO] train_test.py: 101: Evaluation: [Epoch  849] loss: 2.3865 accuracy: 0.6940
+[10/31 11:25:29][INFO] train_test.py:  66: Training: [Epoch  850] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:25:53][INFO] train_test.py: 101: Evaluation: [Epoch  850] loss: 2.3867 accuracy: 0.6940
+[10/31 11:27:14][INFO] train_test.py:  66: Training: [Epoch  851] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:27:38][INFO] train_test.py: 101: Evaluation: [Epoch  851] loss: 2.3866 accuracy: 0.6940
+[10/31 11:28:58][INFO] train_test.py:  66: Training: [Epoch  852] loss: 2.0968 accuracy: 0.9878 lr: 0.001000
+[10/31 11:29:22][INFO] train_test.py: 101: Evaluation: [Epoch  852] loss: 2.3867 accuracy: 0.6940
+[10/31 11:30:42][INFO] train_test.py:  66: Training: [Epoch  853] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:31:06][INFO] train_test.py: 101: Evaluation: [Epoch  853] loss: 2.3866 accuracy: 0.6940
+[10/31 11:32:26][INFO] train_test.py:  66: Training: [Epoch  854] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:32:50][INFO] train_test.py: 101: Evaluation: [Epoch  854] loss: 2.3865 accuracy: 0.6940
+[10/31 11:34:10][INFO] train_test.py:  66: Training: [Epoch  855] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:34:34][INFO] train_test.py: 101: Evaluation: [Epoch  855] loss: 2.3865 accuracy: 0.6940
+[10/31 11:35:54][INFO] train_test.py:  66: Training: [Epoch  856] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:36:18][INFO] train_test.py: 101: Evaluation: [Epoch  856] loss: 2.3864 accuracy: 0.6940
+[10/31 11:37:38][INFO] train_test.py:  66: Training: [Epoch  857] loss: 2.0970 accuracy: 0.9878 lr: 0.001000
+[10/31 11:38:02][INFO] train_test.py: 101: Evaluation: [Epoch  857] loss: 2.3865 accuracy: 0.6940
+[10/31 11:39:22][INFO] train_test.py:  66: Training: [Epoch  858] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:39:47][INFO] train_test.py: 101: Evaluation: [Epoch  858] loss: 2.3864 accuracy: 0.6940
+[10/31 11:41:07][INFO] train_test.py:  66: Training: [Epoch  859] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:41:31][INFO] train_test.py: 101: Evaluation: [Epoch  859] loss: 2.3866 accuracy: 0.6940
+[10/31 11:42:51][INFO] train_test.py:  66: Training: [Epoch  860] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:43:15][INFO] train_test.py: 101: Evaluation: [Epoch  860] loss: 2.3865 accuracy: 0.6940
+[10/31 11:44:35][INFO] train_test.py:  66: Training: [Epoch  861] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:44:59][INFO] train_test.py: 101: Evaluation: [Epoch  861] loss: 2.3864 accuracy: 0.6940
+[10/31 11:46:19][INFO] train_test.py:  66: Training: [Epoch  862] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:46:43][INFO] train_test.py: 101: Evaluation: [Epoch  862] loss: 2.3864 accuracy: 0.6940
+[10/31 11:48:04][INFO] train_test.py:  66: Training: [Epoch  863] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:48:28][INFO] train_test.py: 101: Evaluation: [Epoch  863] loss: 2.3864 accuracy: 0.6940
+[10/31 11:49:48][INFO] train_test.py:  66: Training: [Epoch  864] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:50:12][INFO] train_test.py: 101: Evaluation: [Epoch  864] loss: 2.3864 accuracy: 0.6940
+[10/31 11:51:32][INFO] train_test.py:  66: Training: [Epoch  865] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:51:56][INFO] train_test.py: 101: Evaluation: [Epoch  865] loss: 2.3864 accuracy: 0.6940
+[10/31 11:53:16][INFO] train_test.py:  66: Training: [Epoch  866] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:53:40][INFO] train_test.py: 101: Evaluation: [Epoch  866] loss: 2.3859 accuracy: 0.6940
+[10/31 11:55:00][INFO] train_test.py:  66: Training: [Epoch  867] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:55:24][INFO] train_test.py: 101: Evaluation: [Epoch  867] loss: 2.3860 accuracy: 0.6940
+[10/31 11:56:44][INFO] train_test.py:  66: Training: [Epoch  868] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 11:57:08][INFO] train_test.py: 101: Evaluation: [Epoch  868] loss: 2.3861 accuracy: 0.6940
+[10/31 11:58:28][INFO] train_test.py:  66: Training: [Epoch  869] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:01:27][INFO] train_test.py: 101: Evaluation: [Epoch  869] loss: 2.3861 accuracy: 0.6940
+[10/31 12:02:46][INFO] train_test.py:  66: Training: [Epoch  870] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:03:09][INFO] train_test.py: 101: Evaluation: [Epoch  870] loss: 2.3860 accuracy: 0.6940
+[10/31 12:04:29][INFO] train_test.py:  66: Training: [Epoch  871] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:04:53][INFO] train_test.py: 101: Evaluation: [Epoch  871] loss: 2.3859 accuracy: 0.6940
+[10/31 12:06:11][INFO] train_test.py:  66: Training: [Epoch  872] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:06:35][INFO] train_test.py: 101: Evaluation: [Epoch  872] loss: 2.3858 accuracy: 0.6940
+[10/31 12:07:55][INFO] train_test.py:  66: Training: [Epoch  873] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:08:19][INFO] train_test.py: 101: Evaluation: [Epoch  873] loss: 2.3858 accuracy: 0.6940
+[10/31 12:09:39][INFO] train_test.py:  66: Training: [Epoch  874] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:10:02][INFO] train_test.py: 101: Evaluation: [Epoch  874] loss: 2.3858 accuracy: 0.6940
+[10/31 12:11:22][INFO] train_test.py:  66: Training: [Epoch  875] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:11:46][INFO] train_test.py: 101: Evaluation: [Epoch  875] loss: 2.3860 accuracy: 0.6940
+[10/31 12:13:05][INFO] train_test.py:  66: Training: [Epoch  876] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:13:29][INFO] train_test.py: 101: Evaluation: [Epoch  876] loss: 2.3859 accuracy: 0.6940
+[10/31 12:14:49][INFO] train_test.py:  66: Training: [Epoch  877] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:15:13][INFO] train_test.py: 101: Evaluation: [Epoch  877] loss: 2.3859 accuracy: 0.6940
+[10/31 12:16:33][INFO] train_test.py:  66: Training: [Epoch  878] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:16:57][INFO] train_test.py: 101: Evaluation: [Epoch  878] loss: 2.3858 accuracy: 0.6940
+[10/31 12:18:16][INFO] train_test.py:  66: Training: [Epoch  879] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:18:40][INFO] train_test.py: 101: Evaluation: [Epoch  879] loss: 2.3857 accuracy: 0.6940
+[10/31 12:19:59][INFO] train_test.py:  66: Training: [Epoch  880] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:20:23][INFO] train_test.py: 101: Evaluation: [Epoch  880] loss: 2.3854 accuracy: 0.6940
+[10/31 12:21:42][INFO] train_test.py:  66: Training: [Epoch  881] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:22:06][INFO] train_test.py: 101: Evaluation: [Epoch  881] loss: 2.3852 accuracy: 0.6940
+[10/31 12:23:26][INFO] train_test.py:  66: Training: [Epoch  882] loss: 2.0901 accuracy: 0.9878 lr: 0.001000
+[10/31 12:23:49][INFO] train_test.py: 101: Evaluation: [Epoch  882] loss: 2.3847 accuracy: 0.6995
+[10/31 12:25:08][INFO] train_test.py:  66: Training: [Epoch  883] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:25:32][INFO] train_test.py: 101: Evaluation: [Epoch  883] loss: 2.3842 accuracy: 0.6995
+[10/31 12:26:52][INFO] train_test.py:  66: Training: [Epoch  884] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:27:16][INFO] train_test.py: 101: Evaluation: [Epoch  884] loss: 2.3844 accuracy: 0.6995
+[10/31 12:28:35][INFO] train_test.py:  66: Training: [Epoch  885] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:28:59][INFO] train_test.py: 101: Evaluation: [Epoch  885] loss: 2.3845 accuracy: 0.6940
+[10/31 12:30:19][INFO] train_test.py:  66: Training: [Epoch  886] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:30:43][INFO] train_test.py: 101: Evaluation: [Epoch  886] loss: 2.3844 accuracy: 0.6940
+[10/31 12:32:02][INFO] train_test.py:  66: Training: [Epoch  887] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:32:26][INFO] train_test.py: 101: Evaluation: [Epoch  887] loss: 2.3846 accuracy: 0.6940
+[10/31 12:33:45][INFO] train_test.py:  66: Training: [Epoch  888] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:34:09][INFO] train_test.py: 101: Evaluation: [Epoch  888] loss: 2.3846 accuracy: 0.6940
+[10/31 12:35:29][INFO] train_test.py:  66: Training: [Epoch  889] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:35:53][INFO] train_test.py: 101: Evaluation: [Epoch  889] loss: 2.3845 accuracy: 0.6940
+[10/31 12:37:12][INFO] train_test.py:  66: Training: [Epoch  890] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:37:36][INFO] train_test.py: 101: Evaluation: [Epoch  890] loss: 2.3844 accuracy: 0.6940
+[10/31 12:38:56][INFO] train_test.py:  66: Training: [Epoch  891] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:39:19][INFO] train_test.py: 101: Evaluation: [Epoch  891] loss: 2.3843 accuracy: 0.6940
+[10/31 12:40:39][INFO] train_test.py:  66: Training: [Epoch  892] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:41:03][INFO] train_test.py: 101: Evaluation: [Epoch  892] loss: 2.3843 accuracy: 0.6940
+[10/31 12:42:22][INFO] train_test.py:  66: Training: [Epoch  893] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:42:46][INFO] train_test.py: 101: Evaluation: [Epoch  893] loss: 2.3842 accuracy: 0.6940
+[10/31 12:44:06][INFO] train_test.py:  66: Training: [Epoch  894] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:44:30][INFO] train_test.py: 101: Evaluation: [Epoch  894] loss: 2.3842 accuracy: 0.6940
+[10/31 12:45:49][INFO] train_test.py:  66: Training: [Epoch  895] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:46:13][INFO] train_test.py: 101: Evaluation: [Epoch  895] loss: 2.3841 accuracy: 0.6940
+[10/31 12:47:33][INFO] train_test.py:  66: Training: [Epoch  896] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:47:57][INFO] train_test.py: 101: Evaluation: [Epoch  896] loss: 2.3840 accuracy: 0.6940
+[10/31 12:49:16][INFO] train_test.py:  66: Training: [Epoch  897] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 12:49:40][INFO] train_test.py: 101: Evaluation: [Epoch  897] loss: 2.3840 accuracy: 0.6940
+[10/31 12:51:00][INFO] train_test.py:  66: Training: [Epoch  898] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:00:40][INFO] train_test.py: 101: Evaluation: [Epoch  898] loss: 2.3839 accuracy: 0.6940
+[10/31 13:01:58][INFO] train_test.py:  66: Training: [Epoch  899] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:02:22][INFO] train_test.py: 101: Evaluation: [Epoch  899] loss: 2.3840 accuracy: 0.6940
+[10/31 13:03:41][INFO] train_test.py:  66: Training: [Epoch  900] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:04:05][INFO] train_test.py: 101: Evaluation: [Epoch  900] loss: 2.3841 accuracy: 0.6940
+[10/31 13:05:25][INFO] train_test.py:  66: Training: [Epoch  901] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:05:48][INFO] train_test.py: 101: Evaluation: [Epoch  901] loss: 2.3840 accuracy: 0.6940
+[10/31 13:07:07][INFO] train_test.py:  66: Training: [Epoch  902] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:07:31][INFO] train_test.py: 101: Evaluation: [Epoch  902] loss: 2.3840 accuracy: 0.6940
+[10/31 13:08:50][INFO] train_test.py:  66: Training: [Epoch  903] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:09:14][INFO] train_test.py: 101: Evaluation: [Epoch  903] loss: 2.3839 accuracy: 0.6940
+[10/31 13:10:33][INFO] train_test.py:  66: Training: [Epoch  904] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:10:57][INFO] train_test.py: 101: Evaluation: [Epoch  904] loss: 2.3840 accuracy: 0.6940
+[10/31 13:12:17][INFO] train_test.py:  66: Training: [Epoch  905] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:12:41][INFO] train_test.py: 101: Evaluation: [Epoch  905] loss: 2.3837 accuracy: 0.6940
+[10/31 13:14:01][INFO] train_test.py:  66: Training: [Epoch  906] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:14:25][INFO] train_test.py: 101: Evaluation: [Epoch  906] loss: 2.3837 accuracy: 0.6940
+[10/31 13:15:44][INFO] train_test.py:  66: Training: [Epoch  907] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:16:08][INFO] train_test.py: 101: Evaluation: [Epoch  907] loss: 2.3838 accuracy: 0.6940
+[10/31 13:17:28][INFO] train_test.py:  66: Training: [Epoch  908] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:17:52][INFO] train_test.py: 101: Evaluation: [Epoch  908] loss: 2.3838 accuracy: 0.6940
+[10/31 13:19:11][INFO] train_test.py:  66: Training: [Epoch  909] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:19:35][INFO] train_test.py: 101: Evaluation: [Epoch  909] loss: 2.3837 accuracy: 0.6940
+[10/31 13:20:55][INFO] train_test.py:  66: Training: [Epoch  910] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:21:19][INFO] train_test.py: 101: Evaluation: [Epoch  910] loss: 2.3835 accuracy: 0.6940
+[10/31 13:22:38][INFO] train_test.py:  66: Training: [Epoch  911] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:23:02][INFO] train_test.py: 101: Evaluation: [Epoch  911] loss: 2.3835 accuracy: 0.6940
+[10/31 13:24:22][INFO] train_test.py:  66: Training: [Epoch  912] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:24:45][INFO] train_test.py: 101: Evaluation: [Epoch  912] loss: 2.3835 accuracy: 0.6940
+[10/31 13:26:05][INFO] train_test.py:  66: Training: [Epoch  913] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:26:29][INFO] train_test.py: 101: Evaluation: [Epoch  913] loss: 2.3837 accuracy: 0.6940
+[10/31 13:27:48][INFO] train_test.py:  66: Training: [Epoch  914] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:28:12][INFO] train_test.py: 101: Evaluation: [Epoch  914] loss: 2.3836 accuracy: 0.6940
+[10/31 13:29:32][INFO] train_test.py:  66: Training: [Epoch  915] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:29:55][INFO] train_test.py: 101: Evaluation: [Epoch  915] loss: 2.3834 accuracy: 0.6940
+[10/31 13:31:15][INFO] train_test.py:  66: Training: [Epoch  916] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:31:39][INFO] train_test.py: 101: Evaluation: [Epoch  916] loss: 2.3833 accuracy: 0.6940
+[10/31 13:32:58][INFO] train_test.py:  66: Training: [Epoch  917] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:33:22][INFO] train_test.py: 101: Evaluation: [Epoch  917] loss: 2.3833 accuracy: 0.6940
+[10/31 13:34:42][INFO] train_test.py:  66: Training: [Epoch  918] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:35:06][INFO] train_test.py: 101: Evaluation: [Epoch  918] loss: 2.3832 accuracy: 0.6940
+[10/31 13:36:25][INFO] train_test.py:  66: Training: [Epoch  919] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:36:49][INFO] train_test.py: 101: Evaluation: [Epoch  919] loss: 2.3833 accuracy: 0.6995
+[10/31 13:38:08][INFO] train_test.py:  66: Training: [Epoch  920] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:38:32][INFO] train_test.py: 101: Evaluation: [Epoch  920] loss: 2.3831 accuracy: 0.6995
+[10/31 13:39:52][INFO] train_test.py:  66: Training: [Epoch  921] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:40:16][INFO] train_test.py: 101: Evaluation: [Epoch  921] loss: 2.3831 accuracy: 0.6995
+[10/31 13:41:36][INFO] train_test.py:  66: Training: [Epoch  922] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:42:00][INFO] train_test.py: 101: Evaluation: [Epoch  922] loss: 2.3829 accuracy: 0.6995
+[10/31 13:43:20][INFO] train_test.py:  66: Training: [Epoch  923] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:43:43][INFO] train_test.py: 101: Evaluation: [Epoch  923] loss: 2.3830 accuracy: 0.7049
+[10/31 13:45:03][INFO] train_test.py:  66: Training: [Epoch  924] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:45:27][INFO] train_test.py: 101: Evaluation: [Epoch  924] loss: 2.3828 accuracy: 0.7104
+[10/31 13:46:46][INFO] train_test.py:  66: Training: [Epoch  925] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:47:10][INFO] train_test.py: 101: Evaluation: [Epoch  925] loss: 2.3829 accuracy: 0.7104
+[10/31 13:48:30][INFO] train_test.py:  66: Training: [Epoch  926] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:48:53][INFO] train_test.py: 101: Evaluation: [Epoch  926] loss: 2.3829 accuracy: 0.7104
+[10/31 13:50:13][INFO] train_test.py:  66: Training: [Epoch  927] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:50:37][INFO] train_test.py: 101: Evaluation: [Epoch  927] loss: 2.3826 accuracy: 0.7104
+[10/31 13:51:56][INFO] train_test.py:  66: Training: [Epoch  928] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:52:20][INFO] train_test.py: 101: Evaluation: [Epoch  928] loss: 2.3825 accuracy: 0.7104
+[10/31 13:53:40][INFO] train_test.py:  66: Training: [Epoch  929] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:56:52][INFO] train_test.py: 101: Evaluation: [Epoch  929] loss: 2.3824 accuracy: 0.7104
+[10/31 13:58:11][INFO] train_test.py:  66: Training: [Epoch  930] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 13:58:35][INFO] train_test.py: 101: Evaluation: [Epoch  930] loss: 2.3824 accuracy: 0.7104
+[10/31 13:59:54][INFO] train_test.py:  66: Training: [Epoch  931] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:00:18][INFO] train_test.py: 101: Evaluation: [Epoch  931] loss: 2.3823 accuracy: 0.7104
+[10/31 14:01:38][INFO] train_test.py:  66: Training: [Epoch  932] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:02:02][INFO] train_test.py: 101: Evaluation: [Epoch  932] loss: 2.3823 accuracy: 0.7104
+[10/31 14:03:21][INFO] train_test.py:  66: Training: [Epoch  933] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:03:45][INFO] train_test.py: 101: Evaluation: [Epoch  933] loss: 2.3823 accuracy: 0.7104
+[10/31 14:05:05][INFO] train_test.py:  66: Training: [Epoch  934] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:05:29][INFO] train_test.py: 101: Evaluation: [Epoch  934] loss: 2.3820 accuracy: 0.7104
+[10/31 14:06:49][INFO] train_test.py:  66: Training: [Epoch  935] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:07:13][INFO] train_test.py: 101: Evaluation: [Epoch  935] loss: 2.3821 accuracy: 0.7104
+[10/31 14:08:32][INFO] train_test.py:  66: Training: [Epoch  936] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:08:56][INFO] train_test.py: 101: Evaluation: [Epoch  936] loss: 2.3821 accuracy: 0.7104
+[10/31 14:10:16][INFO] train_test.py:  66: Training: [Epoch  937] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:10:40][INFO] train_test.py: 101: Evaluation: [Epoch  937] loss: 2.3822 accuracy: 0.7104
+[10/31 14:12:00][INFO] train_test.py:  66: Training: [Epoch  938] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:12:24][INFO] train_test.py: 101: Evaluation: [Epoch  938] loss: 2.3821 accuracy: 0.7104
+[10/31 14:13:43][INFO] train_test.py:  66: Training: [Epoch  939] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:14:07][INFO] train_test.py: 101: Evaluation: [Epoch  939] loss: 2.3820 accuracy: 0.7104
+[10/31 14:15:26][INFO] train_test.py:  66: Training: [Epoch  940] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:15:50][INFO] train_test.py: 101: Evaluation: [Epoch  940] loss: 2.3819 accuracy: 0.7104
+[10/31 14:17:09][INFO] train_test.py:  66: Training: [Epoch  941] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:17:33][INFO] train_test.py: 101: Evaluation: [Epoch  941] loss: 2.3819 accuracy: 0.7104
+[10/31 14:18:53][INFO] train_test.py:  66: Training: [Epoch  942] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:19:17][INFO] train_test.py: 101: Evaluation: [Epoch  942] loss: 2.3820 accuracy: 0.7104
+[10/31 14:20:36][INFO] train_test.py:  66: Training: [Epoch  943] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:21:00][INFO] train_test.py: 101: Evaluation: [Epoch  943] loss: 2.3820 accuracy: 0.7104
+[10/31 14:22:20][INFO] train_test.py:  66: Training: [Epoch  944] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:22:44][INFO] train_test.py: 101: Evaluation: [Epoch  944] loss: 2.3822 accuracy: 0.7104
+[10/31 14:24:03][INFO] train_test.py:  66: Training: [Epoch  945] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:24:27][INFO] train_test.py: 101: Evaluation: [Epoch  945] loss: 2.3822 accuracy: 0.7104
+[10/31 14:25:47][INFO] train_test.py:  66: Training: [Epoch  946] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:26:11][INFO] train_test.py: 101: Evaluation: [Epoch  946] loss: 2.3822 accuracy: 0.7104
+[10/31 14:27:31][INFO] train_test.py:  66: Training: [Epoch  947] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:27:55][INFO] train_test.py: 101: Evaluation: [Epoch  947] loss: 2.3821 accuracy: 0.7104
+[10/31 14:29:14][INFO] train_test.py:  66: Training: [Epoch  948] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:29:38][INFO] train_test.py: 101: Evaluation: [Epoch  948] loss: 2.3822 accuracy: 0.7104
+[10/31 14:30:58][INFO] train_test.py:  66: Training: [Epoch  949] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:31:22][INFO] train_test.py: 101: Evaluation: [Epoch  949] loss: 2.3822 accuracy: 0.7104
+[10/31 14:32:42][INFO] train_test.py:  66: Training: [Epoch  950] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:33:05][INFO] train_test.py: 101: Evaluation: [Epoch  950] loss: 2.3820 accuracy: 0.7104
+[10/31 14:34:25][INFO] train_test.py:  66: Training: [Epoch  951] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:34:49][INFO] train_test.py: 101: Evaluation: [Epoch  951] loss: 2.3820 accuracy: 0.7104
+[10/31 14:36:09][INFO] train_test.py:  66: Training: [Epoch  952] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:36:33][INFO] train_test.py: 101: Evaluation: [Epoch  952] loss: 2.3820 accuracy: 0.7104
+[10/31 14:37:53][INFO] train_test.py:  66: Training: [Epoch  953] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:38:17][INFO] train_test.py: 101: Evaluation: [Epoch  953] loss: 2.3820 accuracy: 0.7104
+[10/31 14:39:36][INFO] train_test.py:  66: Training: [Epoch  954] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:40:00][INFO] train_test.py: 101: Evaluation: [Epoch  954] loss: 2.3820 accuracy: 0.7104
+[10/31 14:41:20][INFO] train_test.py:  66: Training: [Epoch  955] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:41:44][INFO] train_test.py: 101: Evaluation: [Epoch  955] loss: 2.3818 accuracy: 0.7104
+[10/31 14:43:03][INFO] train_test.py:  66: Training: [Epoch  956] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:43:27][INFO] train_test.py: 101: Evaluation: [Epoch  956] loss: 2.3817 accuracy: 0.7104
+[10/31 14:44:46][INFO] train_test.py:  66: Training: [Epoch  957] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:45:10][INFO] train_test.py: 101: Evaluation: [Epoch  957] loss: 2.3817 accuracy: 0.7104
+[10/31 14:46:30][INFO] train_test.py:  66: Training: [Epoch  958] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:46:54][INFO] train_test.py: 101: Evaluation: [Epoch  958] loss: 2.3817 accuracy: 0.7104
+[10/31 14:48:13][INFO] train_test.py:  66: Training: [Epoch  959] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:48:37][INFO] train_test.py: 101: Evaluation: [Epoch  959] loss: 2.3816 accuracy: 0.7104
+[10/31 14:49:56][INFO] train_test.py:  66: Training: [Epoch  960] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:50:20][INFO] train_test.py: 101: Evaluation: [Epoch  960] loss: 2.3816 accuracy: 0.7104
+[10/31 14:51:40][INFO] train_test.py:  66: Training: [Epoch  961] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:52:04][INFO] train_test.py: 101: Evaluation: [Epoch  961] loss: 2.3816 accuracy: 0.7104
+[10/31 14:53:23][INFO] train_test.py:  66: Training: [Epoch  962] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:53:47][INFO] train_test.py: 101: Evaluation: [Epoch  962] loss: 2.3818 accuracy: 0.7104
+[10/31 14:55:07][INFO] train_test.py:  66: Training: [Epoch  963] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:55:31][INFO] train_test.py: 101: Evaluation: [Epoch  963] loss: 2.3817 accuracy: 0.7104
+[10/31 14:56:50][INFO] train_test.py:  66: Training: [Epoch  964] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:57:14][INFO] train_test.py: 101: Evaluation: [Epoch  964] loss: 2.3817 accuracy: 0.7104
+[10/31 14:58:34][INFO] train_test.py:  66: Training: [Epoch  965] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 14:58:58][INFO] train_test.py: 101: Evaluation: [Epoch  965] loss: 2.3815 accuracy: 0.7104
+[10/31 15:00:17][INFO] train_test.py:  66: Training: [Epoch  966] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:00:41][INFO] train_test.py: 101: Evaluation: [Epoch  966] loss: 2.3814 accuracy: 0.7104
+[10/31 15:02:01][INFO] train_test.py:  66: Training: [Epoch  967] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:02:25][INFO] train_test.py: 101: Evaluation: [Epoch  967] loss: 2.3814 accuracy: 0.7104
+[10/31 15:03:45][INFO] train_test.py:  66: Training: [Epoch  968] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:04:09][INFO] train_test.py: 101: Evaluation: [Epoch  968] loss: 2.3813 accuracy: 0.7104
+[10/31 15:05:28][INFO] train_test.py:  66: Training: [Epoch  969] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:05:52][INFO] train_test.py: 101: Evaluation: [Epoch  969] loss: 2.3814 accuracy: 0.7104
+[10/31 15:07:11][INFO] train_test.py:  66: Training: [Epoch  970] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:07:35][INFO] train_test.py: 101: Evaluation: [Epoch  970] loss: 2.3812 accuracy: 0.7104
+[10/31 15:08:55][INFO] train_test.py:  66: Training: [Epoch  971] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:09:19][INFO] train_test.py: 101: Evaluation: [Epoch  971] loss: 2.3811 accuracy: 0.7104
+[10/31 15:10:39][INFO] train_test.py:  66: Training: [Epoch  972] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:11:03][INFO] train_test.py: 101: Evaluation: [Epoch  972] loss: 2.3814 accuracy: 0.7104
+[10/31 15:12:23][INFO] train_test.py:  66: Training: [Epoch  973] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:12:46][INFO] train_test.py: 101: Evaluation: [Epoch  973] loss: 2.3814 accuracy: 0.7104
+[10/31 15:14:06][INFO] train_test.py:  66: Training: [Epoch  974] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:14:30][INFO] train_test.py: 101: Evaluation: [Epoch  974] loss: 2.3815 accuracy: 0.7104
+[10/31 15:15:50][INFO] train_test.py:  66: Training: [Epoch  975] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:16:14][INFO] train_test.py: 101: Evaluation: [Epoch  975] loss: 2.3813 accuracy: 0.7104
+[10/31 15:17:33][INFO] train_test.py:  66: Training: [Epoch  976] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:17:57][INFO] train_test.py: 101: Evaluation: [Epoch  976] loss: 2.3812 accuracy: 0.7104
+[10/31 15:19:16][INFO] train_test.py:  66: Training: [Epoch  977] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:19:40][INFO] train_test.py: 101: Evaluation: [Epoch  977] loss: 2.3811 accuracy: 0.7104

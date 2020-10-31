@@ -58,16 +58,13 @@ class Cfgs():
         self.MODEL_TYPE = 'twin'
         self.NUM_CLASSES = 20
         self.BATCH_SIZE = 10
-        self.EPOCHS = 1000
+        self.EPOCHS = 100
         self.MODEL_NAME = '%s' % (self.MODEL_TYPE)
         self.PATH_MODEL = os.path.join(self.OUTPUT_DIR, self.MODEL_NAME)
-        self.SAVE = 'model'
-
         if self.GPU != '.': #Use gpu
             self.dtype = torch.cuda.FloatTensor
         else:
             self.dtype = torch.FloatTensor
-
         self.setup_logger()
 
 

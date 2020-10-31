@@ -5,5 +5,4 @@ clustered/*
 data/*
 data_processed/*
 twin/*
-log/*
 __pycache__/*
