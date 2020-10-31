@@ -3,5 +3,7 @@
 paper/*
 clustered/*
 data/*
-data_processed_1/*
+data_processed/*
+twin/*
+log/*
 __pycache__/*

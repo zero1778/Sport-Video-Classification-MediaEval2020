@@ -97,4 +97,4 @@ if __name__ == "__main__":
     cfgs = Cfgs()
     train = My_dataset("train", cfgs)
 
-    print(np.maximum(train[199]['flow']))
+    # print(np.maximum(train[199]['flow']))

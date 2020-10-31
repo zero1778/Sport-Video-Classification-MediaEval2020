@@ -175,7 +175,8 @@ def make_architecture(__C):
     if __C.MODEL_TYPE == 'twin':
         model = NetTwin(__C.SIZE_DATA, __C.NUM_CLASSES)
     
-    model.cuda()
+    if (__C.GPU != '.'):
+        model.cuda()
     if __C.N_GPU > 1:
-        model = nn.DataParallel(net, device_ids=__C.DEVICES)
+        model = nn.DataParallel(model, device_ids=__C.DEVICES)
     return model

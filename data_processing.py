@@ -156,36 +156,17 @@ def join_values_flow(video_list, name_values, save_path):
 
 if __name__ == "__main__":
     # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
-<<<<<<< HEAD
     # data_dir = "data"
     save_path = "data_processed_1"
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":
             continue
-=======
-    data_dir = "data"
-    save_path = "data_processed"
-    for d in os.listdir(data_dir):
-        cur_dir = os.path.join(data_dir, d)
-        if d == "test":
-            #continue
->>>>>>> 822abac00316da87179fc0e6a211efabe9f9bedf
             save_video_path = os.path.join(save_path, "test")
             video_list = []
             for video in os.listdir(cur_dir):
                 video_path = os.path.join(cur_dir, video)
                 video_list.append(video_path)
-<<<<<<< HEAD
-            build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-        else:
-            if d == "val":
-                continue
-            save_path = os.path.join(save_path, d)
-            for label in sorted(os.listdir(cur_dir))[:2]:
-                label_path = os.path.join(cur_dir, label)
-                save_video_path = os.path.join(save_path, label)
-=======
             build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
         else:
             if d == "val" or d == "train":
@@ -197,16 +178,11 @@ if __name__ == "__main__":
             for label in sorted(os.listdir(cur_dir)):
                 label_path = os.path.join(cur_dir, label)
                 save_video_path = os.path.join(save_d_path, label)
->>>>>>> 822abac00316da87179fc0e6a211efabe9f9bedf
                 video_list = []
                 for video in os.listdir(label_path):
                     video_path = os.path.join(label_path, video)
                     video_list.append(video_path)
-<<<<<<< HEAD
-                build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
-=======
                 build_data(video_list, save_video_path, width_OF=320, log=None, workers=15, flow_method='CVFlow')
->>>>>>> 822abac00316da87179fc0e6a211efabe9f9bedf
                             
 
             
@@ -221,11 +197,7 @@ if __name__ == "__main__":
     #     #     print('')
     # train_list = []
     # for i in data['train']:
-<<<<<<< HEAD
-    #     train_list.append('/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/' + i['path'])
-=======
     #     train_list.append(i['path'])
->>>>>>> 822abac00316da87179fc0e6a211efabe9f9bedf
     # # train_list = train_list[:3]
     
     # # video_list = ['data/train/Defensive_Backhand_Backspin/3197874210_00768_00952.mp4']
@@ -239,10 +211,6 @@ if __name__ == "__main__":
     # # video_list = ['data/train/Serve_Backhand_Topspin/715368773_00876_01044.mp4'] # 2 people
     # # video_list = ['data/train/Serve_Backhand_Topspin/9841059524_02848_03036.mp4'] # 
     # # video_list = ['data/train/Offensive_Forehand_Hit/7410672998_03308_03472.mp4']
-<<<<<<< HEAD
-    # save_path = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data/train_list/'
-=======
     # save_path = 'data/train_list/'
->>>>>>> 822abac00316da87179fc0e6a211efabe9f9bedf
     # make_path(save_path)
     # build_data(train_list, save_path, width_OF=320, log=None, workers=15, flow_method='DeepFlow')
