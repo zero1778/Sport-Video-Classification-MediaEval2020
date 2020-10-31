@@ -1059,3 +1059,290 @@
 [10/31 15:17:57][INFO] train_test.py: 101: Evaluation: [Epoch  976] loss: 2.3812 accuracy: 0.7104
 [10/31 15:19:16][INFO] train_test.py:  66: Training: [Epoch  977] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
 [10/31 15:19:40][INFO] train_test.py: 101: Evaluation: [Epoch  977] loss: 2.3811 accuracy: 0.7104
+[10/31 15:21:00][INFO] train_test.py:  66: Training: [Epoch  978] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:21:24][INFO] train_test.py: 101: Evaluation: [Epoch  978] loss: 2.3811 accuracy: 0.7104
+[10/31 15:22:43][INFO] train_test.py:  66: Training: [Epoch  979] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:23:07][INFO] train_test.py: 101: Evaluation: [Epoch  979] loss: 2.3812 accuracy: 0.7104
+[10/31 15:24:27][INFO] train_test.py:  66: Training: [Epoch  980] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:24:51][INFO] train_test.py: 101: Evaluation: [Epoch  980] loss: 2.3811 accuracy: 0.7104
+[10/31 15:26:10][INFO] train_test.py:  66: Training: [Epoch  981] loss: 2.0953 accuracy: 0.9895 lr: 0.001000
+[10/31 15:26:34][INFO] train_test.py: 101: Evaluation: [Epoch  981] loss: 2.3811 accuracy: 0.7104
+[10/31 15:27:54][INFO] train_test.py:  66: Training: [Epoch  982] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:28:18][INFO] train_test.py: 101: Evaluation: [Epoch  982] loss: 2.3810 accuracy: 0.7104
+[10/31 15:29:38][INFO] train_test.py:  66: Training: [Epoch  983] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:30:02][INFO] train_test.py: 101: Evaluation: [Epoch  983] loss: 2.3810 accuracy: 0.7104
+[10/31 15:31:22][INFO] train_test.py:  66: Training: [Epoch  984] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:31:45][INFO] train_test.py: 101: Evaluation: [Epoch  984] loss: 2.3811 accuracy: 0.7049
+[10/31 15:33:04][INFO] train_test.py:  66: Training: [Epoch  985] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:33:28][INFO] train_test.py: 101: Evaluation: [Epoch  985] loss: 2.3810 accuracy: 0.7049
+[10/31 15:34:48][INFO] train_test.py:  66: Training: [Epoch  986] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:35:12][INFO] train_test.py: 101: Evaluation: [Epoch  986] loss: 2.3810 accuracy: 0.7049
+[10/31 15:36:32][INFO] train_test.py:  66: Training: [Epoch  987] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:36:56][INFO] train_test.py: 101: Evaluation: [Epoch  987] loss: 2.3809 accuracy: 0.7049
+[10/31 15:38:16][INFO] train_test.py:  66: Training: [Epoch  988] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:38:40][INFO] train_test.py: 101: Evaluation: [Epoch  988] loss: 2.3807 accuracy: 0.7049
+[10/31 15:39:59][INFO] train_test.py:  66: Training: [Epoch  989] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:40:26][INFO] train_test.py: 101: Evaluation: [Epoch  989] loss: 2.3806 accuracy: 0.7049
+[10/31 15:41:46][INFO] train_test.py:  66: Training: [Epoch  990] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:42:10][INFO] train_test.py: 101: Evaluation: [Epoch  990] loss: 2.3808 accuracy: 0.7049
+[10/31 15:43:29][INFO] train_test.py:  66: Training: [Epoch  991] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:43:53][INFO] train_test.py: 101: Evaluation: [Epoch  991] loss: 2.3808 accuracy: 0.7049
+[10/31 15:45:13][INFO] train_test.py:  66: Training: [Epoch  992] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:45:37][INFO] train_test.py: 101: Evaluation: [Epoch  992] loss: 2.3807 accuracy: 0.7049
+[10/31 15:46:58][INFO] train_test.py:  66: Training: [Epoch  993] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:47:22][INFO] train_test.py: 101: Evaluation: [Epoch  993] loss: 2.3806 accuracy: 0.7049
+[10/31 15:48:42][INFO] train_test.py:  66: Training: [Epoch  994] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:49:06][INFO] train_test.py: 101: Evaluation: [Epoch  994] loss: 2.3807 accuracy: 0.7049
+[10/31 15:50:26][INFO] train_test.py:  66: Training: [Epoch  995] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:50:50][INFO] train_test.py: 101: Evaluation: [Epoch  995] loss: 2.3807 accuracy: 0.6995
+[10/31 15:52:10][INFO] train_test.py:  66: Training: [Epoch  996] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:52:34][INFO] train_test.py: 101: Evaluation: [Epoch  996] loss: 2.3806 accuracy: 0.7049
+[10/31 15:53:54][INFO] train_test.py:  66: Training: [Epoch  997] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:54:18][INFO] train_test.py: 101: Evaluation: [Epoch  997] loss: 2.3805 accuracy: 0.6995
+[10/31 15:55:38][INFO] train_test.py:  66: Training: [Epoch  998] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:56:02][INFO] train_test.py: 101: Evaluation: [Epoch  998] loss: 2.3805 accuracy: 0.7049
+[10/31 15:57:22][INFO] train_test.py:  66: Training: [Epoch  999] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:57:45][INFO] train_test.py: 101: Evaluation: [Epoch  999] loss: 2.3804 accuracy: 0.7049
+[10/31 15:59:06][INFO] train_test.py:  66: Training: [Epoch 1000] loss: 2.0884 accuracy: 0.9895 lr: 0.001000
+[10/31 15:59:29][INFO] train_test.py: 101: Evaluation: [Epoch 1000] loss: 2.3803 accuracy: 0.7049
+[10/31 15:59:29][INFO] train_test.py: 168: Trained with 1000 epochs, lr = 0.001, batchsize = 10, momentum = 0.5 with max validation accuracy of 0.70 done in 15:10:14
+[10/31 15:59:30][DEBUG] font_manager.py: 1334: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Thin.ttc) normal normal 250 normal>) = 10.1925
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXVariants' (STIXVariants-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'TakaoPGothic' (fonts-japanese-gothic.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizeOneSym-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizeFiveSym-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 500 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-R.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIX' (STIX-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Padauk' (Padauk-bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumMyeongjo' (NanumMyeongjo.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Lohit Punjabi' (Lohit-Punjabi.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 500 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntegralsUpD-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIX' (STIX-Italic.otf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsSm' (STIXIntegralsSm-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral-BoldItalic.otf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-BoldItalic.otf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIX' (STIX-BoldItalic.otf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsD' (STIXIntegralsD-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumMyeongjo' (NanumMyeongjoBold.ttf) normal normal 600 normal>) = 10.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIX' (STIX-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-DemiLight.ttc) normal normal 350 normal>) = 10.0975
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsD' (STIXIntegralsD-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Black.ttc) normal normal 900 normal>) = 10.525
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntegralsUpSm-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumBarunGothic' (NanumBarunGothic.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Symbola' (Symbola_hint.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumBarunGothic' (NanumBarunGothicBold.ttf) normal normal 600 normal>) = 10.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizeFourSym-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumGothic' (NanumGothic.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizeTwoSym-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUp' (STIXIntegralsUp-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizeThreeSym-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIX Math' (STIXMath-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizeThreeSym-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 500 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 500 normal>) = 11.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'NanumGothic' (NanumGothicBold.ttf) normal normal 600 normal>) = 10.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUpD' (STIXIntegralsUpD-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizeTwoSym-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral-Italic.otf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUp' (STIXIntegralsUp-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Light.ttc) normal normal 300 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Padauk' (Padauk.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Padauk Book' (Padauk-book.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'TakaoPGothic' (TakaoPGothic.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXVariants' (STIXVariants-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizeOneSym-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsUpSm' (STIXIntegralsUpSm-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsSm' (STIXIntegralsSm-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizeFourSym-Regular.otf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral-Bold.otf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUnicode-Italic.otf) italic normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Padauk Book' (Padauk-bookbold.ttf) normal normal 700 normal>) = 10.335
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+[10/31 15:59:30][DEBUG] font_manager.py: 1367: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
