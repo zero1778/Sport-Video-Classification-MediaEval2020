@@ -177,6 +177,6 @@ def make_architecture(__C):
     
     if (__C.GPU != '.'):
         model.cuda()
-    if __C.N_GPU > 1:
+    if __C.N_GPU >= 1:
         model = nn.DataParallel(model, device_ids=__C.DEVICES)
     return model
