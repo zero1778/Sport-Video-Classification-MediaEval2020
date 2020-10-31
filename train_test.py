@@ -143,11 +143,11 @@ def train_model(model, __C, train_loader, validation_loader):
         #change_optimizer(optimizer, __C, lr=__C.lr_max)
 
     ########### TENSORBOARD ###########
-    writer = SummaryWriter()
-    writer.add_graph(model)
+    writer = SummaryWriter("log/" + __C.LOG_NAME)
+    # writer.add_graph(model)
     ###################################
 
-    __C.add(state_new)
+    __C.add_args(state_new)
     
     for epoch in range(epoch_start, __C.EPOCHS+1):
 
@@ -171,10 +171,10 @@ def train_model(model, __C, train_loader, validation_loader):
             min_loss_val = loss_val_
             min_loss_train = loss_train_
 
-        writer.add_scalar('Loss/train', loss_train_, epoch)
-        writer.add_scalar('Loss/val', loss_val_, epoch)
-        writer.add_scalar('Accuracy/train', acc_train_, epoch)
-        writer.add_scalar('Accuracy/val', acc_val_, epoch)
+        writer.add_scalars('Loss', {'Train': loss_train_,
+                                    'Val': loss_val_}, epoch)
+        writer.add_scalars('Accuracy', {'Train': acc_train_,
+                                        'Val': acc_val_}, epoch)
 
 
 
@@ -182,7 +182,7 @@ def train_model(model, __C, train_loader, validation_loader):
         (__C.EPOCHS, __C.LR, __C.BATCH_SIZE, __C.MOMENTUM, max_acc, datetime.timedelta(seconds=int(time.time() - start_time))))
     writer.close()
 
-    make_train_figure(loss_train, loss_val, acc_train, acc_val, os.path.join(__C.PATH_MODEL, 'Train.jpg'))
+    make_train_figure(loss_train, loss_val, acc_train, acc_val, os.path.join(__C.PATH_MODEL, '%s.jpg' % (__C.LOG_NAME)))
 
 
 ##########################################################################
