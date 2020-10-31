@@ -1254,14 +1254,14 @@
 { NESTEROV          }-> True
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
-{ NUM_WORKERS       }-> 8
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
 { N_GPU             }-> 2
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
-{ PATH_DATA         }-> data
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
 { PATH_MODEL        }-> ./twin
-{ PATH_PROCESSED_DATA }-> data_processed
-{ SEED              }-> 31
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
 { SIZE_DATA         }-> [100 120 120]
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
@@ -1469,6 +1469,7 @@
 [10/29 15:44:53][INFO] train_test.py: 166: Trained with 100 epochs, lr = 0.001, batchsize = 10, momentum = 0.5 with max validation accuracy of 0.47 done in 3:02:20
 [10/29 22:58:00][INFO] run.py:  92: Train with configs:
 [10/29 22:58:00][INFO] run.py:  93: 
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
@@ -1488,13 +1489,13 @@
 { NESTEROV          }-> True
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
-{ NUM_WORKERS       }-> 8
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
 { N_GPU             }-> 2
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
-{ PATH_DATA         }-> data
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
 { PATH_MODEL        }-> ./twin
-{ PATH_PROCESSED_DATA }-> data_processed
 { SEED              }-> 31
 { SIZE_DATA         }-> [100 120 120]
 { VERSION           }-> 31
@@ -1502,17 +1503,25 @@
 
 [10/29 22:59:05][INFO] run.py:  92: Train with configs:
 [10/29 22:59:05][INFO] run.py:  93: 
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
 { DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 1000
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> True
+=======
 { EPOCHS            }-> 100
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
 { LR                }-> 0.001
 { MODE              }-> train
 { MODEL_NAME        }-> twin
@@ -1521,12 +1530,14 @@
 { NESTEROV          }-> True
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
-{ NUM_WORKERS       }-> 8
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
 { N_GPU             }-> 2
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
-{ PATH_DATA         }-> data
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
 { PATH_MODEL        }-> ./twin
+<<<<<<< HEAD
 { PATH_PROCESSED_DATA }-> data_processed
 { SEED              }-> 31
 { SIZE_DATA         }-> [100 120 120]
@@ -1827,3 +1838,28 @@
 [10/30 11:43:39][INFO] train_test.py: 141: acc_train_ : 0.594406
 [10/30 11:43:39][INFO] train_test.py: 141: loss_val_ : 2.61928
 [10/30 11:43:39][INFO] train_test.py: 141: acc_val_ : 0.469945
+=======
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SEED              }-> 2020
+[10/30 02:34:07][INFO] train_test.py: 139: acc_train_ : 0.776224
+[10/30 02:34:07][INFO] train_test.py: 139: loss_val_ : 2.54437
+[10/30 02:34:07][INFO] train_test.py: 139: acc_val_ : 0.535519
+[10/30 02:35:30][INFO] train_test.py:  66: Training: [Epoch  200] loss: 2.2949 accuracy: 0.7762 lr: 0.001000
+[10/30 02:35:54][INFO] train_test.py: 101: Evaluation: [Epoch  200] loss: 2.5432 accuracy: 0.5301
+[10/30 02:37:28][INFO] train_test.py:  66: Training: [Epoch  201] loss: 2.2949 accuracy: 0.7762 lr: 0.001000
+[10/30 02:37:52][INFO] train_test.py: 101: Evaluation: [Epoch  201] loss: 2.5414 accuracy: 0.5410
+[10/30 02:37:52][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5432 to 2.5414
+[10/30 02:39:27][INFO] train_test.py:  66: Training: [Epoch  202] loss: 2.2948 accuracy: 0.7762 lr: 0.001000
+[10/30 02:39:51][INFO] train_test.py: 101: Evaluation: [Epoch  202] loss: 2.5444 accuracy: 0.5301
+[10/30 02:41:10][INFO] train_test.py:  66: Training: [Epoch  203] loss: 2.3017 accuracy: 0.7762 lr: 0.001000
+[10/30 02:41:34][INFO] train_test.py: 101: Evaluation: [Epoch  203] loss: 2.5409 accuracy: 0.5355
+[10/30 02:41:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5414 to 2.5409
+[10/30 02:43:09][INFO] train_test.py:  66: Training: [Epoch  204] loss: 2.2948 accuracy: 0.7762 lr: 0.001000
+[10/30 02:43:33][INFO] train_test.py: 101: Evaluation: [Epoch  204] loss: 2.5408 accuracy: 0.5355
+[10/30 02:43:33][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5409 to 2.5408
+[10/30 02:45:07][INFO] train_test.py:  66: Training: [Epoch  205] loss: 2.3015 accuracy: 0.7762 lr: 0.001000
+[10/30 02:45:31][INFO] train_test.py: 101: Evaluation: [Epoch  205] loss: 2.5414 accuracy: 0.5355
+[10/30 02:46:51][INFO] train_test.py:  66: Training: [Epoch  206] loss: 2.2947 accuracy: 0.7762 lr: 0.001000
+[10/30 02:47:14][INFO] train_test.py: 101: Evaluation: [Epoch  206] loss: 2.5433 accuracy: 0.5355
+[10/30 02:48:34][INFO] train_test.py:  66: Training: [Epoch  207] loss: 2.3081 accuracy: 0.7762 lr: 0.001000
+>>>>>>> 941136c86be0473713794f182532698d09c569ab

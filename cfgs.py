@@ -3,10 +3,11 @@ import torch
 import numpy as np
 from utils import make_path
 from types import MethodType
+import datetime
 
 @functools.lru_cache(maxsize=None)
 def _cached_log_stream(filename):
-    return open(filename, "a")
+    return open(filename, 'w+')
 
 
 class Cfgs():
@@ -18,8 +19,9 @@ class Cfgs():
         # Resume training
         self.LOAD = False
         # Set RNG For CPU And GPUs
-        self.SEED = 31#random.randint(0, 99999999)
+        self.SEED = 2020#random.randint(0, 99999999)
         self.VERSION = str(self.SEED)
+        self.LOG_DIR =  './log'
         self.OUTPUT_DIR = '.'
         self.OUTPUT_FILE = os.path.join(self.OUTPUT_DIR, 'pred.txt')
 
@@ -28,16 +30,16 @@ class Cfgs():
         # ------------------------------
 
         # {'train', test'}
-        self.MODE = 'train'
+        # self.MODE = 'train'
         self.AUGMENTATION = False
         self.FLOW = 'DeepFlow'
         self.NORM = 'normal'
         self.SIZE_DATA = np.array([100, 120, 120])
-        self.PATH_DATA = 'data'
-        self.PATH_PROCESSED_DATA = 'data_processed'
+        self.PATH_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
+        self.PATH_PROCESSED_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
         self.LABEL_DICT = 'label_dict.json'
         self.DATA_JSON = 'data.json'
-        self.NUM_WORKERS = 8
+        self.NUM_WORKERS = 12
         self.DATA_SEPARATOR = ','
 
         # --------------------------
@@ -45,13 +47,14 @@ class Cfgs():
         # --------------------------
         self.NESTEROV = True
         self.DECAY = 0.005
-        self.LR = 0.001
+        self.LR = 0.0008
         self.MOMENTUM = 0.5
 
         # ------------------------
         # ---- Network Params ----
         # ------------------------
 
+        self.LOAD_PRETRAINED = None
         self.MODEL_TYPE = 'twin'
         self.NUM_CLASSES = 20
         self.BATCH_SIZE = 10
@@ -79,7 +82,8 @@ class Cfgs():
         ch.setFormatter(plain_formatter)
         logger.addHandler(ch)
 
-        filename = os.path.join(self.OUTPUT_DIR, 'stdout.log')
+        
+        filename = os.path.join(self.LOG_DIR, 'log_%s.log' % datetime.datetime.now().strftime("%d-%m-%Y_%H-%M"))
         fh = logging.StreamHandler(_cached_log_stream(filename))
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(plain_formatter)
