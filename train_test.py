@@ -6,6 +6,7 @@ import torch.optim as optim
 from torch.autograd import Variable
 from utils import make_train_figure, progress_bar
 from tqdm import tqdm
+from torch.utils.tensorboard import SummaryWriter
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,7 @@ def save_model(model, __C, optimizer, epoch, dict_of_values):
 
 def load_model(model, weigth_path, optimizer=None):
     checkpoint = torch.load(os.path.join(weigth_path, 'model.tar'), map_location=lambda storage, loc: storage)
+    # model = nn.DataParallel(model, device_ids=__C.DEVICES)
     model.load_state_dict(checkpoint['model_state_dict'])
     epoch = checkpoint['epoch']
     dict_of_values = checkpoint['dict_of_values']
@@ -133,12 +135,17 @@ def train_model(model, __C, train_loader, validation_loader):
         logger.info('Load model %s for retraining' % (__C.PATH_MODEL))
         epoch_start, dict_of_values, cfgs_dict = load_model(model, __C.PATH_MODEL, optimizer=optimizer)
         __C.add_args(cfgs_dict)
-        logger.info('Model from epoch %d' % (epoch))
+        logger.info('Model from epoch %d' % (epoch_start))
         max_acc = dict_of_values['acc_val_']
         min_loss_val = dict_of_values['loss_val_']
         for key in dict_of_values:
             logger.info('%s : %g' % (key, dict_of_values[key]))
         #change_optimizer(optimizer, __C, lr=__C.lr_max)
+
+    ########### TENSORBOARD ###########
+    writer = SummaryWriter()
+    writer.add_graph(model)
+    ###################################
 
     for epoch in range(epoch_start, __C.EPOCHS+1):
 
@@ -161,9 +168,15 @@ def train_model(model, __C, train_loader, validation_loader):
             min_loss_val = loss_val_
             min_loss_train = loss_train_
 
+        writer.add_scalar('Loss/train', loss_train_, epoch)
+        writer.add_scalar('Loss/val', loss_val_, epoch)
+        writer.add_scalar('Accuracy/train', acc_train_, epoch)
+        writer.add_scalar('Accuracy/val', acc_val_, epoch)
+
 
     logger.info('Trained with %d epochs, lr = %g, batchsize = %d, momentum = %g with max validation accuracy of %.2f done in %s' %\
         (__C.EPOCHS, __C.LR, __C.BATCH_SIZE, __C.MOMENTUM, max_acc, datetime.timedelta(seconds=int(time.time() - start_time))))
+    writer.close()
 
     make_train_figure(loss_train, loss_val, acc_train, acc_val, os.path.join(__C.PATH_MODEL, 'Train.jpg'))
 

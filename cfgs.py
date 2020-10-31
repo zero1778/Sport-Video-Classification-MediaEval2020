@@ -14,7 +14,7 @@ class Cfgs():
 
         # Set Devices
         # If use multi-gpu training, set e.g.'0, 1, 2' instead
-        self.GPU = '0,1'
+        self.GPU = '0'
         # Resume training
         self.LOAD = False
         # Set RNG For CPU And GPUs

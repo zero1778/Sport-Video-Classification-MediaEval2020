@@ -97,7 +97,7 @@ if __name__ == "__main__":
     make_path(__C.PATH_MODEL)
     __C.LOAD = True
     if __C.MODE == 'test':
-        __C.LOAD = True
+        # __C.LOAD = True
         test(__C)
     else:
         train(__C)
