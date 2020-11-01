@@ -133,7 +133,7 @@ def train_model(model, __C, train_loader, validation_loader):
         logger.info('Load model %s for retraining' % (__C.PATH_MODEL))
         epoch_start, dict_of_values, cfgs_dict = load_model(model, __C.PATH_MODEL, optimizer=optimizer)
         __C.add_args(cfgs_dict)
-        logger.info('Model from epoch %d' % (epoch))
+        logger.info('Model from epoch %d' % (epoch_start))
         max_acc = dict_of_values['acc_val_']
         min_loss_val = dict_of_values['loss_val_']
         for key in dict_of_values:

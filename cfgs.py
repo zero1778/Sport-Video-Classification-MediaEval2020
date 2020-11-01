@@ -55,7 +55,7 @@ class Cfgs():
         self.MODEL_TYPE = 'twin'
         self.NUM_CLASSES = 20
         self.BATCH_SIZE = 10
-        self.EPOCHS = 100
+        self.EPOCHS = 200
         self.MODEL_NAME = '%s' % (self.MODEL_TYPE)
         self.PATH_MODEL = os.path.join(self.OUTPUT_DIR, self.MODEL_NAME)
         if self.GPU != '.': #Use gpu

@@ -69,3 +69,25 @@ def make_train_figure(loss_train, loss_val, acc_train, acc_val, path):
     plt.legend()
     plt.savefig(path)
     plt.show()
+
+if __name__ == "__main__":
+    loss_train = []
+    loss_val = []
+    acc_val = []
+    acc_train = []
+    ltrain = 3.
+    lval = 2.9
+    atrain = 0.1
+    aval = 0.08 
+    for i in range(1, 1000):
+        ltrain -= i/10000
+        lval -= i/9999
+        atrain += i/500
+        aval += i/500
+        loss_train.append(ltrain)
+        loss_val.append(lval)
+        acc_train.append(atrain)
+        acc_val.append(aval)
+    
+    make_train_figure(loss_train, loss_val, acc_train, acc_val, "test_figure.jpg")
+
