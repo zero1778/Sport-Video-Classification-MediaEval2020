@@ -12,9 +12,10 @@ logger = logging.getLogger(__name__)
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--PATH_DATA', dest='PATH_DATA', type=str, help='Path to data folder')
-    parser.add_argument('--PATH_MODEL', dest='PATH_MODEL', type=str, help='Path to model folder')
-    parser.add_argument('--MODE', dest='MODE', type=str, default='train', choices=['train', 'test'], help='Mode')
+    parser.add_argument('-d', '--data', dest='PATH_PROCESSED_DATA', type=str, help='Path to data folder')
+    parser.add_argument('-s', '--save', dest='SAVE', type=str, help='Name of model save')
+    parser.add_argument('-lp', '--load_p', dest='LOAD_PRETRAINED', type=str, help='Name of model pretrained')
+    parser.add_argument('-m', '--mode', dest='MODE', type=str, default='train', choices=['train', 'test'], help='Mode')
     args = parser.parse_args()
     return args
 
@@ -88,6 +89,7 @@ if __name__ == "__main__":
 
     __C.add_args(args_dict)
     __C.proc()
+
 
     logger.info('Train with configs:')
     logger.info(__C)

@@ -156,12 +156,12 @@ def join_values_flow(video_list, name_values, save_path):
 
 if __name__ == "__main__":
     # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
-    data_dir = "data"
-    save_path = "data_processed"
+    # data_dir = "data"
+    save_path = "data_processed_1"
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":
-            #continue
+            continue
             save_video_path = os.path.join(save_path, "test")
             video_list = []
             for video in os.listdir(cur_dir):

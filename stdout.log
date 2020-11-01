@@ -1254,14 +1254,14 @@
 { NESTEROV          }-> True
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
-{ NUM_WORKERS       }-> 8
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
 { N_GPU             }-> 2
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
-{ PATH_DATA         }-> data
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
 { PATH_MODEL        }-> ./twin
-{ PATH_PROCESSED_DATA }-> data_processed
-{ SEED              }-> 31
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
 { SIZE_DATA         }-> [100 120 120]
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
@@ -1469,6 +1469,7 @@
 [10/29 15:44:53][INFO] train_test.py: 166: Trained with 100 epochs, lr = 0.001, batchsize = 10, momentum = 0.5 with max validation accuracy of 0.47 done in 3:02:20
 [10/29 22:58:00][INFO] run.py:  92: Train with configs:
 [10/29 22:58:00][INFO] run.py:  93: 
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
@@ -1488,13 +1489,13 @@
 { NESTEROV          }-> True
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
-{ NUM_WORKERS       }-> 8
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
 { N_GPU             }-> 2
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
-{ PATH_DATA         }-> data
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
 { PATH_MODEL        }-> ./twin
-{ PATH_PROCESSED_DATA }-> data_processed
 { SEED              }-> 31
 { SIZE_DATA         }-> [100 120 120]
 { VERSION           }-> 31
@@ -1502,6 +1503,49 @@
 
 [10/29 22:59:05][INFO] run.py:  92: Train with configs:
 [10/29 22:59:05][INFO] run.py:  93: 
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 1000
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> True
+=======
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+>>>>>>> dc9196e1128ce4eb6cba242fcd971aadebceed11
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+<<<<<<< HEAD
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+<<<<<<< HEAD
+{ PATH_PROCESSED_DATA }-> data_processed
+{ SEED              }-> 31
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 31
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[10/29 23:20:35][INFO] run.py:  92: Train with configs:
+[10/29 23:20:35][INFO] run.py:  93: 
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
@@ -1533,13 +1577,52 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
-[10/30 13:50:53][INFO] run.py:  92: Train with configs:
-[10/30 13:50:53][INFO] run.py:  93: 
+[10/29 23:20:58][INFO] run.py:  92: Train with configs:
+[10/29 23:20:58][INFO] run.py:  93: 
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 8
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> data_processed
+{ SEED              }-> 31
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 31
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+<<<<<<< HEAD
+[10/30 13:50:53][INFO] run.py:  92: Train with configs:
+[10/30 13:50:53][INFO] run.py:  93: 
+=======
+[10/29 23:24:29][INFO] run.py:  92: Train with configs:
+[10/29 23:24:29][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 110
 { FLOW              }-> DeepFlow
@@ -1578,6 +1661,12 @@
 { EPOCHS            }-> 110
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -1589,7 +1678,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -1600,6 +1693,7 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 13:51:20][INFO] train_test.py: 133: Load model ./twin for retraining
 [10/30 13:51:22][INFO] train_test.py: 136: Model from epoch 90
 [10/30 13:51:22][INFO] train_test.py: 140: loss_train_ : 2.49037
@@ -1871,15 +1965,27 @@
 [10/30 14:10:15][DEBUG] font_manager.py: 1367: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
 [10/30 14:39:00][INFO] run.py:  92: Train with configs:
 [10/30 14:39:00][INFO] run.py:  93: 
+=======
+[10/29 23:24:32][INFO] train_test.py: 133: Load model ./twin for retraining
+[10/29 23:32:38][INFO] run.py:  92: Train with configs:
+[10/29 23:32:38][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 100
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -1891,7 +1997,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -1902,17 +2012,30 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 14:39:16][INFO] run.py:  92: Train with configs:
 [10/30 14:39:16][INFO] run.py:  93: 
+=======
+[10/29 23:32:40][INFO] train_test.py: 134: Load model ./twin for retraining
+[10/29 23:33:31][INFO] run.py:  92: Train with configs:
+[10/29 23:33:31][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 100
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -1924,7 +2047,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -1935,21 +2062,39 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 14:39:26][INFO] train_test.py:  66: Training: [Epoch    1] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
 [10/30 14:39:28][INFO] train_test.py: 101: Evaluation: [Epoch    1] loss: 2.9972 accuracy: 0.0000
 [10/30 14:39:46][INFO] train_test.py:  66: Training: [Epoch    2] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
 [10/30 14:39:48][INFO] train_test.py: 101: Evaluation: [Epoch    2] loss: 2.9972 accuracy: 0.0000
 [10/30 14:40:03][INFO] run.py:  92: Train with configs:
 [10/30 14:40:03][INFO] run.py:  93: 
+=======
+[10/29 23:33:34][INFO] train_test.py: 134: Load model ./twin for retraining
+[10/29 23:33:37][INFO] train_test.py: 138: Model from epoch 90
+[10/29 23:33:37][INFO] train_test.py: 142: loss_train_ : 2.49037
+[10/29 23:33:37][INFO] train_test.py: 142: acc_train_ : 0.594406
+[10/29 23:33:37][INFO] train_test.py: 142: loss_val_ : 2.61928
+[10/29 23:33:37][INFO] train_test.py: 142: acc_val_ : 0.469945
+[10/29 23:36:03][INFO] run.py:  92: Train with configs:
+[10/29 23:36:03][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 2
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 100
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -1961,7 +2106,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -1972,6 +2121,7 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 14:40:16][INFO] train_test.py:  66: Training: [Epoch    1] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
 [10/30 14:40:18][INFO] train_test.py: 101: Evaluation: [Epoch    1] loss: 2.9972 accuracy: 0.0000
 [10/30 14:40:39][INFO] train_test.py:  66: Training: [Epoch    2] loss: 2.9971 accuracy: 0.0000 lr: 0.001000
@@ -1992,15 +2142,36 @@
 [10/30 14:43:22][INFO] train_test.py: 101: Evaluation: [Epoch    9] loss: 2.9968 accuracy: 0.0000
 [10/30 14:46:35][INFO] run.py:  92: Train with configs:
 [10/30 14:46:35][INFO] run.py:  93: 
+=======
+[10/29 23:36:06][INFO] train_test.py: 134: Load model ./twin for retraining
+[10/29 23:36:08][INFO] train_test.py: 138: Model from epoch 90
+[10/29 23:36:08][INFO] train_test.py: 142: loss_train_ : 2.49037
+[10/29 23:36:08][INFO] train_test.py: 142: acc_train_ : 0.594406
+[10/29 23:36:08][INFO] train_test.py: 142: loss_val_ : 2.61928
+[10/29 23:36:08][INFO] train_test.py: 142: acc_val_ : 0.469945
+[10/29 23:39:35][INFO] train_test.py:  67: Training: [Epoch   90] loss: 2.6623 accuracy: 0.4196 lr: 0.001000
+[10/29 23:40:33][INFO] train_test.py: 102: Evaluation: [Epoch   90] loss: 2.9373 accuracy: 0.1257
+[10/29 23:44:01][INFO] train_test.py:  67: Training: [Epoch   91] loss: 2.8492 accuracy: 0.2343 lr: 0.001000
+[10/29 23:44:36][INFO] train_test.py: 102: Evaluation: [Epoch   91] loss: 2.8148 accuracy: 0.2568
+[10/30 11:41:36][INFO] run.py:  92: Train with configs:
+[10/30 11:41:36][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 2
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 100
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -2012,7 +2183,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -2023,6 +2198,7 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 14:46:49][INFO] train_test.py:  66: Training: [Epoch    1] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
 [10/30 14:46:51][INFO] train_test.py: 101: Evaluation: [Epoch    1] loss: 2.9972 accuracy: 0.0000
 [10/30 14:47:12][INFO] train_test.py:  66: Training: [Epoch    2] loss: 2.9971 accuracy: 0.0000 lr: 0.001000
@@ -2034,11 +2210,22 @@
 [10/30 14:48:22][INFO] train_test.py:  66: Training: [Epoch    5] loss: 2.9969 accuracy: 0.0000 lr: 0.001000
 [10/30 15:05:18][INFO] run.py:  92: Train with configs:
 [10/30 15:05:18][INFO] run.py:  93: 
+=======
+[10/30 11:41:46][INFO] train_test.py: 134: Load model ./twin for retraining
+[10/30 11:42:00][INFO] train_test.py: 137: Model from epoch 90
+[10/30 11:42:00][INFO] train_test.py: 141: loss_train_ : 2.49037
+[10/30 11:42:00][INFO] train_test.py: 141: acc_train_ : 0.594406
+[10/30 11:42:00][INFO] train_test.py: 141: loss_val_ : 2.61928
+[10/30 11:42:00][INFO] train_test.py: 141: acc_val_ : 0.469945
+[10/30 11:43:33][INFO] run.py:  92: Train with configs:
+[10/30 11:43:33][INFO] run.py:  93: 
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { AUGMENTATION      }-> False
 { BATCH_SIZE        }-> 10
 { DATA_JSON         }-> data.json
 { DATA_SEPARATOR    }-> ,
 { DECAY             }-> 0.005
+<<<<<<< HEAD
 { DEVICES           }-> [0, 1]
 { EPOCHS            }-> 200
 { FLOW              }-> DeepFlow
@@ -2094,6 +2281,12 @@
 { EPOCHS            }-> 200
 { FLOW              }-> DeepFlow
 { GPU               }-> 0,1
+=======
+{ DEVICES           }-> [0]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { LABEL_DICT        }-> label_dict.json
 { LOAD              }-> False
 { LR                }-> 0.001
@@ -2105,7 +2298,11 @@
 { NORM              }-> normal
 { NUM_CLASSES       }-> 20
 { NUM_WORKERS       }-> 8
+<<<<<<< HEAD
 { N_GPU             }-> 2
+=======
+{ N_GPU             }-> 1
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
 { OUTPUT_DIR        }-> .
 { OUTPUT_FILE       }-> ./pred.txt
 { PATH_DATA         }-> data
@@ -2116,6 +2313,7 @@
 { VERSION           }-> 31
 { dtype             }-> <class 'torch.cuda.FloatTensor'>
 
+<<<<<<< HEAD
 [10/30 15:08:44][INFO] train_test.py:  66: Training: [Epoch    1] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
 [10/30 15:08:46][INFO] train_test.py: 101: Evaluation: [Epoch    1] loss: 2.9972 accuracy: 0.0000
 [10/30 15:09:04][INFO] train_test.py:  66: Training: [Epoch    2] loss: 2.9972 accuracy: 0.0000 lr: 0.001000
@@ -2757,3 +2955,36 @@
 [10/30 16:22:19][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXIntegralsD' (STIXIntegralsD-Regular.otf) normal normal 400 normal>) = 10.05
 [10/30 16:22:19][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
 [10/30 16:22:19][DEBUG] font_manager.py: 1367: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+=======
+[10/30 11:43:36][INFO] train_test.py: 134: Load model ./twin for retraining
+[10/30 11:43:39][INFO] train_test.py: 137: Model from epoch 90
+[10/30 11:43:39][INFO] train_test.py: 141: loss_train_ : 2.49037
+[10/30 11:43:39][INFO] train_test.py: 141: acc_train_ : 0.594406
+[10/30 11:43:39][INFO] train_test.py: 141: loss_val_ : 2.61928
+[10/30 11:43:39][INFO] train_test.py: 141: acc_val_ : 0.469945
+=======
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SEED              }-> 2020
+[10/30 02:34:07][INFO] train_test.py: 139: acc_train_ : 0.776224
+[10/30 02:34:07][INFO] train_test.py: 139: loss_val_ : 2.54437
+[10/30 02:34:07][INFO] train_test.py: 139: acc_val_ : 0.535519
+[10/30 02:35:30][INFO] train_test.py:  66: Training: [Epoch  200] loss: 2.2949 accuracy: 0.7762 lr: 0.001000
+[10/30 02:35:54][INFO] train_test.py: 101: Evaluation: [Epoch  200] loss: 2.5432 accuracy: 0.5301
+[10/30 02:37:28][INFO] train_test.py:  66: Training: [Epoch  201] loss: 2.2949 accuracy: 0.7762 lr: 0.001000
+[10/30 02:37:52][INFO] train_test.py: 101: Evaluation: [Epoch  201] loss: 2.5414 accuracy: 0.5410
+[10/30 02:37:52][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5432 to 2.5414
+[10/30 02:39:27][INFO] train_test.py:  66: Training: [Epoch  202] loss: 2.2948 accuracy: 0.7762 lr: 0.001000
+[10/30 02:39:51][INFO] train_test.py: 101: Evaluation: [Epoch  202] loss: 2.5444 accuracy: 0.5301
+[10/30 02:41:10][INFO] train_test.py:  66: Training: [Epoch  203] loss: 2.3017 accuracy: 0.7762 lr: 0.001000
+[10/30 02:41:34][INFO] train_test.py: 101: Evaluation: [Epoch  203] loss: 2.5409 accuracy: 0.5355
+[10/30 02:41:34][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5414 to 2.5409
+[10/30 02:43:09][INFO] train_test.py:  66: Training: [Epoch  204] loss: 2.2948 accuracy: 0.7762 lr: 0.001000
+[10/30 02:43:33][INFO] train_test.py: 101: Evaluation: [Epoch  204] loss: 2.5408 accuracy: 0.5355
+[10/30 02:43:33][INFO] train_test.py: 159: Minimum of Loss_val is updated from 2.5409 to 2.5408
+[10/30 02:45:07][INFO] train_test.py:  66: Training: [Epoch  205] loss: 2.3015 accuracy: 0.7762 lr: 0.001000
+[10/30 02:45:31][INFO] train_test.py: 101: Evaluation: [Epoch  205] loss: 2.5414 accuracy: 0.5355
+[10/30 02:46:51][INFO] train_test.py:  66: Training: [Epoch  206] loss: 2.2947 accuracy: 0.7762 lr: 0.001000
+[10/30 02:47:14][INFO] train_test.py: 101: Evaluation: [Epoch  206] loss: 2.5433 accuracy: 0.5355
+[10/30 02:48:34][INFO] train_test.py:  66: Training: [Epoch  207] loss: 2.3081 accuracy: 0.7762 lr: 0.001000
+>>>>>>> 941136c86be0473713794f182532698d09c569ab
+>>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
