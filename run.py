@@ -16,6 +16,8 @@ def parse_args():
     parser.add_argument('-s', '--save', dest='SAVE', type=str, help='Name of model save')
     parser.add_argument('-lp', '--load_p', dest='LOAD_PRETRAINED', type=str, help='Name of model pretrained')
     parser.add_argument('-m', '--mode', dest='MODE', type=str, default='train', choices=['train', 'test'], help='Mode')
+    parser.add_argument('-e', '--epoch', dest='EPOCHS', type=int, default=100, help='Number of epochs')
+    parser.add_argument('-bs', '--batch_size', dest='BATCH_SIZE', type=int, default=2, help='Batch size')
     args = parser.parse_args()
     return args
 
