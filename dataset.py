@@ -79,7 +79,10 @@ class My_dataset(Dataset):
         # Get vdieo
         rgb_videos = []
         flow = np.load(os.path.join(processed_video_path, "values_flow_CVFlow.npy")).astype(np.float32)
+        mean, stdDev = cv2.meanStdDev(flow)
+        flow = (flow - mean) / stdDev
         flow = cv2.normalize(flow, None, -1, 1, cv2.NORM_MINMAX)
+    
         for frame_idx in frames_interval_idx:
             rgb_crop = cv2.imread(os.path.join(processed_video_path, "RGB_cropped/%08d.png" % (frame_idx))).astype(np.float32)
             rgb_crop = rgb_crop / 255.

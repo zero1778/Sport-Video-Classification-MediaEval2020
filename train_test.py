@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
-from utils import make_train_figure, progress_bar
+from utils import make_train_figure, progress_bar, make_path
 from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 
@@ -142,12 +142,12 @@ def train_model(model, __C, train_loader, validation_loader):
         
         #change_optimizer(optimizer, __C, lr=__C.lr_max)
 
+    __C.add_args(state_new)
+
     ########### TENSORBOARD ###########
     writer = SummaryWriter("log/" + __C.LOG_NAME)
     # writer.add_graph(model)
     ###################################
-
-    __C.add_args(state_new)
     
     for epoch in range(epoch_start, __C.EPOCHS+1):
 

@@ -15,7 +15,7 @@ class Cfgs():
 
         # Set Devices
         # If use multi-gpu training, set e.g.'0, 1, 2' instead
-        self.GPU = '1'
+        self.GPU = '0,1'
         # Resume training
         self.LOAD = False
         # Set RNG For CPU And GPUs
@@ -57,16 +57,11 @@ class Cfgs():
         self.LOAD_PRETRAINED = None
         self.MODEL_TYPE = 'twin'
         self.NUM_CLASSES = 20
-<<<<<<< HEAD
         self.BATCH_SIZE = 10
-        self.EPOCHS = 200
-=======
-        self.BATCH_SIZE = 2
-        self.EPOCHS = 100
->>>>>>> e2d1696cf5564b9079a72ea55b2f1ff725c9ee5b
+        self.EPOCHS = 1000
         self.MODEL_NAME = '%s' % (self.MODEL_TYPE)
         self.PATH_MODEL = os.path.join(self.OUTPUT_DIR, self.MODEL_NAME)
-        self.LOG_NAME = 'log_%s.log' % datetime.datetime.now().strftime("%d-%m-%Y_%H-%M")
+        self.LOG_NAME = 'log_%s' % datetime.datetime.now().strftime("%d-%m-%Y_%H-%M")
         if self.GPU != '.': #Use gpu
             self.dtype = torch.cuda.FloatTensor
         else:
@@ -89,7 +84,7 @@ class Cfgs():
         logger.addHandler(ch)
 
         
-        filename = os.path.join(self.LOG_DIR, self.LOG_NAME)
+        filename = os.path.join(self.LOG_DIR, self.LOG_NAME + ".log")
         fh = logging.StreamHandler(_cached_log_stream(filename))
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(plain_formatter)
