@@ -66,6 +66,7 @@ class My_dataset(Dataset):
         # start_frame_idx = (video_frame - T) // 2
         frames_interval_idx = range(1, 101)
         # print("frame: ", video_frame)
+        
         # Augmentation
         seed = random.randint(0, 999999999)
         if self.mode == 'train':
@@ -79,14 +80,30 @@ class My_dataset(Dataset):
         # Get vdieo
         rgb_videos = []
         flow = np.load(os.path.join(processed_video_path, "values_flow_CVFlow.npy")).astype(np.float32)
+        
+        # normalize flow
+        
         mean, stdDev = cv2.meanStdDev(flow)
         flow = (flow - mean) / stdDev
         flow = cv2.normalize(flow, None, -1, 1, cv2.NORM_MINMAX)
-    
+        flow_augment = []
         for frame_idx in frames_interval_idx:
             rgb_crop = cv2.imread(os.path.join(processed_video_path, "RGB_cropped/%08d.png" % (frame_idx))).astype(np.float32)
             rgb_crop = rgb_crop / 255.
+            if self.mode == 'train':
+                if self.__C.AUGMENTATION:
+                    random.seed(seed)
+                    transformed = transform(image=rgb_crop, mask=flow[frame_idx - 1])
+                    rgb_crop = transformed['image']
+                    frame_flow = transformed['mask']
             rgb_videos.append(rgb_crop)
+            flow_augment.append(frame_flow)
+
+        if self.mode == 'train':
+            if self.__C.AUGMENTATION:
+                flow = np.array(flow_augment)
+        
+        # print(flow.shape)
         rgb_video = np.transpose(np.array(rgb_videos), (3, 0, 1, 2))
         flow_video = np.transpose(np.array(flow), (3, 0, 1, 2))
         # print(rgb_video.shape)
@@ -99,5 +116,5 @@ class My_dataset(Dataset):
 if __name__ == "__main__":
     cfgs = Cfgs()
     train = My_dataset("train", cfgs)
-
+    train[5]
     # print(np.maximum(train[199]['flow']))

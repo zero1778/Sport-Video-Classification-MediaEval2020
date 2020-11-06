@@ -31,7 +31,7 @@ class Cfgs():
 
         # {'train', test'}
         # self.MODE = 'train'
-        self.AUGMENTATION = False
+        self.AUGMENTATION = True
         self.FLOW = 'DeepFlow'
         self.NORM = 'normal'
         self.SIZE_DATA = np.array([100, 120, 120])
