@@ -1,0 +1,84 @@
+[11/13 10:30:14][INFO] run.py:  97: Train with configs:
+[11/13 10:30:14][INFO] run.py:  98: 
+{ AUGMENTATION      }-> True
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 1000
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LOAD_PRETRAINED   }-> data_augmentation_norm_normal_v1
+{ LOG_DIR           }-> ./log
+{ LOG_NAME          }-> log_13-11-2020_10-30
+{ LR                }-> 0.0005
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> /home/dhieu/selab2/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SAVE              }-> data_augmentation_norm_normal_v1_reducelr
+{ SEED              }-> 2020
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 2020
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[11/13 10:30:18][INFO] train_test.py: 135: Load model ./twin for retraining
+[11/13 10:30:19][INFO] train_test.py: 138: Model from epoch 150
+[11/13 10:30:19][INFO] train_test.py: 142: loss_train_ : 2.20983
+[11/13 10:30:19][INFO] train_test.py: 142: acc_train_ : 0.865385
+[11/13 10:30:19][INFO] train_test.py: 142: loss_val_ : 2.50721
+[11/13 10:30:19][INFO] train_test.py: 142: acc_val_ : 0.579235
+[11/13 10:31:46][INFO] train_test.py:  67: Training: [Epoch  150] loss: 2.1963 accuracy: 0.8811 lr: 0.000500
+[11/13 10:32:08][INFO] train_test.py: 102: Evaluation: [Epoch  150] loss: 2.5309 accuracy: 0.5410
+[11/13 10:33:32][INFO] train_test.py:  67: Training: [Epoch  151] loss: 2.2035 accuracy: 0.8741 lr: 0.000500
+[11/13 10:33:53][INFO] train_test.py: 102: Evaluation: [Epoch  151] loss: 2.5250 accuracy: 0.5410
+[11/13 10:35:16][INFO] train_test.py:  67: Training: [Epoch  152] loss: 2.1944 accuracy: 0.8829 lr: 0.000500
+[11/13 10:35:38][INFO] train_test.py: 102: Evaluation: [Epoch  152] loss: 2.4941 accuracy: 0.5902
+[11/13 10:35:38][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.5072 to 2.4941
+[11/13 10:37:18][INFO] train_test.py:  67: Training: [Epoch  153] loss: 2.2043 accuracy: 0.8794 lr: 0.000500
+[11/13 10:40:22][INFO] train_test.py: 102: Evaluation: [Epoch  153] loss: 2.5227 accuracy: 0.5464
+[11/13 10:41:45][INFO] train_test.py:  67: Training: [Epoch  154] loss: 2.2032 accuracy: 0.8741 lr: 0.000500
+[11/13 10:42:07][INFO] train_test.py: 102: Evaluation: [Epoch  154] loss: 2.5056 accuracy: 0.5683
+[11/13 10:43:31][INFO] train_test.py:  67: Training: [Epoch  155] loss: 2.2041 accuracy: 0.8794 lr: 0.000500
+[11/13 10:43:52][INFO] train_test.py: 102: Evaluation: [Epoch  155] loss: 2.5212 accuracy: 0.5464
+[11/13 10:45:16][INFO] train_test.py:  67: Training: [Epoch  156] loss: 2.1959 accuracy: 0.8811 lr: 0.000500
+[11/13 10:45:37][INFO] train_test.py: 102: Evaluation: [Epoch  156] loss: 2.5234 accuracy: 0.5519
+[11/13 10:47:01][INFO] train_test.py:  67: Training: [Epoch  157] loss: 2.2023 accuracy: 0.8811 lr: 0.000500
+[11/13 10:47:22][INFO] train_test.py: 102: Evaluation: [Epoch  157] loss: 2.5197 accuracy: 0.5628
+[11/13 10:48:46][INFO] train_test.py:  67: Training: [Epoch  158] loss: 2.1936 accuracy: 0.8811 lr: 0.000500
+[11/13 10:49:08][INFO] train_test.py: 102: Evaluation: [Epoch  158] loss: 2.5161 accuracy: 0.5683
+[11/13 10:50:31][INFO] train_test.py:  67: Training: [Epoch  159] loss: 2.1927 accuracy: 0.8829 lr: 0.000500
+[11/13 10:50:52][INFO] train_test.py: 102: Evaluation: [Epoch  159] loss: 2.5207 accuracy: 0.5519
+[11/13 10:52:16][INFO] train_test.py:  67: Training: [Epoch  160] loss: 2.1916 accuracy: 0.8829 lr: 0.000500
+[11/13 10:52:37][INFO] train_test.py: 102: Evaluation: [Epoch  160] loss: 2.5398 accuracy: 0.5355
+[11/13 10:54:01][INFO] train_test.py:  67: Training: [Epoch  161] loss: 2.1972 accuracy: 0.8776 lr: 0.000500
+[11/13 10:54:23][INFO] train_test.py: 102: Evaluation: [Epoch  161] loss: 2.5512 accuracy: 0.5191
+[11/13 10:55:46][INFO] train_test.py:  67: Training: [Epoch  162] loss: 2.1962 accuracy: 0.8864 lr: 0.000500
+[11/13 10:56:08][INFO] train_test.py: 102: Evaluation: [Epoch  162] loss: 2.5431 accuracy: 0.5355
+[11/13 10:57:32][INFO] train_test.py:  67: Training: [Epoch  163] loss: 2.1961 accuracy: 0.8864 lr: 0.000500
+[11/13 10:57:53][INFO] train_test.py: 102: Evaluation: [Epoch  163] loss: 2.5413 accuracy: 0.5410
+[11/13 10:59:17][INFO] train_test.py:  67: Training: [Epoch  164] loss: 2.1909 accuracy: 0.8864 lr: 0.000500
+[11/13 10:59:39][INFO] train_test.py: 102: Evaluation: [Epoch  164] loss: 2.5274 accuracy: 0.5519
+[11/13 11:01:03][INFO] train_test.py:  67: Training: [Epoch  165] loss: 2.1884 accuracy: 0.8881 lr: 0.000500
+[11/13 11:01:25][INFO] train_test.py: 102: Evaluation: [Epoch  165] loss: 2.5280 accuracy: 0.5464
+[11/13 11:02:48][INFO] train_test.py:  67: Training: [Epoch  166] loss: 2.1903 accuracy: 0.8916 lr: 0.000500
+[11/13 11:03:10][INFO] train_test.py: 102: Evaluation: [Epoch  166] loss: 2.5292 accuracy: 0.5519
+[11/13 11:04:35][INFO] train_test.py:  67: Training: [Epoch  167] loss: 2.1939 accuracy: 0.8881 lr: 0.000500
+[11/13 11:04:56][INFO] train_test.py: 102: Evaluation: [Epoch  167] loss: 2.5214 accuracy: 0.5683
+[11/13 11:06:20][INFO] train_test.py:  67: Training: [Epoch  168] loss: 2.1935 accuracy: 0.8881 lr: 0.000500
+[11/13 11:06:42][INFO] train_test.py: 102: Evaluation: [Epoch  168] loss: 2.5255 accuracy: 0.5519
+[11/13 11:08:07][INFO] train_test.py:  67: Training: [Epoch  169] loss: 2.1776 accuracy: 0.8969 lr: 0.000500
+[11/13 11:08:29][INFO] train_test.py: 102: Evaluation: [Epoch  169] loss: 2.5181 accuracy: 0.5574

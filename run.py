@@ -17,6 +17,7 @@ def parse_args():
     parser.add_argument('-lp', '--load_p', dest='LOAD_PRETRAINED', type=str, help='Name of model pretrained')
     parser.add_argument('-m', '--mode', dest='MODE', type=str, default='train', choices=['train', 'test'], help='Mode')
     parser.add_argument('-e', '--epoch', dest='EPOCHS', type=int, default=100, help='Number of epochs')
+    parser.add_argument('-lr', dest='LR', type=float, default=0.001, help='learning_rate')
     parser.add_argument('-bs', '--batch_size', dest='BATCH_SIZE', type=int, default=2, help='Batch size')
     args = parser.parse_args()
     return args
@@ -69,7 +70,7 @@ def test(__C):
     ## Data preparation ##
     ######################
     ##### Build Dataset class and Data Loader #####
-    test_set = TableTennis('test', __C)
+    test_set = My_dataset('test', __C)
     ## Loaders of the Datasets
     test_loader = DataLoader(test_set, batch_size=__C.BATCH_SIZE, shuffle=False, num_workers=__C.NUM_WORKERS)
 

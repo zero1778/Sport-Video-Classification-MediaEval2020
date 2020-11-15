@@ -35,8 +35,8 @@ class Cfgs():
         self.FLOW = 'DeepFlow'
         self.NORM = 'normal'
         self.SIZE_DATA = np.array([100, 120, 120])
-        self.PATH_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
-        self.PATH_PROCESSED_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
+        self.PATH_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
+        self.PATH_PROCESSED_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
         self.LABEL_DICT = 'label_dict.json'
         self.DATA_JSON = 'data.json'
         self.NUM_WORKERS = 12
@@ -57,7 +57,7 @@ class Cfgs():
         self.LOAD_PRETRAINED = None
         self.MODEL_TYPE = 'twin'
         self.NUM_CLASSES = 20
-        self.BATCH_SIZE = 10
+        self.BATCH_SIZE = 2
         self.EPOCHS = 100
         self.MODEL_NAME = '%s' % (self.MODEL_TYPE)
         self.PATH_MODEL = os.path.join(self.OUTPUT_DIR, self.MODEL_NAME)
