@@ -117,7 +117,7 @@ def train_model(model, __C, train_loader, validation_loader):
         weight_decay=__C.DECAY,
         nesterov=__C.NESTEROV
     )
-    Eps = __C.EPOCHS
+    
     # For plot
     loss_train = []
     loss_val = []
