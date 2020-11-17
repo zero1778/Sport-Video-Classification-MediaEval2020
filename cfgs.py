@@ -15,7 +15,7 @@ class Cfgs():
 
         # Set Devices
         # If use multi-gpu training, set e.g.'0, 1, 2' instead
-        self.GPU = '0,1'
+        self.GPU = '1,0'
         # Resume training
         self.LOAD = False
         # Set RNG For CPU And GPUs
@@ -37,7 +37,7 @@ class Cfgs():
         self.SIZE_DATA = np.array([100, 120, 120])
         self.PATH_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
         self.PATH_PROCESSED_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
-        self.LABEL_DICT = 'label_dict.json'
+        self.LABEL_DICT = 'label_dict_hybrid.json'
         self.DATA_JSON = 'data.json'
         self.NUM_WORKERS = 12
         self.DATA_SEPARATOR = ','
@@ -61,7 +61,7 @@ class Cfgs():
         self.EPOCHS = 100
         self.MODEL_NAME = '%s' % (self.MODEL_TYPE)
         self.PATH_MODEL = os.path.join(self.OUTPUT_DIR, self.MODEL_NAME)
-        self.LOG_NAME = 'log_%s' % datetime.datetime.now().strftime("%d-%m-%Y_%H-%M")
+        self.LOG_NAME = 'log_%s_hybrid' % datetime.datetime.now().strftime("%d-%m-%Y_%H-%M")
         if self.GPU != '.': #Use gpu
             self.dtype = torch.cuda.FloatTensor
         else:

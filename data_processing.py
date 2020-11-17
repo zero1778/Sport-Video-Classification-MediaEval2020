@@ -40,6 +40,7 @@ def extract_frames(video_list, save_path, width_OF, log, flow_method):
 
         # Load Video
         cap = cv2.VideoCapture(video_path)
+        print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT), cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         length_video = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         frame_number = 0
         
@@ -156,8 +157,8 @@ def join_values_flow(video_list, name_values, save_path):
 
 if __name__ == "__main__":
     # /Users/bangdang2000/Documents/AI/Contest/MediaEval2020/data/train/Offensive_Backhand_Hit/7410672998_01112_01236.mp4
-    # data_dir = "data"
-    save_path = "data_processed"
+    data_dir = "data"
+    save_path = "data_processed_1"
     for d in os.listdir(data_dir):
         cur_dir = os.path.join(data_dir, d)
         if d == "test":

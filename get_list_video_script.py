@@ -25,7 +25,7 @@ if __name__ == "__main__":
             video_list = []
             min_frame = 999999
             min_frame_video = ""
-            for video in os.listdir(cur_dir):
+            for video in sorted(os.listdir(cur_dir)):
                 video_path = os.path.join(cur_dir, video)
                 # video_list.append(video_path)
                 video = cv2.VideoCapture(video_path)
@@ -52,7 +52,7 @@ if __name__ == "__main__":
                 label_path = os.path.join(cur_dir, label)
                 save_video_path = os.path.join(save_path, label)
                 # video_list = []
-                for video in os.listdir(label_path):
+                for video in sorted(os.listdir(label_path)):
                     video_path = os.path.join(label_path, video)
                     # video_list.append(video_path)
                     video = cv2.VideoCapture(video_path)

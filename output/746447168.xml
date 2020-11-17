@@ -1,0 +1,12 @@
+<video>
+  <action begin="140" end="272" move="Offensive Forehand Loop" />
+  <action begin="656" end="784" move="Offensive Forehand Loop" />
+  <action begin="812" end="992" move="Offensive Backhand Loop" />
+  <action begin="1180" end="1328" move="Offensive Backhand Loop" />
+  <action begin="1356" end="1524" move="Offensive Backhand Loop" />
+  <action begin="1896" end="2036" move="Offensive Backhand Loop" />
+  <action begin="2300" end="2472" move="Offensive Backhand Loop" />
+  <action begin="2732" end="2884" move="Offensive Backhand Loop" />
+  <action begin="3436" end="3580" move="Offensive Backhand Loop" />
+  <action begin="3628" end="3832" move="Offensive Forehand Hit" />
+</video>

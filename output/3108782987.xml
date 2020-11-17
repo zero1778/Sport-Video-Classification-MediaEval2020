@@ -1,0 +1,15 @@
+<video>
+  <action begin="360" end="484" move="Serve Forehand Topspin" />
+  <action begin="496" end="616" move="Serve Forehand Topspin" />
+  <action begin="844" end="960" move="Serve Backhand Loop" />
+  <action begin="976" end="1100" move="Defensive Backhand Backspin" />
+  <action begin="1124" end="1232" move="Serve Forehand Topspin" />
+  <action begin="1256" end="1372" move="Serve Backhand Topspin" />
+  <action begin="1648" end="1768" move="Serve Forehand Topspin" />
+  <action begin="1792" end="1896" move="Serve Forehand Sidespin" />
+  <action begin="1928" end="2048" move="Serve Forehand Topspin" />
+  <action begin="2072" end="2192" move="Serve Forehand Sidespin" />
+  <action begin="2412" end="2528" move="Serve Forehand Topspin" />
+  <action begin="2548" end="2664" move="Serve Backhand Loop" />
+  <action begin="2688" end="2816" move="Serve Forehand Topspin" />
+</video>
