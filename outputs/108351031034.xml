@@ -1,0 +1,14 @@
+<video>
+  <action begin="760" end="880" move="Offensive Backhand Hit" />
+  <action begin="904" end="1016" move="Offensive Backhand Hit" />
+  <action begin="1052" end="1144" move="Offensive Backhand Hit" />
+  <action begin="1336" end="1436" move="Defensive Backhand Block" />
+  <action begin="1460" end="1548" move="Defensive Forehand Push" />
+  <action begin="1580" end="1700" move="Offensive Backhand Hit" />
+  <action begin="1860" end="1988" move="Offensive Forehand Loop" />
+  <action begin="2012" end="2128" move="Serve Backhand Topspin" />
+  <action begin="2448" end="2588" move="Serve Backhand Topspin" />
+  <action begin="2700" end="2824" move="Offensive Forehand Loop" />
+  <action begin="2968" end="3104" move="Offensive Backhand Hit" />
+  <action begin="3376" end="3484" move="Offensive Backhand Loop" />
+</video>

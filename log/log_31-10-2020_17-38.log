@@ -1,0 +1,43 @@
+[10/31 17:38:50][INFO] run.py:  94: Train with configs:
+[10/31 17:38:50][INFO] run.py:  95: 
+{ AUGMENTATION      }-> False
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 1500
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LOAD_PRETRAINED   }-> model_change_lr
+{ LOG_DIR           }-> ./log
+{ LOG_NAME          }-> log_31-10-2020_17-38
+{ LR                }-> 0.0005
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> /home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SAVE              }-> model_lr_0.0005
+{ SEED              }-> 2020
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 2020
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[10/31 17:38:55][INFO] train_test.py: 133: Load model ./twin for retraining
+[10/31 17:38:57][INFO] train_test.py: 136: Model from epoch 751
+[10/31 17:38:57][INFO] train_test.py: 140: loss_train_ : 2.09355
+[10/31 17:38:57][INFO] train_test.py: 140: acc_train_ : 0.984266
+[10/31 17:38:57][INFO] train_test.py: 140: loss_val_ : 2.3774
+[10/31 17:38:57][INFO] train_test.py: 140: acc_val_ : 0.699454

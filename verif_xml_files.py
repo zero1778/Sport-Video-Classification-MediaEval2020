@@ -34,7 +34,7 @@ if __name__ == "__main__":
     except:
         raise ValueError('\n\nUsage : python verif_xml_files.py folder_with_xmls')
 
-    for file in [file for file in os.scandir('test') if file.name[-3:] == 'xml']:
+    for file in [file for file in os.scandir('outputs') if file.name[-3:] == 'xml']:
         print(file.name)
 
         tree = ElementTree.parse(file.path)
