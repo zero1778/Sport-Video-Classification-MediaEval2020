@@ -32,7 +32,7 @@ def load_model(model, weigth_path, model_name, optimizer=None):
     epoch = checkpoint['epoch']
     dict_of_values = checkpoint['dict_of_values']
     cfgs_dict = checkpoint['cfgs']
-    print(cfgs_dict)
+    # print(cfgs_dict)
     if optimizer != None:
         optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     return epoch, dict_of_values, cfgs_dict

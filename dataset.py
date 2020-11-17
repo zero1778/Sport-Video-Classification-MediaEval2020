@@ -76,10 +76,10 @@ class My_dataset(Dataset):
         if self.mode == 'train':
             if self.__C.AUGMENTATION:
                 transform = A.Compose([
-                    A.Flip(),
+                    A.HorizontalFlip(),
                     #A.RandomScale(),
-                    A.Rotate(limit=10)
-                ])
+                    A.Rotate(limit=[-5, 5])
+                ],p=0.7) 
         
         # Get vdieo
         rgb_videos = []

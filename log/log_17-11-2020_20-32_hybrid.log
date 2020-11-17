@@ -1,0 +1,43 @@
+[11/17 20:32:05][INFO] run.py: 120: Train with configs:
+[11/17 20:32:05][INFO] run.py: 121: 
+{ AUGMENTATION      }-> True
+{ BATCH_SIZE        }-> 8
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 1,0
+{ LABEL_DICT        }-> label_dict_hybrid.json
+{ LOAD              }-> False
+{ LOAD_PRETRAINED   }-> None
+{ LOG_DIR           }-> ./log
+{ LOG_NAME          }-> log_17-11-2020_20-32_hybrid
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> /home/dhieu/selab2/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SAVE              }-> hybrid_1
+{ SEED              }-> 2020
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 2020
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[11/17 20:35:30][INFO] train_test.py:  74: Training: [Epoch    1] loss: 2.9951 accuracy: 0.0245 lr: 0.001000
+[11/17 20:36:19][INFO] train_test.py: 228: Minimum of Loss_val is updated from 1000.0000 to 2.9948
+[11/17 20:38:13][INFO] train_test.py:  74: Training: [Epoch    2] loss: 2.9941 accuracy: 0.3427 lr: 0.001000
+[11/17 20:38:34][INFO] train_test.py: 228: Minimum of Loss_val is updated from 2.9948 to 2.9934
+[11/17 20:40:28][INFO] train_test.py:  74: Training: [Epoch    3] loss: 2.9911 accuracy: 0.3951 lr: 0.001000
+[11/17 20:40:49][INFO] train_test.py: 228: Minimum of Loss_val is updated from 2.9934 to 2.9874
