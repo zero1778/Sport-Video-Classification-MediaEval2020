@@ -1,0 +1,384 @@
+[11/14 17:37:30][INFO] run.py:  97: Train with configs:
+[11/14 17:37:30][INFO] run.py:  98: 
+{ AUGMENTATION      }-> True
+{ BATCH_SIZE        }-> 10
+{ DATA_JSON         }-> data.json
+{ DATA_SEPARATOR    }-> ,
+{ DECAY             }-> 0.005
+{ DEVICES           }-> [0, 1]
+{ EPOCHS            }-> 100
+{ FLOW              }-> DeepFlow
+{ GPU               }-> 0,1
+{ LABEL_DICT        }-> label_dict.json
+{ LOAD              }-> False
+{ LOAD_PRETRAINED   }-> None
+{ LOG_DIR           }-> ./log
+{ LOG_NAME          }-> log_14-11-2020_17-37
+{ LR                }-> 0.001
+{ MODE              }-> train
+{ MODEL_NAME        }-> twin
+{ MODEL_TYPE        }-> twin
+{ MOMENTUM          }-> 0.5
+{ NESTEROV          }-> True
+{ NORM              }-> normal
+{ NUM_CLASSES       }-> 20
+{ NUM_WORKERS       }-> 12
+{ N_GPU             }-> 2
+{ OUTPUT_DIR        }-> .
+{ OUTPUT_FILE       }-> ./pred.txt
+{ PATH_DATA         }-> /home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data
+{ PATH_MODEL        }-> ./twin
+{ PATH_PROCESSED_DATA }-> /home/dhieu/selab2/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed
+{ SAVE              }-> data_augmentation_norm_normal_v2
+{ SEED              }-> 2020
+{ SIZE_DATA         }-> [100 120 120]
+{ VERSION           }-> 2020
+{ dtype             }-> <class 'torch.cuda.FloatTensor'>
+
+[11/14 17:39:01][INFO] train_test.py:  67: Training: [Epoch    1] loss: 2.9959 accuracy: 0.0594 lr: 0.001000
+[11/14 17:39:23][INFO] train_test.py: 102: Evaluation: [Epoch    1] loss: 2.9958 accuracy: 0.0656
+[11/14 17:39:23][INFO] train_test.py: 171: Minimum of Loss_val is updated from 1000.0000 to 2.9958
+[11/14 17:41:05][INFO] train_test.py:  67: Training: [Epoch    2] loss: 2.9958 accuracy: 0.0664 lr: 0.001000
+[11/14 17:41:26][INFO] train_test.py: 102: Evaluation: [Epoch    2] loss: 2.9956 accuracy: 0.0820
+[11/14 17:41:26][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9958 to 2.9956
+[11/14 17:43:08][INFO] train_test.py:  67: Training: [Epoch    3] loss: 2.9956 accuracy: 0.0822 lr: 0.001000
+[11/14 17:43:30][INFO] train_test.py: 102: Evaluation: [Epoch    3] loss: 2.9955 accuracy: 0.0820
+[11/14 17:43:30][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9956 to 2.9955
+[11/14 17:45:11][INFO] train_test.py:  67: Training: [Epoch    4] loss: 2.9954 accuracy: 0.0909 lr: 0.001000
+[11/14 17:45:32][INFO] train_test.py: 102: Evaluation: [Epoch    4] loss: 2.9953 accuracy: 0.0820
+[11/14 17:45:32][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9955 to 2.9953
+[11/14 17:47:13][INFO] train_test.py:  67: Training: [Epoch    5] loss: 2.9951 accuracy: 0.0909 lr: 0.001000
+[11/14 17:47:34][INFO] train_test.py: 102: Evaluation: [Epoch    5] loss: 2.9950 accuracy: 0.0820
+[11/14 17:47:34][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9953 to 2.9950
+[11/14 17:49:14][INFO] train_test.py:  67: Training: [Epoch    6] loss: 2.9948 accuracy: 0.0909 lr: 0.001000
+[11/14 17:49:35][INFO] train_test.py: 102: Evaluation: [Epoch    6] loss: 2.9946 accuracy: 0.0820
+[11/14 17:49:35][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9950 to 2.9946
+[11/14 17:51:16][INFO] train_test.py:  67: Training: [Epoch    7] loss: 2.9941 accuracy: 0.0909 lr: 0.001000
+[11/14 17:51:38][INFO] train_test.py: 102: Evaluation: [Epoch    7] loss: 2.9939 accuracy: 0.0820
+[11/14 17:51:38][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9946 to 2.9939
+[11/14 17:53:18][INFO] train_test.py:  67: Training: [Epoch    8] loss: 2.9931 accuracy: 0.0909 lr: 0.001000
+[11/14 17:53:39][INFO] train_test.py: 102: Evaluation: [Epoch    8] loss: 2.9926 accuracy: 0.0820
+[11/14 17:53:39][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9939 to 2.9926
+[11/14 17:55:21][INFO] train_test.py:  67: Training: [Epoch    9] loss: 2.9907 accuracy: 0.0909 lr: 0.001000
+[11/14 17:55:42][INFO] train_test.py: 102: Evaluation: [Epoch    9] loss: 2.9897 accuracy: 0.0820
+[11/14 17:55:42][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9926 to 2.9897
+[11/14 17:57:23][INFO] train_test.py:  67: Training: [Epoch   10] loss: 2.9846 accuracy: 0.0909 lr: 0.001000
+[11/14 17:57:45][INFO] train_test.py: 102: Evaluation: [Epoch   10] loss: 2.9814 accuracy: 0.0820
+[11/14 17:57:45][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9897 to 2.9814
+[11/14 17:59:26][INFO] train_test.py:  67: Training: [Epoch   11] loss: 2.9719 accuracy: 0.0909 lr: 0.001000
+[11/14 17:59:48][INFO] train_test.py: 102: Evaluation: [Epoch   11] loss: 2.9688 accuracy: 0.0984
+[11/14 17:59:48][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9814 to 2.9688
+[11/14 18:01:28][INFO] train_test.py:  67: Training: [Epoch   12] loss: 2.9629 accuracy: 0.0962 lr: 0.001000
+[11/14 18:01:49][INFO] train_test.py: 102: Evaluation: [Epoch   12] loss: 2.9606 accuracy: 0.0820
+[11/14 18:01:49][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9688 to 2.9606
+[11/14 18:03:30][INFO] train_test.py:  67: Training: [Epoch   13] loss: 2.9513 accuracy: 0.1084 lr: 0.001000
+[11/14 18:03:51][INFO] train_test.py: 102: Evaluation: [Epoch   13] loss: 2.9382 accuracy: 0.1694
+[11/14 18:03:51][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9606 to 2.9382
+[11/14 18:05:33][INFO] train_test.py:  67: Training: [Epoch   14] loss: 2.9309 accuracy: 0.1451 lr: 0.001000
+[11/14 18:05:54][INFO] train_test.py: 102: Evaluation: [Epoch   14] loss: 2.9406 accuracy: 0.1202
+[11/14 18:07:18][INFO] train_test.py:  67: Training: [Epoch   15] loss: 2.9296 accuracy: 0.1451 lr: 0.001000
+[11/14 18:07:40][INFO] train_test.py: 102: Evaluation: [Epoch   15] loss: 2.9143 accuracy: 0.1585
+[11/14 18:07:40][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9382 to 2.9143
+[11/14 18:09:22][INFO] train_test.py:  67: Training: [Epoch   16] loss: 2.9087 accuracy: 0.1766 lr: 0.001000
+[11/14 18:09:43][INFO] train_test.py: 102: Evaluation: [Epoch   16] loss: 2.9437 accuracy: 0.1257
+[11/14 18:11:08][INFO] train_test.py:  67: Training: [Epoch   17] loss: 2.8808 accuracy: 0.1923 lr: 0.001000
+[11/14 18:11:29][INFO] train_test.py: 102: Evaluation: [Epoch   17] loss: 2.9751 accuracy: 0.0929
+[11/14 18:12:54][INFO] train_test.py:  67: Training: [Epoch   18] loss: 2.8693 accuracy: 0.2098 lr: 0.001000
+[11/14 18:13:15][INFO] train_test.py: 102: Evaluation: [Epoch   18] loss: 2.8627 accuracy: 0.2295
+[11/14 18:13:15][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.9143 to 2.8627
+[11/14 18:14:56][INFO] train_test.py:  67: Training: [Epoch   19] loss: 2.8313 accuracy: 0.2517 lr: 0.001000
+[11/14 18:15:17][INFO] train_test.py: 102: Evaluation: [Epoch   19] loss: 2.9037 accuracy: 0.1749
+[11/14 18:16:41][INFO] train_test.py:  67: Training: [Epoch   20] loss: 2.8186 accuracy: 0.2657 lr: 0.001000
+[11/14 18:17:02][INFO] train_test.py: 102: Evaluation: [Epoch   20] loss: 2.8407 accuracy: 0.2295
+[11/14 18:17:02][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.8627 to 2.8407
+[11/14 18:18:43][INFO] train_test.py:  67: Training: [Epoch   21] loss: 2.8370 accuracy: 0.2448 lr: 0.001000
+[11/14 18:19:04][INFO] train_test.py: 102: Evaluation: [Epoch   21] loss: 2.8264 accuracy: 0.2459
+[11/14 18:19:04][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.8407 to 2.8264
+[11/14 18:20:46][INFO] train_test.py:  67: Training: [Epoch   22] loss: 2.7807 accuracy: 0.2972 lr: 0.001000
+[11/14 18:21:07][INFO] train_test.py: 102: Evaluation: [Epoch   22] loss: 2.7882 accuracy: 0.2842
+[11/14 18:21:07][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.8264 to 2.7882
+[11/14 18:22:48][INFO] train_test.py:  67: Training: [Epoch   23] loss: 2.7749 accuracy: 0.3077 lr: 0.001000
+[11/14 18:23:09][INFO] train_test.py: 102: Evaluation: [Epoch   23] loss: 2.8046 accuracy: 0.2732
+[11/14 18:24:33][INFO] train_test.py:  67: Training: [Epoch   24] loss: 2.7619 accuracy: 0.3164 lr: 0.001000
+[11/14 18:24:54][INFO] train_test.py: 102: Evaluation: [Epoch   24] loss: 2.9415 accuracy: 0.1311
+[11/14 18:26:18][INFO] train_test.py:  67: Training: [Epoch   25] loss: 2.8375 accuracy: 0.2483 lr: 0.001000
+[11/14 18:26:39][INFO] train_test.py: 102: Evaluation: [Epoch   25] loss: 2.9043 accuracy: 0.1639
+[11/14 18:28:03][INFO] train_test.py:  67: Training: [Epoch   26] loss: 2.7857 accuracy: 0.2850 lr: 0.001000
+[11/14 18:28:25][INFO] train_test.py: 102: Evaluation: [Epoch   26] loss: 2.8013 accuracy: 0.2678
+[11/14 18:29:48][INFO] train_test.py:  67: Training: [Epoch   27] loss: 2.7336 accuracy: 0.3497 lr: 0.001000
+[11/14 18:30:10][INFO] train_test.py: 102: Evaluation: [Epoch   27] loss: 2.8034 accuracy: 0.2732
+[11/14 18:31:33][INFO] train_test.py:  67: Training: [Epoch   28] loss: 2.7578 accuracy: 0.3112 lr: 0.001000
+[11/14 18:31:54][INFO] train_test.py: 102: Evaluation: [Epoch   28] loss: 2.7900 accuracy: 0.2896
+[11/14 18:33:18][INFO] train_test.py:  67: Training: [Epoch   29] loss: 2.7272 accuracy: 0.3549 lr: 0.001000
+[11/14 18:33:40][INFO] train_test.py: 102: Evaluation: [Epoch   29] loss: 2.7798 accuracy: 0.3060
+[11/14 18:33:40][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.7882 to 2.7798
+[11/14 18:35:20][INFO] train_test.py:  67: Training: [Epoch   30] loss: 2.7087 accuracy: 0.3776 lr: 0.001000
+[11/14 18:35:42][INFO] train_test.py: 102: Evaluation: [Epoch   30] loss: 2.7983 accuracy: 0.2842
+[11/14 18:37:05][INFO] train_test.py:  67: Training: [Epoch   31] loss: 2.7135 accuracy: 0.3706 lr: 0.001000
+[11/14 18:37:27][INFO] train_test.py: 102: Evaluation: [Epoch   31] loss: 2.7840 accuracy: 0.2951
+[11/14 18:38:50][INFO] train_test.py:  67: Training: [Epoch   32] loss: 2.6693 accuracy: 0.4056 lr: 0.001000
+[11/14 18:39:11][INFO] train_test.py: 102: Evaluation: [Epoch   32] loss: 2.7690 accuracy: 0.2896
+[11/14 18:39:11][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.7798 to 2.7690
+[11/14 18:40:51][INFO] train_test.py:  67: Training: [Epoch   33] loss: 2.6485 accuracy: 0.4371 lr: 0.001000
+[11/14 18:41:13][INFO] train_test.py: 102: Evaluation: [Epoch   33] loss: 2.8085 accuracy: 0.2623
+[11/14 18:42:36][INFO] train_test.py:  67: Training: [Epoch   34] loss: 2.6541 accuracy: 0.4371 lr: 0.001000
+[11/14 18:42:58][INFO] train_test.py: 102: Evaluation: [Epoch   34] loss: 2.7447 accuracy: 0.3388
+[11/14 18:42:58][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.7690 to 2.7447
+[11/14 18:44:38][INFO] train_test.py:  67: Training: [Epoch   35] loss: 2.6223 accuracy: 0.4580 lr: 0.001000
+[11/14 18:45:00][INFO] train_test.py: 102: Evaluation: [Epoch   35] loss: 2.7458 accuracy: 0.3388
+[11/14 18:46:24][INFO] train_test.py:  67: Training: [Epoch   36] loss: 2.6105 accuracy: 0.4703 lr: 0.001000
+[11/14 18:46:45][INFO] train_test.py: 102: Evaluation: [Epoch   36] loss: 2.6843 accuracy: 0.4044
+[11/14 18:46:45][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.7447 to 2.6843
+[11/14 18:48:26][INFO] train_test.py:  67: Training: [Epoch   37] loss: 2.5896 accuracy: 0.4913 lr: 0.001000
+[11/14 18:48:48][INFO] train_test.py: 102: Evaluation: [Epoch   37] loss: 2.6887 accuracy: 0.3934
+[11/14 18:50:12][INFO] train_test.py:  67: Training: [Epoch   38] loss: 2.5791 accuracy: 0.4983 lr: 0.001000
+[11/14 18:50:33][INFO] train_test.py: 102: Evaluation: [Epoch   38] loss: 2.6981 accuracy: 0.3880
+[11/14 18:51:57][INFO] train_test.py:  67: Training: [Epoch   39] loss: 2.5523 accuracy: 0.5245 lr: 0.001000
+[11/14 18:52:19][INFO] train_test.py: 102: Evaluation: [Epoch   39] loss: 2.8343 accuracy: 0.2459
+[11/14 18:53:43][INFO] train_test.py:  67: Training: [Epoch   40] loss: 2.5481 accuracy: 0.5350 lr: 0.001000
+[11/14 18:54:04][INFO] train_test.py: 102: Evaluation: [Epoch   40] loss: 2.6609 accuracy: 0.4044
+[11/14 18:54:04][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6843 to 2.6609
+[11/14 18:55:45][INFO] train_test.py:  67: Training: [Epoch   41] loss: 2.5355 accuracy: 0.5350 lr: 0.001000
+[11/14 18:56:07][INFO] train_test.py: 102: Evaluation: [Epoch   41] loss: 2.6397 accuracy: 0.4372
+[11/14 18:56:07][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6609 to 2.6397
+[11/14 18:57:49][INFO] train_test.py:  67: Training: [Epoch   42] loss: 2.5318 accuracy: 0.5507 lr: 0.001000
+[11/14 18:58:10][INFO] train_test.py: 102: Evaluation: [Epoch   42] loss: 2.6409 accuracy: 0.4372
+[11/14 18:59:34][INFO] train_test.py:  67: Training: [Epoch   43] loss: 2.5194 accuracy: 0.5577 lr: 0.001000
+[11/14 18:59:56][INFO] train_test.py: 102: Evaluation: [Epoch   43] loss: 2.6662 accuracy: 0.4098
+[11/14 19:01:20][INFO] train_test.py:  67: Training: [Epoch   44] loss: 2.5200 accuracy: 0.5594 lr: 0.001000
+[11/14 19:01:42][INFO] train_test.py: 102: Evaluation: [Epoch   44] loss: 2.6616 accuracy: 0.4098
+[11/14 19:03:06][INFO] train_test.py:  67: Training: [Epoch   45] loss: 2.5102 accuracy: 0.5629 lr: 0.001000
+[11/14 19:03:28][INFO] train_test.py: 102: Evaluation: [Epoch   45] loss: 2.6638 accuracy: 0.4208
+[11/14 19:04:51][INFO] train_test.py:  67: Training: [Epoch   46] loss: 2.5162 accuracy: 0.5717 lr: 0.001000
+[11/14 19:05:12][INFO] train_test.py: 102: Evaluation: [Epoch   46] loss: 2.6800 accuracy: 0.3880
+[11/14 19:06:36][INFO] train_test.py:  67: Training: [Epoch   47] loss: 2.4921 accuracy: 0.5909 lr: 0.001000
+[11/14 19:06:57][INFO] train_test.py: 102: Evaluation: [Epoch   47] loss: 2.6717 accuracy: 0.4044
+[11/14 19:08:21][INFO] train_test.py:  67: Training: [Epoch   48] loss: 2.4965 accuracy: 0.5822 lr: 0.001000
+[11/14 19:08:42][INFO] train_test.py: 102: Evaluation: [Epoch   48] loss: 2.6770 accuracy: 0.3825
+[11/14 19:10:06][INFO] train_test.py:  67: Training: [Epoch   49] loss: 2.4799 accuracy: 0.5944 lr: 0.001000
+[11/14 19:10:27][INFO] train_test.py: 102: Evaluation: [Epoch   49] loss: 2.6374 accuracy: 0.4317
+[11/14 19:10:27][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6397 to 2.6374
+[11/14 19:12:08][INFO] train_test.py:  67: Training: [Epoch   50] loss: 2.4810 accuracy: 0.5979 lr: 0.001000
+[11/14 19:12:29][INFO] train_test.py: 102: Evaluation: [Epoch   50] loss: 2.6412 accuracy: 0.4317
+[11/14 19:13:52][INFO] train_test.py:  67: Training: [Epoch   51] loss: 2.4726 accuracy: 0.6066 lr: 0.001000
+[11/14 19:14:14][INFO] train_test.py: 102: Evaluation: [Epoch   51] loss: 2.6485 accuracy: 0.4317
+[11/14 19:15:38][INFO] train_test.py:  67: Training: [Epoch   52] loss: 2.4569 accuracy: 0.6154 lr: 0.001000
+[11/14 19:15:59][INFO] train_test.py: 102: Evaluation: [Epoch   52] loss: 2.6519 accuracy: 0.4372
+[11/14 19:17:23][INFO] train_test.py:  67: Training: [Epoch   53] loss: 2.4714 accuracy: 0.6084 lr: 0.001000
+[11/14 19:17:44][INFO] train_test.py: 102: Evaluation: [Epoch   53] loss: 2.6480 accuracy: 0.4208
+[11/14 19:19:07][INFO] train_test.py:  67: Training: [Epoch   54] loss: 2.4621 accuracy: 0.6171 lr: 0.001000
+[11/14 19:19:29][INFO] train_test.py: 102: Evaluation: [Epoch   54] loss: 2.6617 accuracy: 0.4153
+[11/14 19:20:53][INFO] train_test.py:  67: Training: [Epoch   55] loss: 2.4765 accuracy: 0.6031 lr: 0.001000
+[11/14 19:21:14][INFO] train_test.py: 102: Evaluation: [Epoch   55] loss: 2.6447 accuracy: 0.4262
+[11/14 19:22:38][INFO] train_test.py:  67: Training: [Epoch   56] loss: 2.4595 accuracy: 0.6206 lr: 0.001000
+[11/14 19:22:59][INFO] train_test.py: 102: Evaluation: [Epoch   56] loss: 2.6407 accuracy: 0.4372
+[11/14 19:24:23][INFO] train_test.py:  67: Training: [Epoch   57] loss: 2.4673 accuracy: 0.6136 lr: 0.001000
+[11/14 19:24:44][INFO] train_test.py: 102: Evaluation: [Epoch   57] loss: 2.6353 accuracy: 0.4426
+[11/14 19:24:44][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6374 to 2.6353
+[11/14 19:26:25][INFO] train_test.py:  67: Training: [Epoch   58] loss: 2.4487 accuracy: 0.6346 lr: 0.001000
+[11/14 19:26:47][INFO] train_test.py: 102: Evaluation: [Epoch   58] loss: 2.6683 accuracy: 0.4098
+[11/14 19:28:10][INFO] train_test.py:  67: Training: [Epoch   59] loss: 2.4487 accuracy: 0.6294 lr: 0.001000
+[11/14 19:28:32][INFO] train_test.py: 102: Evaluation: [Epoch   59] loss: 2.6671 accuracy: 0.4098
+[11/14 19:29:56][INFO] train_test.py:  67: Training: [Epoch   60] loss: 2.4376 accuracy: 0.6346 lr: 0.001000
+[11/14 19:30:18][INFO] train_test.py: 102: Evaluation: [Epoch   60] loss: 2.6353 accuracy: 0.4426
+[11/14 19:30:18][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6353 to 2.6353
+[11/14 19:31:59][INFO] train_test.py:  67: Training: [Epoch   61] loss: 2.4263 accuracy: 0.6469 lr: 0.001000
+[11/14 19:32:20][INFO] train_test.py: 102: Evaluation: [Epoch   61] loss: 2.6508 accuracy: 0.4153
+[11/14 19:33:45][INFO] train_test.py:  67: Training: [Epoch   62] loss: 2.4378 accuracy: 0.6451 lr: 0.001000
+[11/14 19:34:06][INFO] train_test.py: 102: Evaluation: [Epoch   62] loss: 2.6561 accuracy: 0.4208
+[11/14 19:35:31][INFO] train_test.py:  67: Training: [Epoch   63] loss: 2.4239 accuracy: 0.6573 lr: 0.001000
+[11/14 19:35:53][INFO] train_test.py: 102: Evaluation: [Epoch   63] loss: 2.6538 accuracy: 0.4208
+[11/14 19:37:18][INFO] train_test.py:  67: Training: [Epoch   64] loss: 2.4193 accuracy: 0.6521 lr: 0.001000
+[11/14 19:37:39][INFO] train_test.py: 102: Evaluation: [Epoch   64] loss: 2.6675 accuracy: 0.4044
+[11/14 19:39:04][INFO] train_test.py:  67: Training: [Epoch   65] loss: 2.4266 accuracy: 0.6469 lr: 0.001000
+[11/14 19:39:26][INFO] train_test.py: 102: Evaluation: [Epoch   65] loss: 2.6792 accuracy: 0.3934
+[11/14 19:40:51][INFO] train_test.py:  67: Training: [Epoch   66] loss: 2.4194 accuracy: 0.6591 lr: 0.001000
+[11/14 19:41:13][INFO] train_test.py: 102: Evaluation: [Epoch   66] loss: 2.6297 accuracy: 0.4262
+[11/14 19:41:13][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6353 to 2.6297
+[11/14 19:42:54][INFO] train_test.py:  67: Training: [Epoch   67] loss: 2.4316 accuracy: 0.6486 lr: 0.001000
+[11/14 19:43:16][INFO] train_test.py: 102: Evaluation: [Epoch   67] loss: 2.6555 accuracy: 0.4098
+[11/14 19:44:40][INFO] train_test.py:  67: Training: [Epoch   68] loss: 2.4134 accuracy: 0.6608 lr: 0.001000
+[11/14 19:45:01][INFO] train_test.py: 102: Evaluation: [Epoch   68] loss: 2.6521 accuracy: 0.4372
+[11/14 19:46:25][INFO] train_test.py:  67: Training: [Epoch   69] loss: 2.4193 accuracy: 0.6608 lr: 0.001000
+[11/14 19:46:46][INFO] train_test.py: 102: Evaluation: [Epoch   69] loss: 2.6403 accuracy: 0.4317
+[11/14 19:48:10][INFO] train_test.py:  67: Training: [Epoch   70] loss: 2.4039 accuracy: 0.6748 lr: 0.001000
+[11/14 19:48:31][INFO] train_test.py: 102: Evaluation: [Epoch   70] loss: 2.6503 accuracy: 0.4317
+[11/14 19:49:55][INFO] train_test.py:  67: Training: [Epoch   71] loss: 2.4106 accuracy: 0.6643 lr: 0.001000
+[11/14 19:50:17][INFO] train_test.py: 102: Evaluation: [Epoch   71] loss: 2.6513 accuracy: 0.4262
+[11/14 19:51:40][INFO] train_test.py:  67: Training: [Epoch   72] loss: 2.3998 accuracy: 0.6801 lr: 0.001000
+[11/14 19:52:02][INFO] train_test.py: 102: Evaluation: [Epoch   72] loss: 2.6302 accuracy: 0.4481
+[11/14 19:53:25][INFO] train_test.py:  67: Training: [Epoch   73] loss: 2.4153 accuracy: 0.6626 lr: 0.001000
+[11/14 19:53:47][INFO] train_test.py: 102: Evaluation: [Epoch   73] loss: 2.6468 accuracy: 0.4372
+[11/14 19:55:10][INFO] train_test.py:  67: Training: [Epoch   74] loss: 2.4027 accuracy: 0.6696 lr: 0.001000
+[11/14 19:55:32][INFO] train_test.py: 102: Evaluation: [Epoch   74] loss: 2.6455 accuracy: 0.4481
+[11/14 19:56:56][INFO] train_test.py:  67: Training: [Epoch   75] loss: 2.4019 accuracy: 0.6713 lr: 0.001000
+[11/14 19:57:17][INFO] train_test.py: 102: Evaluation: [Epoch   75] loss: 2.6619 accuracy: 0.4098
+[11/14 19:58:41][INFO] train_test.py:  67: Training: [Epoch   76] loss: 2.3977 accuracy: 0.6748 lr: 0.001000
+[11/14 19:59:02][INFO] train_test.py: 102: Evaluation: [Epoch   76] loss: 2.6370 accuracy: 0.4426
+[11/14 20:00:25][INFO] train_test.py:  67: Training: [Epoch   77] loss: 2.4092 accuracy: 0.6783 lr: 0.001000
+[11/14 20:00:46][INFO] train_test.py: 102: Evaluation: [Epoch   77] loss: 2.6398 accuracy: 0.4481
+[11/14 20:02:10][INFO] train_test.py:  67: Training: [Epoch   78] loss: 2.4072 accuracy: 0.6661 lr: 0.001000
+[11/14 20:02:31][INFO] train_test.py: 102: Evaluation: [Epoch   78] loss: 2.6309 accuracy: 0.4426
+[11/14 20:03:55][INFO] train_test.py:  67: Training: [Epoch   79] loss: 2.4027 accuracy: 0.6766 lr: 0.001000
+[11/14 20:04:17][INFO] train_test.py: 102: Evaluation: [Epoch   79] loss: 2.6301 accuracy: 0.4590
+[11/14 20:05:42][INFO] train_test.py:  67: Training: [Epoch   80] loss: 2.3891 accuracy: 0.6818 lr: 0.001000
+[11/14 20:06:03][INFO] train_test.py: 102: Evaluation: [Epoch   80] loss: 2.6418 accuracy: 0.4372
+[11/14 20:07:27][INFO] train_test.py:  67: Training: [Epoch   81] loss: 2.3898 accuracy: 0.6923 lr: 0.001000
+[11/14 20:07:49][INFO] train_test.py: 102: Evaluation: [Epoch   81] loss: 2.6365 accuracy: 0.4481
+[11/14 20:09:14][INFO] train_test.py:  67: Training: [Epoch   82] loss: 2.3869 accuracy: 0.6871 lr: 0.001000
+[11/14 20:09:35][INFO] train_test.py: 102: Evaluation: [Epoch   82] loss: 2.6062 accuracy: 0.4645
+[11/14 20:09:35][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6297 to 2.6062
+[11/14 20:11:17][INFO] train_test.py:  67: Training: [Epoch   83] loss: 2.3601 accuracy: 0.7115 lr: 0.001000
+[11/14 20:11:38][INFO] train_test.py: 102: Evaluation: [Epoch   83] loss: 2.5956 accuracy: 0.4863
+[11/14 20:11:38][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.6062 to 2.5956
+[11/14 20:13:20][INFO] train_test.py:  67: Training: [Epoch   84] loss: 2.3633 accuracy: 0.7098 lr: 0.001000
+[11/14 20:13:42][INFO] train_test.py: 102: Evaluation: [Epoch   84] loss: 2.6293 accuracy: 0.4426
+[11/14 20:15:06][INFO] train_test.py:  67: Training: [Epoch   85] loss: 2.3618 accuracy: 0.7115 lr: 0.001000
+[11/14 20:15:29][INFO] train_test.py: 102: Evaluation: [Epoch   85] loss: 2.5977 accuracy: 0.4754
+[11/14 20:16:53][INFO] train_test.py:  67: Training: [Epoch   86] loss: 2.3430 accuracy: 0.7308 lr: 0.001000
+[11/14 20:17:14][INFO] train_test.py: 102: Evaluation: [Epoch   86] loss: 2.6017 accuracy: 0.4699
+[11/14 20:18:39][INFO] train_test.py:  67: Training: [Epoch   87] loss: 2.3448 accuracy: 0.7395 lr: 0.001000
+[11/14 20:19:01][INFO] train_test.py: 102: Evaluation: [Epoch   87] loss: 2.6067 accuracy: 0.4863
+[11/14 20:20:26][INFO] train_test.py:  67: Training: [Epoch   88] loss: 2.3515 accuracy: 0.7290 lr: 0.001000
+[11/14 20:20:48][INFO] train_test.py: 102: Evaluation: [Epoch   88] loss: 2.6032 accuracy: 0.4699
+[11/14 20:22:13][INFO] train_test.py:  67: Training: [Epoch   89] loss: 2.3492 accuracy: 0.7308 lr: 0.001000
+[11/14 20:22:35][INFO] train_test.py: 102: Evaluation: [Epoch   89] loss: 2.6067 accuracy: 0.4809
+[11/14 20:24:00][INFO] train_test.py:  67: Training: [Epoch   90] loss: 2.3353 accuracy: 0.7465 lr: 0.001000
+[11/14 20:24:21][INFO] train_test.py: 102: Evaluation: [Epoch   90] loss: 2.5994 accuracy: 0.4699
+[11/14 20:25:44][INFO] train_test.py:  67: Training: [Epoch   91] loss: 2.3305 accuracy: 0.7500 lr: 0.001000
+[11/14 20:26:06][INFO] train_test.py: 102: Evaluation: [Epoch   91] loss: 2.6237 accuracy: 0.4481
+[11/14 20:27:30][INFO] train_test.py:  67: Training: [Epoch   92] loss: 2.3271 accuracy: 0.7430 lr: 0.001000
+[11/14 20:27:52][INFO] train_test.py: 102: Evaluation: [Epoch   92] loss: 2.6138 accuracy: 0.4590
+[11/14 20:29:15][INFO] train_test.py:  67: Training: [Epoch   93] loss: 2.3132 accuracy: 0.7640 lr: 0.001000
+[11/14 20:29:37][INFO] train_test.py: 102: Evaluation: [Epoch   93] loss: 2.5859 accuracy: 0.4863
+[11/14 20:29:37][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.5956 to 2.5859
+[11/14 20:31:17][INFO] train_test.py:  67: Training: [Epoch   94] loss: 2.3151 accuracy: 0.7570 lr: 0.001000
+[11/14 20:31:38][INFO] train_test.py: 102: Evaluation: [Epoch   94] loss: 2.5913 accuracy: 0.4809
+[11/14 20:33:02][INFO] train_test.py:  67: Training: [Epoch   95] loss: 2.3042 accuracy: 0.7710 lr: 0.001000
+[11/14 20:33:23][INFO] train_test.py: 102: Evaluation: [Epoch   95] loss: 2.5926 accuracy: 0.4754
+[11/14 20:34:48][INFO] train_test.py:  67: Training: [Epoch   96] loss: 2.3092 accuracy: 0.7710 lr: 0.001000
+[11/14 20:35:09][INFO] train_test.py: 102: Evaluation: [Epoch   96] loss: 2.5878 accuracy: 0.4809
+[11/14 20:36:34][INFO] train_test.py:  67: Training: [Epoch   97] loss: 2.3027 accuracy: 0.7710 lr: 0.001000
+[11/14 20:36:56][INFO] train_test.py: 102: Evaluation: [Epoch   97] loss: 2.5892 accuracy: 0.5027
+[11/14 20:38:21][INFO] train_test.py:  67: Training: [Epoch   98] loss: 2.3160 accuracy: 0.7657 lr: 0.001000
+[11/14 20:38:42][INFO] train_test.py: 102: Evaluation: [Epoch   98] loss: 2.5843 accuracy: 0.5027
+[11/14 20:38:42][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.5859 to 2.5843
+[11/14 20:40:24][INFO] train_test.py:  67: Training: [Epoch   99] loss: 2.3172 accuracy: 0.7587 lr: 0.001000
+[11/14 20:40:46][INFO] train_test.py: 102: Evaluation: [Epoch   99] loss: 2.5858 accuracy: 0.4918
+[11/14 20:42:10][INFO] train_test.py:  67: Training: [Epoch  100] loss: 2.2932 accuracy: 0.7867 lr: 0.001000
+[11/14 20:42:32][INFO] train_test.py: 102: Evaluation: [Epoch  100] loss: 2.5508 accuracy: 0.5410
+[11/14 20:42:32][INFO] train_test.py: 171: Minimum of Loss_val is updated from 2.5843 to 2.5508
+[11/14 20:42:48][INFO] train_test.py: 184: Trained with 100 epochs, lr = 0.001, batchsize = 10, momentum = 0.5 with max validation accuracy of 0.54 done in 3:05:14
+[11/14 20:42:48][DEBUG] font_manager.py: 1334: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal 700 normal>) = 2.244090909090909
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal 700 normal>) = 1.2440909090909091
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+[11/14 20:42:48][DEBUG] font_manager.py: 1346: findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+[11/14 20:42:48][DEBUG] font_manager.py: 1366: findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/dhieu/miniconda3/envs/workspace/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.

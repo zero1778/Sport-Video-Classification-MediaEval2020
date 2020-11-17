@@ -15,7 +15,7 @@ class Cfgs():
 
         # Set Devices
         # If use multi-gpu training, set e.g.'0, 1, 2' instead
-        self.GPU = '0,1'
+        self.GPU = '1'
         # Resume training
         self.LOAD = False
         # Set RNG For CPU And GPUs
@@ -31,12 +31,12 @@ class Cfgs():
 
         # {'train', test'}
         # self.MODE = 'train'
-        self.AUGMENTATION = False
+        self.AUGMENTATION = True
         self.FLOW = 'DeepFlow'
         self.NORM = 'normal'
         self.SIZE_DATA = np.array([100, 120, 120])
-        self.PATH_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
-        self.PATH_PROCESSED_DATA = '/home/dhieu/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
+        self.PATH_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data'
+        self.PATH_PROCESSED_DATA = '/home/dhieu/Contest/MediaEval2020/sport/Sport-Video-Classification-MediaEval2020/data_processed'
         self.LABEL_DICT = 'label_dict.json'
         self.DATA_JSON = 'data.json'
         self.NUM_WORKERS = 12
@@ -84,7 +84,7 @@ class Cfgs():
         logger.addHandler(ch)
 
         
-        filename = os.path.join(self.LOG_DIR, self.LOG_NAME + '.log')
+        filename = os.path.join(self.LOG_DIR, self.LOG_NAME + ".log")
         fh = logging.StreamHandler(_cached_log_stream(filename))
         fh.setLevel(logging.DEBUG)
         fh.setFormatter(plain_formatter)

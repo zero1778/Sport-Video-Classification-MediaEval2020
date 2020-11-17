@@ -6,7 +6,7 @@ from utils import make_path
 from cfgs import Cfgs
 from dataset import My_dataset
 from model import make_architecture
-from train_test import train_model, test_model
+from train_test import train_model, test_model, val_model
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +15,10 @@ def parse_args():
     parser.add_argument('-d', '--data', dest='PATH_PROCESSED_DATA', type=str, help='Path to data folder')
     parser.add_argument('-s', '--save', dest='SAVE', type=str, help='Name of model save')
     parser.add_argument('-lp', '--load_p', dest='LOAD_PRETRAINED', type=str, help='Name of model pretrained')
-    parser.add_argument('-m', '--mode', dest='MODE', type=str, default='train', choices=['train', 'test'], help='Mode')
+    parser.add_argument('-m', '--mode', dest='MODE', type=str, default='train', choices=['train', 'test', 'val'], help='Mode')
+    parser.add_argument('-e', '--epoch', dest='EPOCHS', type=int, default=100, help='Number of epochs')
+    parser.add_argument('-lr', dest='LR', type=float, default=0.001, help='learning_rate')
+    parser.add_argument('-bs', '--batch_size', dest='BATCH_SIZE', type=int, default=2, help='Batch size')
     args = parser.parse_args()
     return args
 
@@ -67,7 +70,7 @@ def test(__C):
     ## Data preparation ##
     ######################
     ##### Build Dataset class and Data Loader #####
-    test_set = TableTennis('test', __C)
+    test_set = My_dataset('test', __C)
     ## Loaders of the Datasets
     test_loader = DataLoader(test_set, batch_size=__C.BATCH_SIZE, shuffle=False, num_workers=__C.NUM_WORKERS)
 
@@ -80,6 +83,29 @@ def test(__C):
     ## Test process ##
     ##################
     test_model(model, __C, test_loader)
+
+def validate(__C):
+
+    #### Same seed #####
+    reset_training(__C.SEED)
+    
+    ######################
+    ## Data preparation ##
+    ######################
+    ##### Build Dataset class and Data Loader #####
+    val_set = My_dataset('val', __C)
+    ## Loaders of the Datasets
+    val_loader = DataLoader(val_set, batch_size=__C.BATCH_SIZE, shuffle=False, num_workers=__C.NUM_WORKERS)
+
+    ##################
+    ## Architecture ##
+    ##################
+    model = make_architecture(__C)
+
+    ##################
+    ## Test process ##
+    ##################
+    val_model(model, __C, val_loader)
 
 if __name__ == "__main__":
     # Variables
@@ -99,7 +125,9 @@ if __name__ == "__main__":
     make_path(__C.PATH_MODEL)
     # __C.LOAD = True
     if __C.MODE == 'test':
-        # __C.LOAD = True
         test(__C)
     else:
-        train(__C)
+        if __C.MODE == 'val':
+            validate(__C)
+        else:
+            train(__C)
